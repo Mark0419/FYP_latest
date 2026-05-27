@@ -1,0 +1,9 @@
+set search_path [list . /data/synopsys/fusioncompiler/W-2024.09-SP3/dw/syn_ver /data/synopsys/fusioncompiler/W-2024.09-SP3/dw/sim_ver /data/synopsys/fusioncompiler/W-2024.09-SP3/libraries/syn ] 
+analyze -format sverilog  "ahb_wrapper.sv qspi_core.sv" 
+C/home/user18/Projects/Flash_controller/source
+/home/user18/Projects/Flash_controller/source/ahb_wrapper.sv
+ahb_wrapper
+/home/user18/Projects/Flash_controller/source/qspi_core.sv
+qspi_fsm
+elaborate ahb_wrapper
+set_top_module ahb_wrapper

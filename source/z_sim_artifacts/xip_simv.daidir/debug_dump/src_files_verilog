@@ -1,0 +1,5 @@
+/home/user18/Projects/Flash_controller/source/ahb_wrapper_final.sv
+/home/user18/Projects/Flash_controller/source/flash_model_final.sv
+/home/user18/Projects/Flash_controller/source/qspi_core_fifo.sv
+/home/user18/Projects/Flash_controller/source/sync_fifo.sv
+/home/user18/Projects/Flash_controller/source/tb_xip.sv

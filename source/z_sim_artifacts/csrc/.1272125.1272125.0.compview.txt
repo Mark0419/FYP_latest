@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1778485166.480159206, "rt":22.45, "ut":0.04, "st":0.03}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1778485166.158738478}
+{"VCS_COMP_START_TIME": 1778485166.158738478}
+{"VCS_COMP_END_TIME": 1778485188.963887790}
+{"VCS_USER_OPTIONS": "-sverilog -debug_access+all -kdb -lca tb_xip.sv ahb_wrapper_final.sv qspi_core_final.sv flash_model_final.sv sync_fifo.sv -o xip_simv"}

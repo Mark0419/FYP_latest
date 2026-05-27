@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1779037677.707732206, "rt":20.73, "ut":0.06, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1779037677.310938848}
+{"VCS_COMP_START_TIME": 1779037677.310938848}
+{"VCS_COMP_END_TIME": 1779037698.490538306}
+{"VCS_USER_OPTIONS": "-sverilog -debug_access+all -timescale=1ns/1ps +incdir+./arm_m3_core/logical/cortexm3_integration/verilog +incdir+./arm_m3_core/logical/cortexm3/verilog +incdir+./arm_m3_core/logical/cm3_lic_defs/verilog -y ./arm_m3_core/logical/cortexm3_integration/verilog -y ./arm_m3_core/logical/cortexm3/verilog -y ./arm_m3_core/logical/components/verilog -y ./arm_m3_core/logical/cm3_lic_defs/verilog +libext+.v ./arm_m3_core/logical/cortexm3_integration/verilog/CORTEXM3INTEGRATION.v ./arm_m3_core/logical/cortexm3/verilog/CORTEXM3.v tb_top_soc.sv boot_rom.v ahb_wrapper_full.sv qspi_core_full.sv sync_fifo_full.sv flash_model_final.sv"}
+{"vcs1": {"peak_mem": 314960}}

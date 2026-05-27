@@ -1,0 +1,14 @@
+Command Line: /data/synopsys/verdi/W-2024.09-SP2/platform/LINUXAMD64/bin/Novas -ssf soc_full.fsdb
+uname(Linux vecad-svr1 4.18.0-553.8.1.el8_10.x86_64 #1 SMP Tue Jul 2 07:26:33 EDT 2024 x86_64)
+file I/O: ffrLog.cpp:269, fclose(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+file I/O: cmdobj.cpp:1464, fflush(), errno: 28, msg: No space left on device
+au time 185327.728420 223.457219 115.954605 delta 449703936 449703936 total 1469526016 1469526016

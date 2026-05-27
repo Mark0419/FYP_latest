@@ -1,0 +1,88 @@
+Magic 271485
+Revision Verdi_W-2024.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1272 602 157 105
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/user18/Projects/Flash_controller/source/2_pure_xip/soc_full.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 3759205.841447 4168866.354608
+cursor 3340000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 10
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/user18/Projects/Flash_controller/source/2_pure_xip/soc_full.fsdb"
+addSignal -h 15 /tb_soc_top/HCLK
+addSignal -h 15 -UNSIGNED -HEX -holdScope SYS_HADDR[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope SYS_HRDATA[31:0]
+addSignal -h 15 -holdScope SYS_HREADY
+addSignal -h 15 -UNSIGNED -HEX -holdScope SYS_HWDATA[31:0]
+addSignal -h 15 -holdScope SYS_HWRITE
+addGroup "G2"
+addSignal -h 15 /tb_soc_top/u_dut/qspi_clk
+addSignal -h 15 -holdScope qspi_cs_n
+addSignal -h 15 -UNSIGNED /tb_soc_top/u_dut/u_core/state[2:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_soc_top/u_dut/qspi_data_in[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope qspi_data_out[3:0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/user18/Projects/Flash_controller/source/2_pure_xip/soc_full.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/sync_fifo"
+"/tb_soc_top"
+"/tb_soc_top/u_dut"
+
+SCOPE_LIST_BEGIN
+"/sync_fifo"
+"/tb_soc_top"
+"/tb_soc_top/u_dut"
+"/tb_soc_top/u_flash"
+"/tb_soc_top/u_cpu"
+"/tb_soc_top/u_boot_rom_icode"
+"/tb_soc_top/u_boot_rom_dcode"
+"/tb_soc_top/u_dut/u_core"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

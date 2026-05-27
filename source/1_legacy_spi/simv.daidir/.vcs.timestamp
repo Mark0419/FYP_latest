@@ -1,0 +1,586 @@
+232      
+0 cm3_lic_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_lic_defs.v
+0 cm3_dpu_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_dpu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_dpu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_dpu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_dpu_defs.v
+0 cm3_dpu_undefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_dpu_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_dpu_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_dpu_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_dpu_undefs.v
+0 cm3_nvic_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_nvic_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_nvic_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_nvic_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_nvic_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_nvic_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_nvic_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_nvic_defs.v
+0 cm3_nvic_undefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_nvic_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_nvic_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_nvic_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_nvic_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_nvic_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_nvic_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_nvic_undefs.v
+0 cm3_fpb_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_fpb_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_fpb_defs.v
+0 cm3_fpb_undefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_fpb_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_fpb_undefs.v
+0 cm3_etm_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_etm_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_etm_defs.v
+0 cm3_mtx_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_mtx_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_mtx_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_mtx_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_mtx_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_mtx_defs.v
+0 cm3_mtx_undefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_mtx_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_mtx_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_mtx_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_mtx_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_mtx_undefs.v
+0 cm3_mpu_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_mpu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_mpu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_mpu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_mpu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_mpu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mpu_defs.v
+0 cm3_mpu_undefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_mpu_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_mpu_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_mpu_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_mpu_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_mpu_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mpu_undefs.v
+0 cm3_tpiu_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_tpiu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_tpiu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_tpiu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_tpiu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_tpiu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_tpiu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_tpiu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_tpiu_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_tpiu_defs.v
+0 cm3_dwt_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_dwt_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_dwt_defs.v
+0 cm3_dwt_undefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_dwt_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_dwt_undefs.v
+0 cm3_dap_ahb_ap_defs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_dap_ahb_ap_defs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_dap_ahb_ap_defs.v
+0 cm3_dap_ahb_ap_undefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_dap_ahb_ap_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_dap_ahb_ap_undefs.v
+0 DAPJtagDpDefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/DAPJtagDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/DAPJtagDpDefs.v
+0 DAPDpApbDefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/DAPDpApbDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/DAPDpApbDefs.v
+0 DAPSwDpDefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/DAPSwDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/DAPSwDpDefs.v
+0 DAPSwjDpDefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/DAPSwjDpDefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/DAPSwjDpDefs.v
+0 cm3_etm_undefs.v
+0 /data/synopsys/vcs/W-2024.09-SP2/etc/systemverilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_etm_undefs.v
+0 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_etm_undefs.v
+87
++define+ARM_TestBench
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog
++incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells
++itf+/data/synopsys/vcs/W-2024.09-SP2/linux64/lib/vcsdp_lite.tab
++libext+.v
++lint=TFIPC-L
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/data/synopsys/vcs/W-2024.09-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/libvirsim.so /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/liberrorinf.so /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/libsnpsmalloc.so /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/data/synopsys/vcs/W-2024.09-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/data/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/data/synopsys/vcs/W-2024.09-SP2/include
+-Mxllcflags=
+-P
+-debug_access+all
+-fsdb
+-gen_obj
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+-y
+/data/synopsys/vcs/W-2024.09-SP2/linux64/bin/vcs1
+/data/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/CORTEXM3INTEGRATION.v
+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/CORTEXM3.v
+ahb_rom.v
+sram_top_512kb.v
+sram_model_64kb.v
+ahb_spi_wrapper.sv
+ahb_sram_wrapper.sv
+spi_fsm.sv
+tb_soc_top.sv
+96
+which_declare=declare -f
+XRC_HOME=/data/synopsys/starrc/W-2024.09-SP4
+XMODIFIERS=@im=ibus
+XILINX_VIVADO=/tools/Xilinx/2025.1/Vivado
+XILINX_VITIS=/tools/Xilinx/2025.1/Vitis
+XILINX_HLS=/tools/Xilinx/2025.1/Vitis
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=1
+XDG_SESSION_DESKTOP=gnome
+XDG_SESSION_CLASS=user
+XDG_RUNTIME_DIR=/run/user/1017
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/user18/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=GNOME
+XA_HOME=/data/synopsys/xa/W-2024.09-SP2
+XA_64=1
+XAUTHORITY=/home/user18/.Xauthority
+WV_HOME=/data/synopsys/wv/W-2024.09-SP2
+VTE_VERSION=5204
+VMR_MODE_FLAG=32
+VERDI_LIB=/data/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/linux64
+VERDI_HOME=/data/synopsys/verdi/W-2024.09-SP2
+VCS_TARGET_ARCH=amd64
+VCS_PYTHON3=/data/synopsys/vcs/W-2024.09-SP2/linux64/bin/Python-3.6.1/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_HOME=/data/synopsys/vcs/W-2024.09-SP2
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=user18
+UNAME=/bin/uname
+TOOL_HOME=/data/synopsys/vcs/W-2024.09-SP2/linux64
+SYNOPSYS_SYSTYPE=LINUX.64
+SYNOPSYS_ROOT=/data/synopsys
+SYNOPSYS_LC_ROOT=/data/synopsys/lc/W-2024.09-SP3
+SYNOPSYS=/data/synopsys/syn/W-2024.09-SP4
+SSH_AUTH_SOCK=/run/user/1017/keyring/ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPS_VCS_PYTHON3=/data/synopsys/vcs/W-2024.09-SP2/linux64/bin/Python-3.6.1/bin/python3
+SNPS_VCS_CLANG_PATH=/data/synopsys/vcs/W-2024.09-SP2/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SNPSLMD_DISABLE_DEBUG_LICENSE_CHECKS=1
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/4250,unix/unix:/tmp/.ICE-unix/4250
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+PT_HOME=/data/synopsys/prime/W-2024.09-SP4
+PRIMEWAVE_HOME=/data/synopsys/primewave/W-2024.09-SP2
+PRIMESIM_LIC=27020@60.52.57.115:27028@icesb.myddns.me
+PRIMESIM_HOME=/data/synopsys/primesim/W-2024.09-SP2
+PRIMESIM_64=1
+POWERVIEW_64=1
+OVA_UUM=0
+NOVAS_HOME=/data/synopsys/verdi/W-2024.09-SP2
+MW_HOME=/synopsys/mw/Q-2019.12-SP4
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MODULEPATH=/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MATLABPATH=/tools/Xilinx/2025.1/Vitis/functional_suite/lib/matlab/mex:/tools/Xilinx/2025.1/Vitis/functional_suite/varray/matlab:/tools/Xilinx/2025.1/Vitis/functional_suite/vfs/matlab:/tools/Xilinx/2025.1/Vitis/functional_suite/vfs/matlab/src:/tools/Xilinx/2025.1/Vitis/functional_suite/common/matlab:/tools/Xilinx/2025.1/Vitis/functional_suite/hil/matlab:/tools/Xilinx/2025.1/Vitis/functional_suite/lib/matlab/mex:/tools/Xilinx/2025.1/Vitis/functional_suite/varray/matlab:/tools/Xilinx/2025.1/Vitis/functional_suite/vfs/matlab:/tools/Xilinx/2025.1/Vitis/functional_suite/vfs/matlab/src:/tools/Xilinx/2025.1/Vitis/functional_suite/common/matlab:/tools/Xilinx/2025.1/Vitis/functional_suite/hil/matlab
+LOADEDMODULES=
+LIBGL_DRI3_DISABLE=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+JOURNAL_STREAM=9:24441
+INVOCATION_ID=7421bddccbac4631b40186b97f557e35
+ICV_INCLUDES=/data/synopsys/icvalidator/W-2024.09-SP4/include
+ICV_HOME_DIR=/data/synopsys/icvalidator/W-2024.09-SP4
+ICVWB_HOME=/synopsys/icv_workbench/V-2023.09-SP3
+ICC_HOME=/data/synopsys/icc/W-2024.09-SP2
+ICC2_HOME=/data/synopsys/icc2/W-2024.09-SP3
+HSPICE_HOME=/data/synopsys/hspice/W-2024.09-SP2
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.155
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/675de20e_c1ae_43b5_88a8_437e7d64a9ff
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+GJS_DEBUG_OUTPUT=stderr
+GDMSESSION=gnome
+FM_HOME=/data/synopsys/fm/W-2024.09-SP4
+FC_HOME=/data/synopsys/fusioncompiler/W-2024.09-SP3
+DESKTOP_SESSION=gnome
+DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1017/bus
+COLORTERM=truecolor
+CC_HOME=/data/synopsys/customcompiler/W-2024.09-SP2
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;_ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then_ typeset swname='main';_ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then_ typeset swfound=0;_ unset MODULES_USE_COMPAT_VERSION;_ fi;_ else_ typeset swname='compatibility';_ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then_ typeset swfound=0;_ MODULES_USE_COMPAT_VERSION=1;_ export MODULES_USE_COMPAT_VERSION;_ fi;_ fi;_ if [ $swfound -eq 0 ]; then_ echo "Switching to Modules $swname version";_ source /usr/share/Modules/init/bash;_ else_ echo "Cannot switch to Modules $swname version, command not found";_ return 1;_ fi_}
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then_ eval "module $@";_ else_ /usr/bin/scl "$@";_ fi_}
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1_}
+BASH_FUNC_ml%%=() {  module ml "$@"_}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then_ case "$-" in _ *v*x*)_ set +vx;_ _mlshdbg='vx'_ ;;_ *v*)_ set +v;_ _mlshdbg='v'_ ;;_ *x*)_ set +x;_ _mlshdbg='x'_ ;;_ *)_ _mlshdbg=''_ ;;_ esac;_ fi;_ unset _mlre _mlIFS;_ if [ -n "${IFS+x}" ]; then_ _mlIFS=$IFS;_ fi;_ IFS=' ';_ for _mlv in ${MODULES_RUN_QUARANTINE:-};_ do_ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then_ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then_ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";_ fi;_ _mlrv="MODULES_RUNENV_${_mlv}";_ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";_ fi;_ done;_ if [ -n "${_mlre:-}" ]; then_ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;_ else_ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;_ fi;_ _mlstatus=$?;_ if [ -n "${_mlIFS+x}" ]; then_ IFS=$_mlIFS;_ else_ unset IFS;_ fi;_ unset _mlre _mlv _mlrv _mlIFS;_ if [ -n "${_mlshdbg:-}" ]; then_ set -$_mlshdbg;_ fi;_ unset _mlshdbg;_ return $_mlstatus_}
+0
+15
+1765730933941 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells
+1765730933330 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog
+1765730934389 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog
+1765730933188 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog
+1765730932921 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog
+1765730934411 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog
+1765730934609 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog
+1765730933943 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog
+1765730934504 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog
+1765730933677 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog
+1765730934373 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog
+1765730933212 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog
+1765730934809 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog
+1765730933406 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog
+1765730934829 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog
+143
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_maskgen.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_comp.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_event_gen.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_cell.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_region.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_alu_srtdiv.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_alu_bshift.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells/cm3_cdc_capt_sync.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPDpSync.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPDpEnSync.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_trig_gen.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_trc_en.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_sync_count.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_res_control.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_gen.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_undefs.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_fifo.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_itm_fifo_byte.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dwt_packet_state.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_tree.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_preempt.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_int_state.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_regions.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_ppb_intf.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_align.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_ahb_ctl.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_regfile.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_lsu_ctl.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_lsu_ahbintf.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_fetch_ctl.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_fetch_ahbintf.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_br_dec.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_alu_dp.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_alu_ctl.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_32bit_dec.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_16bit_dec.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells/cm3_etm_clk_gate.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells/cm3_cdc_connect.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPSwjDpDefs.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPSwjWatcher.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPSwDpSync.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPSwDpDefs.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPSwDpProtocol.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPSwDpApbIf.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPDpApbDefs.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPJtagDpDefs.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPJtagDpProtocol.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPDpIMux.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPDpApbSync.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/cm3_dap_ahb_ap_sync.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/cm3_dap_ahb_ap_slv.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/cm3_dap_ahb_ap_undefs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/cm3_dap_ahb_ap_defs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/cm3_dap_ahb_ap_mst.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_trigger.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_trace_out.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_trace.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_control_reg.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_apb_if.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_itm_ts.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_itm_if.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_itm_fifo.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_itm_emit.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_itm_arb.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dwt_packet_gen.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dwt_comp.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dwt_undefs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dwt_defs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dwt_apb_if.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_trace_sync.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_trace_out.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_trace_fifo.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_trace_clk.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_formatter.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_atb_sync.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_atb_fifo.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_defs.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu_apb_if.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_reg.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_ppb_intf.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_main.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_full.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_undefs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_defs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu_default.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_status.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_regbank.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_lsu.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_fetch.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_exec.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_etmintf.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_dec.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_alu.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_output_stage_sys.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_output_stage_ppb.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_output_stage_icode.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_output_stage_dcode.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_input_stage_icore.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_input_stage_dcore.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_input_stage_dap.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_decode_icore.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_decode_dcore.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_decode_dap.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_undefs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_defs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_bit_master.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells/cm3_sync.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells/cm3_clk_gate.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog/DAPSWJDP.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog/cm3_dap_ahb_ap.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/cm3_etm_defs.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog/CM3ETM.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog/cm3_itm.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog/cm3_dwt.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_fpb_undefs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_fpb_defs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog/cm3_fpb.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog/cm3_tpiu.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog/cm3_wic.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_undefs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic_defs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog/cm3_nvic.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog/cm3_mpu.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_undefs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu_defs.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog/cm3_dpu.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_bus_matrix.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/cm3_rom_table.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_ppb_decoder.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_ppb_ahb_to_apb.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/cm3_htm_port.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_lic_defs.v
+1779858145 tb_soc_top.sv
+1779856352 spi_fsm.sv
+1779718898 ahb_sram_wrapper.sv
+1779855472 ahb_spi_wrapper.sv
+1779719045 sram_model_64kb.v
+1779719077 sram_top_512kb.v
+1779855385 ahb_rom.v
+1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/CORTEXM3.v
+1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/CORTEXM3INTEGRATION.v
+1741065587 /data/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
+1740888368 /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/vcsdp_lite.tab
+4
+1740891987 /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/libvirsim.so
+1740889567 /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/liberrorinf.so
+1740889560 /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/libsnpsmalloc.so
+1740889556 /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/libvfs.so
+1779858198 simv.daidir
+-1 partitionlib

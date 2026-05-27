@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1778576056.812382659, "rt":20.78, "ut":0.05, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1778576056.488203257}
+{"VCS_COMP_START_TIME": 1778576056.488203257}
+{"VCS_COMP_END_TIME": 1778576077.643087995}
+{"VCS_USER_OPTIONS": "-sverilog -debug_access+all -kdb -lca ahb_wrapper_tb_final.sv ahb_wrapper_full.sv qspi_core_full.sv flash_model_final.sv sync_fifo_full.sv -l compile.log"}
+{"vcs1": {"peak_mem": 495180}}

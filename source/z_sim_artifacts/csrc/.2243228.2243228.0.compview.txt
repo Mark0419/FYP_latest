@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1776747104.896318250, "rt":20.85, "ut":0.13, "st":0.07}}
+{"vcselab":{"timestamp_begin":1776747125.803258439, "rt":20.74, "ut":0.11, "st":0.02}}
+{"link":{"timestamp_begin":1776747146.585226231, "rt":0.18, "ut":0.11, "st":0.07}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1776747104.655425530}
+{"VCS_COMP_START_TIME": 1776747104.655425530}
+{"VCS_COMP_END_TIME": 1776747146.814933649}
+{"VCS_USER_OPTIONS": "-sverilog tb_xip.sv ahb_wrapper_final.sv qspi_core_final.sv flash_model.sv sync_fifo.sv -o xip_simv"}
+{"vcs1": {"peak_mem": 327716}}
+{"vcselab": {"peak_mem": 179004}}

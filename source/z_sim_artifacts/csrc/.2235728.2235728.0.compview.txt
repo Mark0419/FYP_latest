@@ -1,0 +1,6 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1776745840.074060386, "rt":9.71, "ut":0.02, "st":0.03}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1776745839.835509737}
+{"VCS_COMP_START_TIME": 1776745839.835509737}
+{"VCS_COMP_END_TIME": 1776745849.836319848}
+{"VCS_USER_OPTIONS": "-sverilog tb_xip.sv ahb_wrapper_fifo.sv qspi_core_fifo.sv flash_model.sv -o xip_simv"}
