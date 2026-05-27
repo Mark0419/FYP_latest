@@ -105,9 +105,7 @@ module qspi_fsm (
         case (state)
             IDLE: begin
                 if (start) begin
-                    // 1-Cycle Penalty: Delay if dropping XIP for a sudden Write
-                    if (write_op && xip_active && cnt == 0) next = IDLE; 
-                    else next = (write_op) ? WREN : (xip_active ? ADDR : CMD);
+                    next = (write_op) ? WREN : (xip_active ? ADDR : CMD);
                 end
             end
             

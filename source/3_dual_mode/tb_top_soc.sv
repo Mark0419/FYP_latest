@@ -186,36 +186,51 @@ module tb_soc_top();
         $fsdbDumpvars(0, tb_soc_top);
         $fsdbDumpMDA(); 
         #100000; 
-        $error("[PPA BENCH] TIMEOUT before common workload completed.");
+        $error("[DUAL MODE TB] TIMEOUT before read/write/erase workload completed.");
         $finish;
     end
 
     // ==========================================
-    // 8. XIP Timing Monitor
+    // 8. Dual-Mode Read / Program / Erase Monitor
     // ==========================================
     logic        flash_read_active;
     logic [31:0] flash_read_addr;
+    logic        flash_write_active;
+    logic [31:0] flash_write_addr;
     logic        done_write_active;
-    integer      read_count;
+    logic [31:0] phase;
     time         reset_release_time;
-    time         init_done_time;
-    time         op_done_time;
+    time         boot_read_done_time;
+    time         program_issue_time;
+    time         program_read_done_time;
+    time         erase_issue_time;
+    time         erase_read_done_time;
+    time         final_read_done_time;
+
+    localparam [31:0] PH_BOOT_READ       = 32'd0;
+    localparam [31:0] PH_PROGRAM_WRITE   = 32'd1;
+    localparam [31:0] PH_PROGRAM_READ    = 32'd2;
+    localparam [31:0] PH_ERASE_WRITE     = 32'd3;
+    localparam [31:0] PH_ERASE_READ      = 32'd4;
+    localparam [31:0] PH_FINAL_READ      = 32'd5;
+    localparam [31:0] PH_DONE_MARKER     = 32'd6;
 
     function automatic is_payload_addr(input logic [31:0] addr);
         begin
-            is_payload_addr = (addr == 32'h4000_0000 || addr == 32'h4000_0004 ||
-                               addr == 32'h4000_0008 || addr == 32'h4000_000c);
+            is_payload_addr = (addr == 32'h4000_0000 ||
+                               addr == 32'h4000_000c ||
+                               addr == 32'h4000_1000);
         end
     endfunction
 
-    function automatic [31:0] expected_flash_data(input logic [31:0] addr);
+    function automatic [31:0] expected_flash_data(input logic [31:0] addr, input logic [31:0] cur_phase);
         begin
-            case (addr)
-                32'h4000_0000: expected_flash_data = 32'h4902_4801;
-                32'h4000_0004: expected_flash_data = 32'he7fe_6001;
-                32'h4000_0008: expected_flash_data = 32'h2000_8000;
-                32'h4000_000c: expected_flash_data = 32'haabb_ccdd;
-                default:       expected_flash_data = 32'hxxxx_xxxx;
+            case (cur_phase)
+                PH_BOOT_READ:    expected_flash_data = 32'h4902_4801;
+                PH_PROGRAM_READ: expected_flash_data = 32'h1234_5678;
+                PH_ERASE_READ:   expected_flash_data = 32'hffff_ffff;
+                PH_FINAL_READ:   expected_flash_data = 32'haabb_ccdd;
+                default:         expected_flash_data = 32'hxxxx_xxxx;
             endcase
         end
     endfunction
@@ -223,11 +238,17 @@ module tb_soc_top();
     initial begin
         flash_read_active = 1'b0;
         flash_read_addr = 32'h0;
+        flash_write_active = 1'b0;
+        flash_write_addr = 32'h0;
         done_write_active = 1'b0;
-        read_count = 0;
+        phase = PH_BOOT_READ;
         reset_release_time = 0;
-        init_done_time = 0;
-        op_done_time = 0;
+        boot_read_done_time = 0;
+        program_issue_time = 0;
+        program_read_done_time = 0;
+        erase_issue_time = 0;
+        erase_read_done_time = 0;
+        final_read_done_time = 0;
         wait (HRESETn === 1'b1);
         reset_release_time = $time;
     end
@@ -235,38 +256,88 @@ module tb_soc_top();
     always @(posedge HCLK) begin
         if (HRESETn && SYS_HREADY) begin
             if (flash_read_active) begin
-                if (SYS_HRDATA !== expected_flash_data(flash_read_addr)) begin
-                    $error("[PPA BENCH] XIP read mismatch at %08h: expected %08h, got %08h",
-                           flash_read_addr, expected_flash_data(flash_read_addr), SYS_HRDATA);
+                if (SYS_HRDATA !== expected_flash_data(flash_read_addr, phase)) begin
+                    $error("[DUAL MODE TB] Read mismatch at %08h in phase %0d: expected %08h, got %08h",
+                           flash_read_addr, phase, expected_flash_data(flash_read_addr, phase), SYS_HRDATA);
                     $finish;
                 end
 
-                read_count = read_count + 1;
-                $display("[%0t] [PPA BENCH] XIP read %0d complete: %08h -> %08h",
-                         $time, read_count, flash_read_addr, SYS_HRDATA);
+                $display("[%0t] [DUAL MODE TB] Read OK phase %0d: %08h -> %08h",
+                         $time, phase, flash_read_addr, SYS_HRDATA);
 
-                if (read_count == 1) init_done_time = $time;
-                if (read_count == 4) op_done_time = $time;
+                case (phase)
+                    PH_BOOT_READ: begin
+                        boot_read_done_time = $time;
+                        phase = PH_PROGRAM_WRITE;
+                    end
+                    PH_PROGRAM_READ: begin
+                        program_read_done_time = $time;
+                        phase = PH_ERASE_WRITE;
+                    end
+                    PH_ERASE_READ: begin
+                        erase_read_done_time = $time;
+                        phase = PH_FINAL_READ;
+                    end
+                    PH_FINAL_READ: begin
+                        final_read_done_time = $time;
+                        phase = PH_DONE_MARKER;
+                    end
+                endcase
+            end
+
+            if (flash_write_active) begin
+                case (phase)
+                    PH_PROGRAM_WRITE: begin
+                        if (flash_write_addr !== 32'h4000_1000 || SYS_HWDATA !== 32'h1234_5678) begin
+                            $error("[DUAL MODE TB] Program request mismatch: addr %08h data %08h",
+                                   flash_write_addr, SYS_HWDATA);
+                            $finish;
+                        end
+                        program_issue_time = $time;
+                        phase = PH_PROGRAM_READ;
+                        $display("[%0t] [DUAL MODE TB] Program request observed: %08h -> %08h",
+                                 $time, SYS_HWDATA, flash_write_addr);
+                    end
+                    PH_ERASE_WRITE: begin
+                        if (flash_write_addr !== 32'h4000_1000 || SYS_HWDATA !== 32'hffff_ffff) begin
+                            $error("[DUAL MODE TB] Erase request mismatch: addr %08h data %08h",
+                                   flash_write_addr, SYS_HWDATA);
+                            $finish;
+                        end
+                        erase_issue_time = $time;
+                        phase = PH_ERASE_READ;
+                        $display("[%0t] [DUAL MODE TB] Erase request observed: %08h -> %08h",
+                                 $time, SYS_HWDATA, flash_write_addr);
+                    end
+                    default: begin
+                        $error("[DUAL MODE TB] Unexpected flash write in phase %0d: addr %08h data %08h",
+                               phase, flash_write_addr, SYS_HWDATA);
+                        $finish;
+                    end
+                endcase
             end
 
             if (done_write_active) begin
                 if (SYS_HWDATA !== 32'haabb_ccdd) begin
-                    $error("[PPA BENCH] Completion marker mismatch: expected aabbccdd, got %08h", SYS_HWDATA);
+                    $error("[DUAL MODE TB] Completion marker mismatch: expected aabbccdd, got %08h", SYS_HWDATA);
                     $finish;
                 end
 
                 $display("\n*******************************************************");
-                $display("[%0t] PPA BENCH SUCCESS: DUAL MODE DIRECT READ PASSED", $time);
-                $display("Init time       : %0t ps", init_done_time - reset_release_time);
-                $display("Operation time  : %0t ps", op_done_time - init_done_time);
-                $display("Total read time : %0t ps", op_done_time - reset_release_time);
-                $display("Marker latency  : %0t ps", $time - op_done_time);
+                $display("[%0t] DUAL MODE SUCCESS: READ + PROGRAM + ERASE VERIFIED", $time);
+                $display("Initial XIP read latency : %0t ps", boot_read_done_time - reset_release_time);
+                $display("Program transaction time : %0t ps", program_read_done_time - program_issue_time);
+                $display("Erase transaction time   : %0t ps", erase_read_done_time - erase_issue_time);
+                $display("Final XIP read latency   : %0t ps", final_read_done_time - erase_read_done_time);
+                $display("Total benchmark time     : %0t ps", $time - reset_release_time);
                 $display("*******************************************************\n");
                 #100; $finish;
             end
 
             flash_read_active <= (!SYS_HWRITE && SYS_HTRANS[1] && is_payload_addr(SYS_HADDR));
             flash_read_addr   <= SYS_HADDR;
+            flash_write_active <= (SYS_HWRITE && SYS_HTRANS[1] && SYS_HADDR == 32'h4000_1000);
+            flash_write_addr   <= SYS_HADDR;
             done_write_active <= (SYS_HWRITE && SYS_HTRANS[1] && SYS_HADDR == 32'h2000_8000);
         end
     end
