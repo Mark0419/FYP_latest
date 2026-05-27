@@ -4,182 +4,18 @@ wvSetPosition -win $_nWave2 {("G1" 0)}
 wvOpenFile -win $_nWave2 \
            {/home/user18/Projects/Flash_controller/source/5_legacy_backup/tb_soc_top.fsdb}
 verdiSetActWin -win $_nWave2
-verdiWindowResize -win $_Verdi_1 "510" "116" "1265" "700"
+verdiWindowResize -win $_Verdi_1 "90" "114" "1757" "700"
 verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
 verdiSetActWin -win $_nWave2
-wvGetSignalOpen -win $_nWave2
-wvGetSignalSetScope -win $_nWave2 "/tb_soc_top"
-wvSetPosition -win $_nWave2 {("G1" 2)}
-wvSetPosition -win $_nWave2 {("G1" 2)}
-wvAddSignal -win $_nWave2 -clear
-wvAddSignal -win $_nWave2 -group {"G1" \
-{/tb_soc_top/HCLK} \
-{/tb_soc_top/SYSRESETn} \
-}
-wvAddSignal -win $_nWave2 -group {"G2" \
-}
-wvSelectSignal -win $_nWave2 {( "G1" 1 2 )} 
-wvSetPosition -win $_nWave2 {("G1" 2)}
-wvSelectGroup -win $_nWave2 {G2}
-wvSetPosition -win $_nWave2 {("G1" 6)}
-wvSetPosition -win $_nWave2 {("G1" 6)}
-wvAddSignal -win $_nWave2 -clear
-wvAddSignal -win $_nWave2 -group {"G1" \
-{/tb_soc_top/HCLK} \
-{/tb_soc_top/SYSRESETn} \
-{/tb_soc_top/HADDRD\[31:0\]} \
-{/tb_soc_top/HADDRI\[31:0\]} \
-{/tb_soc_top/HRDATAD\[31:0\]} \
-{/tb_soc_top/HTRANSI\[1:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G2" \
-}
-wvSelectSignal -win $_nWave2 {( "G1" 3 4 5 6 )} 
-wvSetPosition -win $_nWave2 {("G1" 6)}
-wvSetPosition -win $_nWave2 {("G1" 5)}
-wvSetPosition -win $_nWave2 {("G1" 6)}
-wvSetPosition -win $_nWave2 {("G2" 0)}
-wvMoveSelected -win $_nWave2
-wvSetPosition -win $_nWave2 {("G2" 4)}
-wvSetPosition -win $_nWave2 {("G2" 4)}
-wvScrollDown -win $_nWave2 0
-wvSelectGroup -win $_nWave2 {G3}
-wvSetPosition -win $_nWave2 {("G2" 8)}
-wvSetPosition -win $_nWave2 {("G2" 8)}
-wvAddSignal -win $_nWave2 -clear
-wvAddSignal -win $_nWave2 -group {"G1" \
-{/tb_soc_top/HCLK} \
-{/tb_soc_top/SYSRESETn} \
-}
-wvAddSignal -win $_nWave2 -group {"G2" \
-{/tb_soc_top/HADDRD\[31:0\]} \
-{/tb_soc_top/HADDRI\[31:0\]} \
-{/tb_soc_top/HRDATAD\[31:0\]} \
-{/tb_soc_top/HTRANSI\[1:0\]} \
-{/tb_soc_top/HADDRS\[31:0\]} \
-{/tb_soc_top/HREADYS} \
-{/tb_soc_top/HWDATAS\[31:0\]} \
-{/tb_soc_top/HWRITES} \
-}
-wvAddSignal -win $_nWave2 -group {"G3" \
-}
-wvSelectSignal -win $_nWave2 {( "G2" 5 6 7 8 )} 
-wvSetPosition -win $_nWave2 {("G2" 8)}
-wvSetPosition -win $_nWave2 {("G2" 5)}
-wvSetPosition -win $_nWave2 {("G2" 6)}
-wvSetPosition -win $_nWave2 {("G2" 7)}
-wvSetPosition -win $_nWave2 {("G2" 8)}
-wvSetPosition -win $_nWave2 {("G3" 0)}
-wvMoveSelected -win $_nWave2
-wvSetPosition -win $_nWave2 {("G3" 4)}
-wvSetPosition -win $_nWave2 {("G3" 4)}
-wvScrollDown -win $_nWave2 1
-wvSelectGroup -win $_nWave2 {G4}
-wvSetPosition -win $_nWave2 {("G3" 5)}
-wvSetPosition -win $_nWave2 {("G3" 5)}
-wvAddSignal -win $_nWave2 -clear
-wvAddSignal -win $_nWave2 -group {"G1" \
-{/tb_soc_top/HCLK} \
-{/tb_soc_top/SYSRESETn} \
-}
-wvAddSignal -win $_nWave2 -group {"G2" \
-{/tb_soc_top/HADDRD\[31:0\]} \
-{/tb_soc_top/HADDRI\[31:0\]} \
-{/tb_soc_top/HRDATAD\[31:0\]} \
-{/tb_soc_top/HTRANSI\[1:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G3" \
-{/tb_soc_top/HADDRS\[31:0\]} \
-{/tb_soc_top/HREADYS} \
-{/tb_soc_top/HWDATAS\[31:0\]} \
-{/tb_soc_top/HWRITES} \
-{/tb_soc_top/HRDATAS\[31:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G4" \
-}
-wvSelectSignal -win $_nWave2 {( "G3" 5 )} 
-wvSetPosition -win $_nWave2 {("G3" 5)}
-wvSelectGroup -win $_nWave2 {G4}
-wvSetPosition -win $_nWave2 {("G3" 9)}
-wvSetPosition -win $_nWave2 {("G3" 9)}
-wvAddSignal -win $_nWave2 -clear
-wvAddSignal -win $_nWave2 -group {"G1" \
-{/tb_soc_top/HCLK} \
-{/tb_soc_top/SYSRESETn} \
-}
-wvAddSignal -win $_nWave2 -group {"G2" \
-{/tb_soc_top/HADDRD\[31:0\]} \
-{/tb_soc_top/HADDRI\[31:0\]} \
-{/tb_soc_top/HRDATAD\[31:0\]} \
-{/tb_soc_top/HTRANSI\[1:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G3" \
-{/tb_soc_top/HADDRS\[31:0\]} \
-{/tb_soc_top/HREADYS} \
-{/tb_soc_top/HWDATAS\[31:0\]} \
-{/tb_soc_top/HWRITES} \
-{/tb_soc_top/HRDATAS\[31:0\]} \
-{/tb_soc_top/spi_clk} \
-{/tb_soc_top/spi_cs_n} \
-{/tb_soc_top/spi_miso} \
-{/tb_soc_top/spi_mosi} \
-}
-wvAddSignal -win $_nWave2 -group {"G4" \
-}
-wvSelectSignal -win $_nWave2 {( "G3" 6 7 8 9 )} 
-wvSetPosition -win $_nWave2 {("G3" 9)}
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvAddSignal -win $_nWave2 -clear
-wvAddSignal -win $_nWave2 -group {"G1" \
-{/tb_soc_top/HCLK} \
-{/tb_soc_top/SYSRESETn} \
-}
-wvAddSignal -win $_nWave2 -group {"G2" \
-{/tb_soc_top/HADDRD\[31:0\]} \
-{/tb_soc_top/HADDRI\[31:0\]} \
-{/tb_soc_top/HRDATAD\[31:0\]} \
-{/tb_soc_top/HTRANSI\[1:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G3" \
-{/tb_soc_top/HADDRS\[31:0\]} \
-{/tb_soc_top/HREADYS} \
-{/tb_soc_top/HWDATAS\[31:0\]} \
-{/tb_soc_top/HWRITES} \
-{/tb_soc_top/HRDATAS\[31:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G4" \
-{/tb_soc_top/spi_clk} \
-{/tb_soc_top/spi_cs_n} \
-{/tb_soc_top/spi_miso} \
-{/tb_soc_top/spi_mosi} \
-}
-wvAddSignal -win $_nWave2 -group {"G5" \
-}
-wvSelectSignal -win $_nWave2 {( "G4" 1 2 3 4 )} 
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvGetSignalClose -win $_nWave2
-wvZoomAll -win $_nWave2
-wvZoom -win $_nWave2 379538.905473 2516507.960199
+wvRestoreSignal -win $_nWave2 \
+           "/home/user18/Projects/Flash_controller/source/5_legacy_backup/signal.rc" \
+           -overWriteAutoAlias on -appendSignals on
 verdiDockWidgetMaximize -dock windowDock_nWave_2
-wvSetCursor -win $_nWave2 727692.214429 -snap {("G5" 0)}
-wvSetCursor -win $_nWave2 559907.487221 -snap {("G3" 4)}
-wvSetCursor -win $_nWave2 981540.654167 -snap {("G5" 0)}
-wvSelectSignal -win $_nWave2 {( "G4" 4 )} 
-wvSelectGroup -win $_nWave2 {G5}
-wvSetCursor -win $_nWave2 232801.309001 -snap {("G5" 0)}
-wvSetCursor -win $_nWave2 432569.999833 -snap {("G2" 2)}
-wvSetCursor -win $_nWave2 436764.618013 -snap {("G2" 2)}
-wvSetCursor -win $_nWave2 443056.545284 -snap {("G2" 2)}
-wvSetCursor -win $_nWave2 472418.872545 -snap {("G2" 2)}
-wvSetCursor -win $_nWave2 489197.345266 -snap {("G2" 2)}
-wvSetCursor -win $_nWave2 514365.054347 -snap {("G2" 2)}
-wvSetCursor -win $_nWave2 751360.981528 -snap {("G5" 0)}
 wvGetSignalOpen -win $_nWave2
-wvGetSignalSetScope -win $_nWave2 "/tb_soc_top"
-wvGetSignalSetScope -win $_nWave2 "/tb_soc_top"
-wvSetPosition -win $_nWave2 {("G4" 5)}
-wvSetPosition -win $_nWave2 {("G4" 5)}
+wvGetSignalSetScope -win $_nWave2 "/tb_soc_top/u_spi"
+wvGetSignalSetScope -win $_nWave2 "/tb_soc_top/u_spi/u_spi_fsm"
+wvSetPosition -win $_nWave2 {("G4" 7)}
+wvSetPosition -win $_nWave2 {("G4" 7)}
 wvAddSignal -win $_nWave2 -clear
 wvAddSignal -win $_nWave2 -group {"G1" \
 {/tb_soc_top/HCLK} \
@@ -203,41 +39,23 @@ wvAddSignal -win $_nWave2 -group {"G4" \
 {/tb_soc_top/spi_cs_n} \
 {/tb_soc_top/spi_miso} \
 {/tb_soc_top/spi_mosi} \
-{/tb_soc_top/sniff_data_phase} \
+{/tb_soc_top/u_spi/u_spi_fsm/cmd\[7:0\]} \
+{/tb_soc_top/u_spi/u_spi_fsm/flash_addr\[31:0\]} \
+{/tb_soc_top/u_spi/u_spi_fsm/state\[2:0\]} \
 }
 wvAddSignal -win $_nWave2 -group {"G5" \
 }
-wvSelectSignal -win $_nWave2 {( "G4" 5 )} 
+wvSelectSignal -win $_nWave2 {( "G4" 5 6 7 )} 
+wvSetPosition -win $_nWave2 {("G4" 7)}
 wvSetPosition -win $_nWave2 {("G4" 5)}
-wvSetCursor -win $_nWave2 1334412.908576 -snap {("G5" 0)}
-wvGetSignalClose -win $_nWave2
-wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G4" 6)}
+wvSetPosition -win $_nWave2 {("G4" 7)}
 wvSetPosition -win $_nWave2 {("G5" 0)}
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvSetCursor -win $_nWave2 562603.163419 -snap {("G3" 4)}
-wvSetCursor -win $_nWave2 585673.563410 -snap {("G3" 3)}
-verdiWindowResize -win $_Verdi_1 "147" "128" "1757" "700"
-verdiShowWindow -win $_Verdi_1 -switchFS
-wvSetCursor -win $_nWave2 3070806.541979 -snap {("G5" 0)}
-wvSetCursor -win $_nWave2 3714150.781462
-wvSetCursor -win $_nWave2 6959162.360745
-wvSetCursor -win $_nWave2 6389163.555731 -snap {("G5" 0)}
-wvSetCursor -win $_nWave2 7076661.371660 -snap {("G5" 0)}
-verdiShowWindow -win $_Verdi_1 -switchFS
-verdiWindowResize -win $_Verdi_1 "147" "128" "1757" "700"
-wvSetCursor -win $_nWave2 5840398.164237 -snap {("G3" 5)}
-wvSetCursor -win $_nWave2 5947287.492843 -snap {("G4" 2)}
-wvGetSignalOpen -win $_nWave2
-wvGetSignalSetScope -win $_nWave2 "/tb_soc_top"
-wvGetSignalSetScope -win $_nWave2 "/tb_soc_top"
-wvGetSignalScopeHistory -win $_nWave2 -backward
-wvGetSignalScopeHistory -win $_nWave2 -backward
-wvGetSignalScopeHistory -win $_nWave2 -forward
-wvGetSignalScopeHistory -win $_nWave2 -backward
-wvGetSignalScopeHistory -win $_nWave2 -backward
-wvGetSignalScopeHistory -win $_nWave2 -backward
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvSetPosition -win $_nWave2 {("G4" 4)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("G5" 3)}
+wvSetPosition -win $_nWave2 {("G5" 3)}
+wvSetPosition -win $_nWave2 {("G5" 3)}
+wvSetPosition -win $_nWave2 {("G5" 3)}
 wvAddSignal -win $_nWave2 -clear
 wvAddSignal -win $_nWave2 -group {"G1" \
 {/tb_soc_top/HCLK} \
@@ -263,66 +81,20 @@ wvAddSignal -win $_nWave2 -group {"G4" \
 {/tb_soc_top/spi_mosi} \
 }
 wvAddSignal -win $_nWave2 -group {"G5" \
+{/tb_soc_top/u_spi/u_spi_fsm/cmd\[7:0\]} \
+{/tb_soc_top/u_spi/u_spi_fsm/flash_addr\[31:0\]} \
+{/tb_soc_top/u_spi/u_spi_fsm/state\[2:0\]} \
 }
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvAddSignal -win $_nWave2 -clear
-wvAddSignal -win $_nWave2 -group {"G1" \
-{/tb_soc_top/HCLK} \
-{/tb_soc_top/SYSRESETn} \
+wvAddSignal -win $_nWave2 -group {"G6" \
 }
-wvAddSignal -win $_nWave2 -group {"G2" \
-{/tb_soc_top/HADDRD\[31:0\]} \
-{/tb_soc_top/HADDRI\[31:0\]} \
-{/tb_soc_top/HRDATAD\[31:0\]} \
-{/tb_soc_top/HTRANSI\[1:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G3" \
-{/tb_soc_top/HADDRS\[31:0\]} \
-{/tb_soc_top/HREADYS} \
-{/tb_soc_top/HWDATAS\[31:0\]} \
-{/tb_soc_top/HWRITES} \
-{/tb_soc_top/HRDATAS\[31:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G4" \
-{/tb_soc_top/spi_clk} \
-{/tb_soc_top/spi_cs_n} \
-{/tb_soc_top/spi_miso} \
-{/tb_soc_top/spi_mosi} \
-}
-wvAddSignal -win $_nWave2 -group {"G5" \
-}
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvSetPosition -win $_nWave2 {("G4" 4)}
-wvAddSignal -win $_nWave2 -clear
-wvAddSignal -win $_nWave2 -group {"G1" \
-{/tb_soc_top/HCLK} \
-{/tb_soc_top/SYSRESETn} \
-}
-wvAddSignal -win $_nWave2 -group {"G2" \
-{/tb_soc_top/HADDRD\[31:0\]} \
-{/tb_soc_top/HADDRI\[31:0\]} \
-{/tb_soc_top/HRDATAD\[31:0\]} \
-{/tb_soc_top/HTRANSI\[1:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G3" \
-{/tb_soc_top/HADDRS\[31:0\]} \
-{/tb_soc_top/HREADYS} \
-{/tb_soc_top/HWDATAS\[31:0\]} \
-{/tb_soc_top/HWRITES} \
-{/tb_soc_top/HRDATAS\[31:0\]} \
-}
-wvAddSignal -win $_nWave2 -group {"G4" \
-{/tb_soc_top/spi_clk} \
-{/tb_soc_top/spi_cs_n} \
-{/tb_soc_top/spi_miso} \
-{/tb_soc_top/spi_mosi} \
-}
-wvAddSignal -win $_nWave2 -group {"G5" \
-}
-wvSetPosition -win $_nWave2 {("G4" 4)}
+wvSetPosition -win $_nWave2 {("G5" 3)}
+wvGetSignalClose -win $_nWave2
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvZoomAll -win $_nWave2
+wvSetCursor -win $_nWave2 6200704.635310 -snap {("G5" 2)}
+wvSetCursor -win $_nWave2 910039.604635 -snap {("G5" 1)}
 wvSaveSignal -win $_nWave2 \
            "/home/user18/Projects/Flash_controller/source/5_legacy_backup/signal.rc"
 debExit

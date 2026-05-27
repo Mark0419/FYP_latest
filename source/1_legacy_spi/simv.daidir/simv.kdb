@@ -1,7 +1,7 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/home/user18/Projects/Flash_controller/source/5_legacy_backup
+COMPILE_PATH=/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi
 VCS_HOME=/data/synopsys/vcs/W-2024.09-SP2
 VERDI_HOME=/data/synopsys/verdi/W-2024.09-SP2
 SystemC=FALSE

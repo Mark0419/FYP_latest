@@ -1,3 +1,2 @@
 Command Line: /data/synopsys/verdi/W-2024.09-SP2/platform/LINUXAMD64/bin/Novas -ssf tb_soc_top.fsdb
 uname(Linux vecad-svr1 4.18.0-553.8.1.el8_10.x86_64 #1 SMP Tue Jul 2 07:26:33 EDT 2024 x86_64)
-au time 405.073203 6.379999 0.702289 delta 361193472 361193472 total 1381015552 1381015552

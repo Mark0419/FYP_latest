@@ -221,6 +221,8 @@ Selection-LineColor = ID_BLUE3
 Selection-LineWidth = 1
 [FSM_Dlg-Print]
 Orientation = Landscape
+[FileBrowser]
+nWaveRestoreRCDirHistory = "\"/home/user18/Projects/Flash_controller/source/5_legacy_backup/signal.rc\""
 [Form]
 version = Verdi_W-2024.09-SP2
 [General]
@@ -229,10 +231,10 @@ TclAutoSource =
 cmd_enter_form = FALSE
 SyncBrowserDir = TRUE
 FindBarVisible = 
+recent_commands_Verdi = nsFullScreen
 ColorTheme = classic
 version = Verdi_W-2024.09-SP2
-recent_commands_Verdi = nsFullScreen
-recent_commands_nWave = saveSignal,getSignal,editCut,zoomAll,openFile,nextEvent,zoomOut,previousEvent,digitalFHex,restoreSignal
+recent_commands_nWave = saveSignal,zoomAll,getSignal,restoreSignal,openFile,editCut,nextEvent,zoomOut,previousEvent,digitalFHex
 prevColorTheme = classic
 SignalCaseInSensitive = FALSE
 [GlobalProp]
@@ -383,11 +385,11 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-restoreSigDlg = 684,284,551,438
-openFileDlg = 841,224,602,483
-qWaveSignalDialog = 314,434,800,479
-saveSigDlg = 693,308,551,386
-QwUserAskDlg = 806,475,324,125
+openFileDlg = 667,222,602,483
+restoreSigDlg = 693,245,551,438
+qWaveSignalDialog = 568,224,800,479
+saveSigDlg = 693,271,551,386
+QwUserAskDlg = 806,438,324,125
 [Relationship]
 hideRecursiceNode = FALSE
 [Safety]
@@ -584,7 +586,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = FIXED12
 [Text.1]
-viewport = 90 151 1757 700 45
+viewport = 90 114 1757 700 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -675,45 +677,45 @@ isOneSearchVisible = TRUE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = "Severity"
-width = 60
-visualIndex = 2
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = "Block's First Line"
 width = 120
 visualIndex = 1
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
-name = "Type"
-width = 60
-visualIndex = 4
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
-name = "Message"
-width = 2000
-visualIndex = 5
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = "Time"
 width = 60
 visualIndex = 0
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = "Code"
 width = 60
 visualIndex = 3
 isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+isColFilterColorCoding = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = "Type"
+width = 60
+visualIndex = 4
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+isColFilterColorCoding = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = "Message"
+width = 2000
+visualIndex = 5
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+isColFilterColorCoding = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
+name = "Severity"
+width = 60
+visualIndex = 2
+isHidden = FALSE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.ruleHistory]
@@ -792,7 +794,7 @@ AutoApplySeverityColor = TRUE
 scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
-getSignalForm = 314 434 800 479 165 387 393 5
+getSignalForm = 568 187 800 479 165 387 393 5
 viewPort = 0 25 1757 602 144 134
 legendBackground = -c ID_BLACK
 valueBackground = -c ID_BLACK
@@ -959,8 +961,9 @@ printBasic = 1 0 0 FALSE FALSE
 printDest = -printer {}
 printSignature = {%f %h %t} {}
 curveWindow_Drag&Drop_Mode = TRUE
-RecentFile1 = "\"/home/user18/Projects/Flash_controller/source/5_legacy_backup/tb_soc_top.fsdb\""
-RecentFile2 = "\"/home/user18/Projects/Flash_controller/source/1_legacy_spi/tb_spi.fsdb\""
+RecentFile1 = "\"/home/user18/Projects/Flash_controller/source/5_legacy_backup/signal.rc\""
+RecentFile2 = "\"/home/user18/Projects/Flash_controller/source/5_legacy_backup/tb_soc_top.fsdb\""
+RecentFile3 = "\"/home/user18/Projects/Flash_controller/source/1_legacy_spi/tb_spi.fsdb\""
 open_file_time_range = FALSE
 legend_window_font = -f COURIER12 -c ID_CYAN5
 value_window_font = -f COURIER12 -c ID_CYAN5

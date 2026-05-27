@@ -207,7 +207,7 @@ PRIMESIM_64=1
 HISTCONTROL=ignoredups
 DISPLAY=:18
 HOSTNAME=vecad-svr1
-OLDPWD=/home/user18/Projects/Flash_controller/source/2_pure_xip
+OLDPWD=/home/user18/Projects/Flash_controller/FYP_latest/source/2_pure_xip
 INVOCATION_ID=7421bddccbac4631b40186b97f557e35
 SYNOPSYS_SYSTYPE=LINUX.64
 COLORTERM=truecolor
@@ -216,7 +216,7 @@ SNPSLMD_LICENSE_FILE=27020@60.52.57.115:27028@icesb.myddns.me
 LIBGL_DRI3_DISABLE=1
 KDEDIRS=/usr
 PRIMESIM_LIC=27020@60.52.57.115:27028@icesb.myddns.me
-SSH_AUTH_SOCK=/run/user/1017/keyring/ssh
+SSH_AUTH_SOCK=/tmp/ssh-IRJNkUjshFPJ/agent.102690
 SNPSLMD_DISABLE_DEBUG_LICENSE_CHECKS=1
 XILINX_VIVADO=/tools/Xilinx/2025.1/Vivado
 which_declare=declare -f
@@ -229,12 +229,13 @@ DESKTOP_SESSION=gnome
 XA_64=1
 SYNOPSYS_LC_ROOT=/data/synopsys/lc/W-2024.09-SP3
 GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/675de20e_c1ae_43b5_88a8_437e7d64a9ff
-PWD=/home/user18/Projects/Flash_controller/source
+PWD=/home/user18/Projects/Flash_controller/FYP_latest/source
 FM_HOME=/data/synopsys/fm/W-2024.09-SP4
 XILINX_HLS=/tools/Xilinx/2025.1/Vitis
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 HOME=/home/user18
 JOURNAL_STREAM=9:24441
+SSH_AGENT_PID=102691
 XDG_SESSION_TYPE=x11
 XDG_DATA_DIRS=/home/user18/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 FC_HOME=/data/synopsys/fusioncompiler/W-2024.09-SP3
@@ -385,128 +386,128 @@ SPECMAN_OUTPUT_TO_TTY=1
 FLEXLM_BORROWFILE=/home/user18/.vecad-svr1-borrow.txt
 Runtime command line arguments:
 argv[0]=./simv
-304 profile - 100
-          CPU/Mem usage: 0.040 sys,  0.160 user,  271.02M mem
-305 Elapsed time:    0:00:21    Mon May 25 18:04:54 2026
-306 User CPU time used: 0 seconds
-307 System CPU time used: 0 seconds
-308 pliAppInit
-309 FSDB_GATE is set.
-310 FSDB_RTL is set.
-311 FSDB_DYNAMIC_ALIAS is enabled.
-312 libnuma.so open fail. libnuma.so: cannot open shared object file: No such file or directory
-313 FSDB NUMA optimize not available.
-314 FSDB_PACKED_MODE is enabled.
-315 FSDB_GATE_PACKED is enabled.
-316 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
-317 FSDB_REDUCE_VC_MEM is enabled.
-318 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
-319 Enable Parallel Dumping.
-320 pliAppMiscSet: New Sim Round
-321 pliEntryInit
-322 LIBSSCORE=found /data/synopsys/verdi/W-2024.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202409.so through $NOVAS_HOME setting.
-323 FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
-324 (C) 1996 - 2025 by Synopsys, Inc.
-325 sps_call_fsdbDumpfile_main at 0 : ./2_pure_xip/tb_top_soc.sv(180)
-326 argv[0]: (soc_full.fsdb)
-327 *Verdi* : Create FSDB file 'soc_full.fsdb'
-328 [spi_vcs_vd_ppi_create_root]: no upf option
-329 DUMPER_MEMORY_REDUCTION is enabled.
-330 compile option from '/home/user18/Projects/Flash_controller/source/simv.daidir/vcs_rebuild'.
-331   "vcs '-sverilog' '-debug_access+all' '-timescale=1ns/1ps' '+libext+.v' '+define+ARM_TestBench' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/CORTEXM3INTEGRATION.v' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/CORTEXM3.v' './2_pure_xip/tb_top_soc.sv' './0_shared_ip/boot_rom.v' './2_pure_xip/ahb_wrapper_pure.sv' './2_pure_xip/qspi_pure_xip.sv' './0_shared_ip/sync_fifo_full.sv' './2_pure_xip/flash_model_pure.sv' 2>&1"
-332 DVDI_is_vir_unload_enabled is enable
-333 FSDB_VCS_ENABLE_NATIVE_VC is enable
-334 FSDB_VCS_ENABLE_MEMORY_NATIVE_VC is enabled
-335 spi_vcs_vd_vlog_vc_enable_vector_strength is skipped since VCS is not support.
-336 sps_call_fsdbDumpvars_vd_main at 0 : ./2_pure_xip/tb_top_soc.sv(181)
-337 argv[0]: (0)
-338 argv[1]: (handle) tb_soc_top
-339 *Verdi* : Begin traversing the scope (tb_soc_top), layer (0).
-340 *Verdi* : End of traversing.
-341 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.320 user,  372.18M mem
-                   incr: 0.010 sys,  0.150 user,  10.65M mem
-                   accu: 0.010 sys,  0.150 user,  10.65M mem
-              accu incr: 0.010 sys,  0.150 user,  10.65M mem
+305 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.140 user,  271.04M mem
+306 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
+307 User CPU time used: 0 seconds
+308 System CPU time used: 0 seconds
+309 pliAppInit
+310 FSDB_GATE is set.
+311 FSDB_RTL is set.
+312 FSDB_DYNAMIC_ALIAS is enabled.
+313 libnuma.so open fail. libnuma.so: cannot open shared object file: No such file or directory
+314 FSDB NUMA optimize not available.
+315 FSDB_PACKED_MODE is enabled.
+316 FSDB_GATE_PACKED is enabled.
+317 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+318 FSDB_REDUCE_VC_MEM is enabled.
+319 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+320 Enable Parallel Dumping.
+321 pliAppMiscSet: New Sim Round
+322 pliEntryInit
+323 LIBSSCORE=found /data/synopsys/verdi/W-2024.09-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202409.so through $NOVAS_HOME setting.
+324 FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+325 (C) 1996 - 2025 by Synopsys, Inc.
+326 sps_call_fsdbDumpfile_main at 0 : ./2_pure_xip/tb_top_soc.sv(185)
+327 argv[0]: (soc_full.fsdb)
+328 *Verdi* : Create FSDB file 'soc_full.fsdb'
+329 [spi_vcs_vd_ppi_create_root]: no upf option
+330 DUMPER_MEMORY_REDUCTION is enabled.
+331 compile option from '/home/user18/Projects/Flash_controller/FYP_latest/source/simv.daidir/vcs_rebuild'.
+332   "vcs '-sverilog' '-debug_access+all' '-timescale=1ns/1ps' '+libext+.v' '+define+ARM_TestBench' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog' '+incdir+/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dpu/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_mpu/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_nvic/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_wic/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_tpiu/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_fpb/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dwt/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_itm/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_etm/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_dap_ahb_ap/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/dapswjdp/verilog' '-y' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/CORTEXM3INTEGRATION.v' '/home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/CORTEXM3.v' './2_pure_xip/tb_top_soc.sv' './0_shared_ip/boot_rom.v' './2_pure_xip/ahb_wrapper_pure.sv' './2_pure_xip/qspi_pure_xip.sv' './0_shared_ip/sync_fifo_full.sv' './2_pure_xip/flash_model_pure.sv' 2>&1"
+333 DVDI_is_vir_unload_enabled is enable
+334 FSDB_VCS_ENABLE_NATIVE_VC is enable
+335 FSDB_VCS_ENABLE_MEMORY_NATIVE_VC is enabled
+336 spi_vcs_vd_vlog_vc_enable_vector_strength is skipped since VCS is not support.
+337 sps_call_fsdbDumpvars_vd_main at 0 : ./2_pure_xip/tb_top_soc.sv(186)
+338 argv[0]: (0)
+339 argv[1]: (handle) tb_soc_top
+340 *Verdi* : Begin traversing the scope (tb_soc_top), layer (0).
+341 *Verdi* : End of traversing.
+342 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.280 user,  372.21M mem
+                   incr: 0.010 sys,  0.140 user,  10.68M mem
+                   accu: 0.010 sys,  0.140 user,  10.68M mem
+              accu incr: 0.010 sys,  0.140 user,  10.68M mem
 
-          Count usage: 24008 var,  17300 idcode,  3207 callback
-                 incr: 24008 var,  17300 idcode,  3207 callback
-                 accu: 24008 var,  17300 idcode,  3207 callback
-            accu incr: 24008 var,  17300 idcode,  3207 callback
-342 Idcode  0 - bc1:0  mda:0
-343 Elapsed time:    0:00:21    Mon May 25 18:04:54 2026
-344 User CPU time used: 0 seconds
-345 System CPU time used: 0 seconds
-346 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.320 user,  372.18M mem
+          Count usage: 24014 var,  17305 idcode,  3213 callback
+                 incr: 24014 var,  17305 idcode,  3213 callback
+                 accu: 24014 var,  17305 idcode,  3213 callback
+            accu incr: 24014 var,  17305 idcode,  3213 callback
+343 Idcode  0 - bc1:0  mda:0
+344 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
+345 User CPU time used: 0 seconds
+346 System CPU time used: 0 seconds
+347 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.050 sys,  0.280 user,  372.21M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.010 sys,  0.150 user,  10.65M mem
+                   accu: 0.010 sys,  0.140 user,  10.68M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 24008 var,  17300 idcode,  3207 callback
+          Count usage: 24014 var,  17305 idcode,  3213 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 24008 var,  17300 idcode,  3207 callback
+                 accu: 24014 var,  17305 idcode,  3213 callback
             accu incr: 0 var,  0 idcode,  0 callback
-347 Idcode  0 - bc1:0  mda:0
-348 Elapsed time:    0:00:21    Mon May 25 18:04:54 2026
-349 User CPU time used: 0 seconds
-350 System CPU time used: 0 seconds
-351 sps_call_fsdbDumpMDA_vd_main at 0 : ./2_pure_xip/tb_top_soc.sv(182)
-352 *Verdi* : Begin traversing the MDAs, layer (0).
-353 *Verdi* : Enable +mda and +packedmda dumping.
-354 *Verdi* : End of traversing the MDAs.
-355 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.320 user,  372.18M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+348 Idcode  0 - bc1:0  mda:0
+349 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
+350 User CPU time used: 0 seconds
+351 System CPU time used: 0 seconds
+352 sps_call_fsdbDumpMDA_vd_main at 0 : ./2_pure_xip/tb_top_soc.sv(187)
+353 *Verdi* : Begin traversing the MDAs, layer (0).
+354 *Verdi* : Enable +mda and +packedmda dumping.
+355 *Verdi* : End of traversing the MDAs.
+356 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.290 user,  372.21M mem
+                   incr: 0.000 sys,  0.010 user,  0.00M mem
+                   accu: 0.000 sys,  0.010 user,  0.00M mem
+              accu incr: 0.000 sys,  0.010 user,  0.00M mem
 
-          Count usage: 32208 var,  17300 idcode,  3210 callback
+          Count usage: 32214 var,  17305 idcode,  3216 callback
                  incr: 8200 var,  0 idcode,  3 callback
                  accu: 8200 var,  0 idcode,  3 callback
             accu incr: 8200 var,  0 idcode,  3 callback
-356 Idcode  0 - bc1:0  mda:8203
-357 Elapsed time:    0:00:21    Mon May 25 18:04:54 2026
-358 User CPU time used: 0 seconds
-359 System CPU time used: 0 seconds
-360 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.320 user,  372.18M mem
+357 Idcode  0 - bc1:0  mda:8203
+358 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
+359 User CPU time used: 0 seconds
+360 System CPU time used: 0 seconds
+361 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.050 sys,  0.290 user,  372.21M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.010 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 32208 var,  17300 idcode,  3210 callback
+          Count usage: 32214 var,  17305 idcode,  3216 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 8200 var,  0 idcode,  3 callback
             accu incr: 0 var,  0 idcode,  0 callback
-361 Idcode  0 - bc1:0  mda:8203
-362 Elapsed time:    0:00:21    Mon May 25 18:04:54 2026
-363 User CPU time used: 0 seconds
-364 System CPU time used: 0 seconds
-365 End of simulation at 100000000
-366 Memory usage: 449.786 M
-367 Maximum resident set size: 148 MB
-368 Hard page faults: 76
-369 Soft page faults: 18872
-370 Elapsed time:    0:00:22    Mon May 25 18:04:55 2026
-371 User CPU time used: 0 seconds
-372 System CPU time used: 0 seconds
-373 Begin FSDB profile info:
-374 FSDB Writer : bc1(79506) bcn(162856) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.015970) io wait(0.000000) theadpool wait(0.000000)
+362 Idcode  0 - bc1:0  mda:8203
+363 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
+364 User CPU time used: 0 seconds
+365 System CPU time used: 0 seconds
+366 End of simulation at 3310001
+367 Memory usage: 372.675 M
+368 Maximum resident set size: 141 MB
+369 Hard page faults: 0
+370 Soft page faults: 20824
+371 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
+372 User CPU time used: 0 seconds
+373 System CPU time used: 0 seconds
+374 Begin FSDB profile info:
+375 FSDB Writer : bc1(3448) bcn(12190) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.007318) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-375 End FSDB profile info
-376 FSDB closed. Name: soc_full.fsdb Size: 470799
-377 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-378                      - BlockUsed:3 Acquire:0 BufferUsed:3775562
-379                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:1
-380                      - MainProducerTime:0.657048640 TotalConsumerTime:0.019732863
-381                      - ElapsedTime:0.449103000
-382 Producer   0 profile - BlockUsed:3 Acquire:0 BufferUsed:3775562
-383 Consumer   0 profile - Affinity:-1 CPUTime:0.019732863 LifeTime:0.132842686 (0.15%)
-384                      - BlockUsed:3 Acquire:0 BufferUsed:3775562
-385 SimExit
-386 Elapsed time:    0:00:22    Mon May 25 18:04:55 2026
-387 User CPU time used: 0 seconds
-388 System CPU time used: 0 seconds
-389 Sim process exit
+376 End FSDB profile info
+377 FSDB closed. Name: soc_full.fsdb Size: 469239
+378 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+379                      - BlockUsed:1 Acquire:0 BufferUsed:303750
+380                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
+381                      - MainProducerTime:0.372459808 TotalConsumerTime:0.000000000
+382                      - ElapsedTime:0.190872000
+383 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:303750
+384 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
+385                      - BlockUsed:2 Acquire:0 BufferUsed:303750
+386 SimExit
+387 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
+388 User CPU time used: 0 seconds
+389 System CPU time used: 0 seconds
+390 Sim process exit

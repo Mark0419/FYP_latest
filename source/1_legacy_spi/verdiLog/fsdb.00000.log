@@ -1,7 +1,7 @@
 #######################################################################################
 # fsdb.xxxxx.log : log primitive debug message of FSDB Reader
 # This is for R&D to analyze when there are issues happening when FSDB reading
-# The corresponding FSDB file is /home/user18/Projects/Flash_controller/source/5_legacy_backup/tb_soc_top.fsdb
+# The corresponding FSDB file is /home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/tb_soc_top.fsdb
 #######################################################################################
 [BASIC]Reader version : Chronologic Simulation VCS Release W-2024.09-SP2_Full64
 [BASIC]simulator version : Chronologic Simulation VCS Release W-2024.09-SP2_Full64

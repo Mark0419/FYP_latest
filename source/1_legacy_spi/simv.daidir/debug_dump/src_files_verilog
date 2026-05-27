@@ -1,3 +1,10 @@
+/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/ahb_rom.v
+/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/ahb_spi_wrapper.sv
+/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/ahb_sram_wrapper.sv
+/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/spi_fsm.sv
+/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/sram_model_64kb.v
+/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/sram_top_512kb.v
+/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/tb_soc_top.sv
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_bus_matrix.v
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_bit_master.v
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_decode_dap.v
@@ -132,10 +139,3 @@
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells/cm3_clk_gate.v
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells/cm3_etm_clk_gate.v
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/models/cells/cm3_sync.v
-/home/user18/Projects/Flash_controller/source/5_legacy_backup/ahb_rom.v
-/home/user18/Projects/Flash_controller/source/5_legacy_backup/ahb_spi_wrapper.sv
-/home/user18/Projects/Flash_controller/source/5_legacy_backup/ahb_sram_wrapper.sv
-/home/user18/Projects/Flash_controller/source/5_legacy_backup/spi_fsm.sv
-/home/user18/Projects/Flash_controller/source/5_legacy_backup/sram_model_64kb.v
-/home/user18/Projects/Flash_controller/source/5_legacy_backup/sram_top_512kb.v
-/home/user18/Projects/Flash_controller/source/5_legacy_backup/tb_soc_top.sv
