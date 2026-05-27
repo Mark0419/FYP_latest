@@ -202,6 +202,27 @@ module tb_soc_top();
     reg [31:0] sniff_addr;
     reg        sniff_is_write;
 
+    function automatic is_bench_addr(input [31:0] addr);
+        begin
+            is_bench_addr = (addr == 32'h2000_0000 || addr == 32'h2000_0004 ||
+                             addr == 32'h2000_0008 || addr == 32'h2000_000c ||
+                             addr == 32'h2000_8000);
+        end
+    endfunction
+
+    function automatic [31:0] expected_data(input [31:0] addr);
+        begin
+            case (addr)
+                32'h2000_0000: expected_data = 32'h4902_4801;
+                32'h2000_0004: expected_data = 32'he7fe_6001;
+                32'h2000_0008: expected_data = 32'h2000_8000;
+                32'h2000_000c: expected_data = 32'haabb_ccdd;
+                32'h2000_8000: expected_data = 32'haabb_ccdd;
+                default:       expected_data = 32'hxxxx_xxxx;
+            endcase
+        end
+    endfunction
+
     always @(posedge HCLK_base) begin
         if (SYSRESETn) begin
             
@@ -214,9 +235,16 @@ module tb_soc_top();
                     if (sniff_is_write) $display("[%0t] SYS WRITE  -> Addr: %08h | Data: %08h", $time, sniff_addr, HWDATAS);
                     else                $display("[%0t] SYS READ   <- Addr: %08h | Data: %08h", $time, sniff_addr, HRDATAS);
 
+                    if (sniff_is_write && is_bench_addr(sniff_addr) &&
+                        HWDATAS !== expected_data(sniff_addr)) begin
+                        $error("[PPA BENCH] Mismatch at %08h: expected %08h, got %08h",
+                               sniff_addr, expected_data(sniff_addr), HWDATAS);
+                        $finish;
+                    end
+
                     if (sniff_addr == 32'h20008000 && HWDATAS == 32'hAABBCCDD) begin
                         $display("\n*******************************************************");
-                        $display("[%0t] ABSOLUTE SUCCESS! THUMB-2 SHADOWING VERIFIED!", $time);
+                        $display("[%0t] PPA BENCH SUCCESS: LEGACY SPI SHADOWING COMMON DATASET PASSED", $time);
                         $display("The Cortex-M3 successfully woke up from ROM, used the");
                         $display("Legacy SPI Controller to shadow 16 bytes of machine code");
                         $display("from Flash into SRAM, jumped to 0x20000001, and executed");
@@ -241,7 +269,7 @@ module tb_soc_top();
         $fsdbDumpvars(0, tb_soc_top.u_spi);	
         #50000; 
 	
-        $display("\n[%0t] ERROR: SIMULATION TIMEOUT.", $time);
+        $error("\n[%0t] ERROR: SIMULATION TIMEOUT.", $time);
         $finish;
     end
 endmodule

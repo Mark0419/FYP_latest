@@ -5,17 +5,22 @@ module tb_soc_top();
     // ==========================================
     // 1. System Clock and Reset
     // ==========================================
+    logic HCLK_base;
     logic HCLK;
     logic HRESETn;
 
     initial begin
-        HCLK = 0;
-        forever #10 HCLK = ~HCLK; // 50 MHz System Clock
+        HCLK_base = 0;
+        forever #10 HCLK_base = ~HCLK_base; // 50 MHz System Clock
     end
+
+    assign #1ps HCLK = HCLK_base;
 
     initial begin
         HRESETn = 0;
-        #1000; 
+        repeat (20) @(posedge HCLK_base);
+        @(negedge HCLK_base);
+        #5;
         HRESETn = 1; 
         $display("\n[%0t ps] SYSTEM: HRESETn released. CPU should boot now.", $time);
     end
@@ -181,44 +186,66 @@ module tb_soc_top();
         $fsdbDumpvars(0, tb_soc_top);
         $fsdbDumpMDA(); 
         #100000; 
+        $error("[PPA BENCH] TIMEOUT before common workload completed.");
         $finish;
     end
 
     // ==========================================
-    // 8. SoC Passive AHB Scoreboard 
+    // 8. Common PPA Workload Scoreboard
     // ==========================================
-    logic [31:0] shadow_memory [bit [31:0]];
-    logic [31:0] mon_addr;
-    logic        mon_write;
-    logic        mon_active;
+    logic        sniff_write_active;
+    logic [31:0] sniff_write_addr;
+    integer      pass_count;
+
+    function automatic [31:0] expected_data(input logic [31:0] addr);
+        begin
+            case (addr)
+                32'h2000_0000: expected_data = 32'h4902_4801;
+                32'h2000_0004: expected_data = 32'he7fe_6001;
+                32'h2000_0008: expected_data = 32'h2000_8000;
+                32'h2000_000c: expected_data = 32'haabb_ccdd;
+                32'h2000_8000: expected_data = 32'haabb_ccdd;
+                default:       expected_data = 32'hxxxx_xxxx;
+            endcase
+        end
+    endfunction
+
+    initial begin
+        sniff_write_active = 1'b0;
+        sniff_write_addr = 32'h0;
+        pass_count = 0;
+    end
 
     always @(posedge HCLK) begin
-        if (SYS_HREADY) begin
-            
-            // Scoreboard Check Phase
-            if (mon_active) begin
-                if (mon_write) begin
-                    shadow_memory[mon_addr] = SYS_HWDATA;
-                    $display("[SoC SNIFFER] CPU Wrote: %08h to Addr: %08h", SYS_HWDATA, mon_addr);
-                end else begin
-                    if (shadow_memory.exists(mon_addr)) begin
-                        if (SYS_HRDATA !== shadow_memory[mon_addr]) begin
-                            $error("[SYSTEM ERROR] Mismatch at %08h! Expected %08h, Got %08h", 
-                                      mon_addr, shadow_memory[mon_addr], SYS_HRDATA);
-                        end else begin
-                            $display("[SoC SNIFFER] CPU Read Verified: %08h from %08h", SYS_HRDATA, mon_addr);
-                        end
-                    end
+        if (HRESETn && SYS_HREADY) begin
+            if (sniff_write_active) begin
+                if (SYS_HWDATA !== expected_data(sniff_write_addr)) begin
+                    $error("[PPA BENCH] Mismatch at %08h: expected %08h, got %08h",
+                           sniff_write_addr, expected_data(sniff_write_addr), SYS_HWDATA);
+                    $finish;
+                end
+
+                pass_count++;
+                $display("[%0t] [PPA BENCH] Matched write %0d: %08h -> %08h",
+                         $time, pass_count, SYS_HWDATA, sniff_write_addr);
+
+                if (sniff_write_addr == 32'h2000_8000 && SYS_HWDATA == 32'haabb_ccdd) begin
+                    $display("\n*******************************************************");
+                    $display("[%0t] PPA BENCH SUCCESS: DUAL MODE COMMON DATASET PASSED", $time);
+                    $display("Read 16 common flash bytes and reached magic endpoint.");
+                    $display("*******************************************************\n");
+                    #100; $finish;
                 end
             end
 
-            // Address Capture Phase (Matches your 0x4000_xxxx base region)
-            if (SYS_HTRANS[1] && (SYS_HADDR[31:28] == 4'h4)) begin
-                mon_active <= 1'b1;
-                mon_addr   <= SYS_HADDR;
-                mon_write  <= SYS_HWRITE;
+            if (SYS_HWRITE && SYS_HTRANS[1] &&
+                (SYS_HADDR == 32'h2000_0000 || SYS_HADDR == 32'h2000_0004 ||
+                 SYS_HADDR == 32'h2000_0008 || SYS_HADDR == 32'h2000_000c ||
+                 SYS_HADDR == 32'h2000_8000)) begin
+                sniff_write_active <= 1'b1;
+                sniff_write_addr   <= SYS_HADDR;
             end else begin
-                mon_active <= 1'b0;
+                sniff_write_active <= 1'b0;
             end
         end
     end

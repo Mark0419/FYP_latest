@@ -1,4 +1,13 @@
 #!/bin/bash
+set -e
+
+echo "=== 1. Compiling Common PPA Firmware ==="
+arm-none-eabi-gcc -c -mcpu=cortex-m3 -mthumb -O1 startup.c -o startup.o
+arm-none-eabi-gcc -c -mcpu=cortex-m3 -mthumb -O1 main.c -o main.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -nostartfiles -T linker.ld startup.o main.o -o firmware.elf
+arm-none-eabi-objcopy -O verilog -j .text -j .rodata firmware.elf firmware.hex
+cp firmware.hex ../
+
 echo "=== 2. Compiling Hardware with VCS ==="
 
 # Step back to the root directory
@@ -55,5 +64,5 @@ echo "=== 3. Running Simulation ==="
 ./simv
 
 # Clean up simulation garbage
-mv simv simv.daidir *.fsdb novas* verdi* 3_dual_mode/ 2>/dev/null
+mv simv simv.daidir *.fsdb novas* verdi* 3_dual_mode/ 2>/dev/null || true
 cd 3_dual_mode

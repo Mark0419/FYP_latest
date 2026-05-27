@@ -5,17 +5,22 @@ module tb_soc_top();
     // ==========================================
     // 1. System Clock and Reset
     // ==========================================
+    logic HCLK_base;
     logic HCLK;
     logic HRESETn;
 
     initial begin
-        HCLK = 0;
-        forever #10 HCLK = ~HCLK; // 50 MHz System Clock
+        HCLK_base = 0;
+        forever #10 HCLK_base = ~HCLK_base; // 50 MHz System Clock
     end
+
+    assign #1ps HCLK = HCLK_base;
 
     initial begin
         HRESETn = 0;
-        #1000; 
+        repeat (20) @(posedge HCLK_base);
+        @(negedge HCLK_base);
+        #5;
         HRESETn = 1; 
         $display("\n[%0t ps] SYSTEM: HRESETn released. CPU should boot now.", $time);
     end
@@ -181,42 +186,62 @@ module tb_soc_top();
         $fsdbDumpvars(0, tb_soc_top);
         $fsdbDumpMDA(); 
         #100000; 
+        $error("[PPA BENCH] TIMEOUT before common workload completed.");
         $finish;
     end
 
     // ==========================================
-    // 8. THE AHB PIPELINE-AWARE SNIFFER
+    // 8. Common PPA Workload Scoreboard
     // ==========================================
     logic        sniff_write_active;
     logic [31:0] sniff_write_addr;
+    integer      pass_count;
+
+    function automatic [31:0] expected_data(input logic [31:0] addr);
+        begin
+            case (addr)
+                32'h2000_0000: expected_data = 32'h4902_4801;
+                32'h2000_0004: expected_data = 32'he7fe_6001;
+                32'h2000_0008: expected_data = 32'h2000_8000;
+                32'h2000_000c: expected_data = 32'haabb_ccdd;
+                32'h2000_8000: expected_data = 32'haabb_ccdd;
+                default:       expected_data = 32'hxxxx_xxxx;
+            endcase
+        end
+    endfunction
+
+    initial begin
+        sniff_write_active = 1'b0;
+        sniff_write_addr = 32'h0;
+        pass_count = 0;
+    end
 
     always @(posedge HCLK) begin
         if (HRESETn && SYS_HREADY) begin
-            
-            // 1. Sniff Flash Reads (Reads do not need HWDATA, capture on Address Phase)
-            if (SYS_HWRITE == 0 && SYS_HTRANS[1]) begin
-                if (SYS_HADDR == 32'h40001000) 
-                    $display("[%0t] [SNIFFER] Flash Read Req: 4000_1000", $time);
-                if (SYS_HADDR == 32'h40002000) 
-                    $display("[%0t] [SNIFFER] Flash Read Req: 4000_2000", $time);
-                if (SYS_HADDR == 32'h40003000) 
-                    $display("[%0t] [SNIFFER] Flash Read Req: 4000_3000", $time);
-            end
-            
-            // 2. Data Phase Capture (Print the data exactly ONE cycle after the address!)
             if (sniff_write_active) begin
-                if (sniff_write_addr == 32'h20008000) 
-                    $display("[%0t] [SNIFFER] SUCCESS: SRAM Echo %08h at 2000_8000 (Boot XIP)", $time, SYS_HWDATA);
-                if (sniff_write_addr == 32'h20008004) 
-                    $display("[%0t] [SNIFFER] SUCCESS: SRAM Echo %08h at 2000_8004 (Continuous 1)", $time, SYS_HWDATA);
-                if (sniff_write_addr == 32'h20008008) 
-                    $display("[%0t] [SNIFFER] SUCCESS: SRAM Echo %08h at 2000_8008 (Negative Test Fail Echo)", $time, SYS_HWDATA);
-                if (sniff_write_addr == 32'h2000800C) 
-                    $display("[%0t] [SNIFFER] SUCCESS: SRAM Echo %08h at 2000_800C (Continuous 3)", $time, SYS_HWDATA);
+                if (SYS_HWDATA !== expected_data(sniff_write_addr)) begin
+                    $error("[PPA BENCH] Mismatch at %08h: expected %08h, got %08h",
+                           sniff_write_addr, expected_data(sniff_write_addr), SYS_HWDATA);
+                    $finish;
+                end
+
+                pass_count++;
+                $display("[%0t] [PPA BENCH] Matched write %0d: %08h -> %08h",
+                         $time, pass_count, SYS_HWDATA, sniff_write_addr);
+
+                if (sniff_write_addr == 32'h2000_8000 && SYS_HWDATA == 32'haabb_ccdd) begin
+                    $display("\n*******************************************************");
+                    $display("[%0t] PPA BENCH SUCCESS: PURE XIP COMMON DATASET PASSED", $time);
+                    $display("Read 16 common flash bytes and reached magic endpoint.");
+                    $display("*******************************************************\n");
+                    #100; $finish;
+                end
             end
 
-            // 3. Address Phase Capture (Memorize WHERE the CPU wants to write)
-            if (SYS_HWRITE == 1 && SYS_HTRANS[1] && (SYS_HADDR[31:28] == 4'h2)) begin
+            if (SYS_HWRITE && SYS_HTRANS[1] &&
+                (SYS_HADDR == 32'h2000_0000 || SYS_HADDR == 32'h2000_0004 ||
+                 SYS_HADDR == 32'h2000_0008 || SYS_HADDR == 32'h2000_000c ||
+                 SYS_HADDR == 32'h2000_8000)) begin
                 sniff_write_active <= 1'b1;
                 sniff_write_addr   <= SYS_HADDR;
             end else begin

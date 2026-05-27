@@ -22,19 +22,19 @@ module flash_model (
         write_enabled = 0; 
         xip_active = 0; 
         
-        $display("FLASH VIP: Initializing Pre-loaded Test Data...");
+        $display("FLASH VIP: Initializing common 16-byte PPA dataset...");
 
-        // Pre-load data for Address 0x4000_0000 -> 32'hff00f00f
-        memory[32'h4000_0000] = 8'hff; memory[32'h4000_0001] = 8'h00;
-        memory[32'h4000_0002] = 8'hf0; memory[32'h4000_0003] = 8'h0f;
+        memory[32'h4000_0000] = 8'h49; memory[32'h4000_0001] = 8'h02;
+        memory[32'h4000_0002] = 8'h48; memory[32'h4000_0003] = 8'h01;
 
-        // Pre-load data for Address 0x4000_2000 -> 32'haabbccdd
-        memory[32'h4000_2000] = 8'haa; memory[32'h4000_2001] = 8'hbb;
-        memory[32'h4000_2002] = 8'hcc; memory[32'h4000_2003] = 8'hdd;
+        memory[32'h4000_0004] = 8'he7; memory[32'h4000_0005] = 8'hfe;
+        memory[32'h4000_0006] = 8'h60; memory[32'h4000_0007] = 8'h01;
 
-        // Pre-load data for Address 0x4000_2004 -> 32'h11223344
-        memory[32'h4000_2004] = 8'h11; memory[32'h4000_2005] = 8'h22;
-        memory[32'h4000_2006] = 8'h33; memory[32'h4000_2007] = 8'h44;
+        memory[32'h4000_0008] = 8'h20; memory[32'h4000_0009] = 8'h00;
+        memory[32'h4000_000a] = 8'h80; memory[32'h4000_000b] = 8'h00;
+        
+        memory[32'h4000_000c] = 8'haa; memory[32'h4000_000d] = 8'hbb;
+        memory[32'h4000_000e] = 8'hcc; memory[32'h4000_000f] = 8'hdd;
         
         $display("FLASH VIP: Model initialization complete.");
     end
