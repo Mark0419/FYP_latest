@@ -191,62 +191,83 @@ module tb_soc_top();
     end
 
     // ==========================================
-    // 8. Common PPA Workload Scoreboard
+    // 8. XIP Timing Monitor
     // ==========================================
-    logic        sniff_write_active;
-    logic [31:0] sniff_write_addr;
-    integer      pass_count;
+    logic        flash_read_active;
+    logic [31:0] flash_read_addr;
+    logic        done_write_active;
+    integer      read_count;
+    time         reset_release_time;
+    time         init_done_time;
+    time         op_done_time;
 
-    function automatic [31:0] expected_data(input logic [31:0] addr);
+    function automatic is_payload_addr(input logic [31:0] addr);
+        begin
+            is_payload_addr = (addr == 32'h4000_0000 || addr == 32'h4000_0004 ||
+                               addr == 32'h4000_0008 || addr == 32'h4000_000c);
+        end
+    endfunction
+
+    function automatic [31:0] expected_flash_data(input logic [31:0] addr);
         begin
             case (addr)
-                32'h2000_0000: expected_data = 32'h4902_4801;
-                32'h2000_0004: expected_data = 32'he7fe_6001;
-                32'h2000_0008: expected_data = 32'h2000_8000;
-                32'h2000_000c: expected_data = 32'haabb_ccdd;
-                32'h2000_8000: expected_data = 32'haabb_ccdd;
-                default:       expected_data = 32'hxxxx_xxxx;
+                32'h4000_0000: expected_flash_data = 32'h4902_4801;
+                32'h4000_0004: expected_flash_data = 32'he7fe_6001;
+                32'h4000_0008: expected_flash_data = 32'h2000_8000;
+                32'h4000_000c: expected_flash_data = 32'haabb_ccdd;
+                default:       expected_flash_data = 32'hxxxx_xxxx;
             endcase
         end
     endfunction
 
     initial begin
-        sniff_write_active = 1'b0;
-        sniff_write_addr = 32'h0;
-        pass_count = 0;
+        flash_read_active = 1'b0;
+        flash_read_addr = 32'h0;
+        done_write_active = 1'b0;
+        read_count = 0;
+        reset_release_time = 0;
+        init_done_time = 0;
+        op_done_time = 0;
+        wait (HRESETn === 1'b1);
+        reset_release_time = $time;
     end
 
     always @(posedge HCLK) begin
         if (HRESETn && SYS_HREADY) begin
-            if (sniff_write_active) begin
-                if (SYS_HWDATA !== expected_data(sniff_write_addr)) begin
-                    $error("[PPA BENCH] Mismatch at %08h: expected %08h, got %08h",
-                           sniff_write_addr, expected_data(sniff_write_addr), SYS_HWDATA);
+            if (flash_read_active) begin
+                if (SYS_HRDATA !== expected_flash_data(flash_read_addr)) begin
+                    $error("[PPA BENCH] XIP read mismatch at %08h: expected %08h, got %08h",
+                           flash_read_addr, expected_flash_data(flash_read_addr), SYS_HRDATA);
                     $finish;
                 end
 
-                pass_count++;
-                $display("[%0t] [PPA BENCH] Matched write %0d: %08h -> %08h",
-                         $time, pass_count, SYS_HWDATA, sniff_write_addr);
+                read_count = read_count + 1;
+                $display("[%0t] [PPA BENCH] XIP read %0d complete: %08h -> %08h",
+                         $time, read_count, flash_read_addr, SYS_HRDATA);
 
-                if (sniff_write_addr == 32'h2000_8000 && SYS_HWDATA == 32'haabb_ccdd) begin
-                    $display("\n*******************************************************");
-                    $display("[%0t] PPA BENCH SUCCESS: DUAL MODE COMMON DATASET PASSED", $time);
-                    $display("Read 16 common flash bytes and reached magic endpoint.");
-                    $display("*******************************************************\n");
-                    #100; $finish;
+                if (read_count == 1) init_done_time = $time;
+                if (read_count == 4) op_done_time = $time;
+            end
+
+            if (done_write_active) begin
+                if (SYS_HWDATA !== 32'haabb_ccdd) begin
+                    $error("[PPA BENCH] Completion marker mismatch: expected aabbccdd, got %08h", SYS_HWDATA);
+                    $finish;
                 end
+
+                $display("\n*******************************************************");
+                $display("[%0t] PPA BENCH SUCCESS: DUAL MODE DIRECT READ PASSED", $time);
+                $display("Init time       : %0t ps", init_done_time - reset_release_time);
+                $display("Operation time  : %0t ps", op_done_time - init_done_time);
+                $display("Total read time : %0t ps", op_done_time - reset_release_time);
+                $display("Marker latency  : %0t ps", $time - op_done_time);
+                $display("*******************************************************\n");
+                #100; $finish;
             end
 
-            if (SYS_HWRITE && SYS_HTRANS[1] &&
-                (SYS_HADDR == 32'h2000_0000 || SYS_HADDR == 32'h2000_0004 ||
-                 SYS_HADDR == 32'h2000_0008 || SYS_HADDR == 32'h2000_000c ||
-                 SYS_HADDR == 32'h2000_8000)) begin
-                sniff_write_active <= 1'b1;
-                sniff_write_addr   <= SYS_HADDR;
-            end else begin
-                sniff_write_active <= 1'b0;
-            end
+            flash_read_active <= (!SYS_HWRITE && SYS_HTRANS[1] && is_payload_addr(SYS_HADDR));
+            flash_read_addr   <= SYS_HADDR;
+            done_write_active <= (SYS_HWRITE && SYS_HTRANS[1] && SYS_HADDR == 32'h2000_8000);
         end
     end
 

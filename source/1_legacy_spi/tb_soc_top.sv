@@ -33,6 +33,7 @@ module tb_soc_top();
         $display("\n=======================================================");
         $display("[%0t] RESETS LIFTED. CORTEX-M3 AWAKE.", $time);
         $display("=======================================================\n");
+        reset_release_time = $time;
     end
 
     // =========================================================================
@@ -201,6 +202,15 @@ module tb_soc_top();
     reg        sniff_data_phase;
     reg [31:0] sniff_addr;
     reg        sniff_is_write;
+    time       reset_release_time;
+    time       init_done_time;
+    time       op_done_time;
+
+    initial begin
+        reset_release_time = 0;
+        init_done_time = 0;
+        op_done_time = 0;
+    end
 
     function automatic is_bench_addr(input [31:0] addr);
         begin
@@ -242,9 +252,17 @@ module tb_soc_top();
                         $finish;
                     end
 
+                    if (sniff_is_write && sniff_addr == 32'h2000_000c) begin
+                        init_done_time = $time;
+                    end
+
                     if (sniff_addr == 32'h20008000 && HWDATAS == 32'hAABBCCDD) begin
+                        op_done_time = $time;
                         $display("\n*******************************************************");
                         $display("[%0t] PPA BENCH SUCCESS: LEGACY SPI SHADOWING COMMON DATASET PASSED", $time);
+                        $display("Init time       : %0t ps", init_done_time - reset_release_time);
+                        $display("Operation time  : %0t ps", op_done_time - init_done_time);
+                        $display("Total time      : %0t ps", op_done_time - reset_release_time);
                         $display("The Cortex-M3 successfully woke up from ROM, used the");
                         $display("Legacy SPI Controller to shadow 16 bytes of machine code");
                         $display("from Flash into SRAM, jumped to 0x20000001, and executed");
