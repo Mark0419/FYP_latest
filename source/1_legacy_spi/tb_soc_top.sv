@@ -1,3 +1,4 @@
+
 `timescale 1ns / 1ps
 
 module tb_soc_top();
@@ -10,6 +11,9 @@ module tb_soc_top();
     logic HCLK;
     logic PORESETn;
     logic SYSRESETn;
+    time  reset_release_time;
+    time  init_done_time;
+    time  op_done_time;
 
     initial begin
         HCLK_base = 0;
@@ -202,9 +206,6 @@ module tb_soc_top();
     reg        sniff_data_phase;
     reg [31:0] sniff_addr;
     reg        sniff_is_write;
-    time       reset_release_time;
-    time       init_done_time;
-    time       op_done_time;
 
     initial begin
         reset_release_time = 0;
