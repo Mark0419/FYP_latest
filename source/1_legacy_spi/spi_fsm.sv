@@ -76,8 +76,9 @@ module spi_serializer_fsm (
         end
     end
 
-    // RX Logic (Triggers on NEGEDGE clk)
-    always_ff @(negedge clk or negedge rst_n) begin
+    // RX Logic uses the same positive-edge clock as the rest of the FSM so
+    // synthesis maps the receive shift register to standard-cell flops.
+    always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             shift_rx <= 32'd0;
         end else begin
@@ -107,6 +108,6 @@ module spi_serializer_fsm (
     // Output Mapping
     assign spi_mosi = shift_tx[31];
     assign spi_busy = (state != IDLE);
-    assign spi_clk  = (state == CMD_ST || state == ADDR_ST || state == DATA_ST) ? ~clk : 1'b0;
+    assign spi_clk  = (state == CMD_ST || state == ADDR_ST || state == DATA_ST) ? clk : 1'b0;
 
 endmodule

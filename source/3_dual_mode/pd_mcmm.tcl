@@ -14,6 +14,7 @@ if {[info exists ::env(SAED14_PATH)]} {
 }
 
 set NETLIST_FILE "outputs/${DESIGN_NAME}_mapped.v"
+set DDC_FILE     "outputs/${DESIGN_NAME}.ddc"
 set SDC_FILE     "outputs/${DESIGN_NAME}.sdc"
 
 set search_path ". $SAED_PATH/lib/stdcell_rvt/db_nldm $SAED_PATH/lib/stdcell_rvt/ndm"
@@ -30,7 +31,21 @@ close_lib -all
 file delete -force ${DESIGN_NAME}_mcmm.nlib
 create_lib ${DESIGN_NAME}_mcmm.nlib -technology $tech_file -ref_libs $physical_library
 
-read_verilog $NETLIST_FILE
+if {[file exists $DDC_FILE] && ![catch {read_ddc $DDC_FILE} ddc_msg]} {
+    puts "INFO: Imported DC DDC database: $DDC_FILE"
+} else {
+    if {[info exists ddc_msg]} {
+        puts "INFO: DDC import unavailable or failed: $ddc_msg"
+    }
+    set fp [open $NETLIST_FILE r]
+    set netlist_text [read $fp]
+    close $fp
+    if {[regexp {\*\*SEQGEN\*\*} $netlist_text]} {
+        error "Mapped Verilog contains **SEQGEN** unresolved sequential cells. Re-run run_dc.tcl after the RTL/DC script updates before running Fusion Compiler."
+    }
+    puts "INFO: Falling back to mapped Verilog import: $NETLIST_FILE"
+    read_verilog $NETLIST_FILE
+}
 link_block
 current_block $TOP_MODULE
 
@@ -77,7 +92,10 @@ compile_pg -strategies rail_strat
 compile_pg -strategies mesh_strat
 check_pg_connectivity
 
-set_app_options -name route_opt.flow.enable_hold -value true
+if {[catch {set_app_options -name route_opt.flow.enable_hold -value true} hold_msg]} {
+    puts "INFO: route_opt.flow.enable_hold is not supported in this Fusion Compiler build."
+    puts "INFO: Continuing with func_ff active for hold optimization. Tool message: $hold_msg"
+}
 
 place_opt
 set_clock_tree_options -target_skew 0.1 -target_latency 0.5
@@ -103,4 +121,3 @@ check_routes > outputs_mcmm/${DESIGN_NAME}_mcmm_routes.rpt
 puts "============================================================"
 puts "MCMM PHYSICAL DESIGN COMPLETE: $DESIGN_NAME"
 puts "============================================================"
-
