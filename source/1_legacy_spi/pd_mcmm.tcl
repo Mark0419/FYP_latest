@@ -108,9 +108,9 @@ create_stdcell_fillers -lib_cells [get_lib_cells */*FILL*]
 connect_pg_net -automatic
 
 file mkdir outputs_mcmm
-write_verilog -hierarchy outputs_mcmm/${DESIGN_NAME}_final.v
+write_verilog -hierarchy all outputs_mcmm/${DESIGN_NAME}_final.v
 write_gds outputs_mcmm/${DESIGN_NAME}_final.gds
-write_sdc outputs_mcmm/${DESIGN_NAME}_final.sdc
+write_sdc -output outputs_mcmm/${DESIGN_NAME}_final.sdc
 
 report_qor -scenarios [all_scenarios] > outputs_mcmm/${DESIGN_NAME}_mcmm_qor.rpt
 report_timing -scenario func_ss -delay_type max -max_paths 20 > outputs_mcmm/${DESIGN_NAME}_mcmm_setup.rpt
@@ -118,6 +118,7 @@ report_timing -scenario func_ff -delay_type min -max_paths 20 > outputs_mcmm/${D
 report_clock_qor -scenario func_ff > outputs_mcmm/${DESIGN_NAME}_mcmm_clock.rpt
 report_constraint -all_violators -scenarios [all_scenarios] > outputs_mcmm/${DESIGN_NAME}_mcmm_constraints.rpt
 check_routes > outputs_mcmm/${DESIGN_NAME}_mcmm_routes.rpt
+
 
 puts "============================================================"
 puts "MCMM PHYSICAL DESIGN COMPLETE: $DESIGN_NAME"

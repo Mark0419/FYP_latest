@@ -1,0 +1,103 @@
+****************************************
+Report : constraint
+        -all_violators
+Design : ahb_wrapper
+Version: W-2024.09-SP3
+Date   : Thu May 28 16:41:31 2026
+****************************************
+
+   late_timing
+   -----------
+
+Warning: Scenario func_ff is not configured for setup analysis: skipping. (UIC-058)
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Warning: Scenario func_ss is not configured for hold analysis: skipping. (UIC-058)
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+u_core/U11/A2 (SAEDRVT14_OA21B_1)
+                                   0.51 r         0.57           0.00    -0.06   HCLK     func_ff
+u_core/U11/A1 (SAEDRVT14_OA21B_1)
+                                   0.52 f         0.57           0.00    -0.06   HCLK     func_ff
+u_core/sreg_reg_24_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.01   HCLK     func_ff
+u_core/sreg_reg_25_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_15_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.00   HCLK     func_ff
+u_core/state_reg_0_/D (SAEDRVT14_FDPRBQ_V2_0P5)
+                                   0.57 f         0.58           0.00    -0.00   HCLK     func_ff
+u_core/cnt_reg_1_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.53 f         0.54           0.00    -0.00   HCLK     func_ff
+u_core/state_reg_1_/D (SAEDRVT14_FDPRBQ_V2_0P5)
+                                   0.57 f         0.58           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_26_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_12_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.00   HCLK     func_ff
+a_reg_reg_19_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_22_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.00   HCLK     func_ff
+ahb_rdata_reg_reg_0_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_20_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.00   HCLK     func_ff
+u_core/xip_active_reg/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+ahb_rdata_reg_reg_13_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.00   HCLK     func_ff
+a_reg_reg_28_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.56 f         0.56           0.00    -0.00   HCLK     func_ff
+u_core/cnt_reg_0_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_30_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+ahb_rdata_reg_reg_2_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+
+   Mode: func_mode Corner: ff_corner
+   Scenario: func_ff
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: func_mode Corner: ss_corner
+   Scenario: func_ss
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: func_mode Corner: ff_corner
+   Scenario: func_ff
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Mode: func_mode Corner: ss_corner
+   Scenario: func_ss
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+
+   Mode: func_mode Corner: ff_corner
+   Scenario: func_ff
+  ---------------------------------------------------------------------------
+   Number of min_capacitance violation(s): 0
+
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+   Total number of violation(s): 0
+1

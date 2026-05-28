@@ -1,0 +1,145 @@
+ 
+****************************************
+Report : reference
+Design : ahb_spi_legacy
+Version: V-2023.12-SP2
+Date   : Thu May 28 15:04:16 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+SAEDRVT14_AN2B_MM_1
+                   saed14rvt_tt0p8v25c
+                                  0.399600       1      0.399600  
+SAEDRVT14_AN2_MM_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.310800       1      0.310800  
+SAEDRVT14_AN3_0P5  saed14rvt_tt0p8v25c
+                                  0.355200       1      0.355200  
+SAEDRVT14_AO22_0P5 saed14rvt_tt0p8v25c
+                                  0.532800      25     13.320000  
+SAEDRVT14_AO222_1  saed14rvt_tt0p8v25c
+                                  0.754800       6      4.528800  
+SAEDRVT14_AOI21_0P75
+                   saed14rvt_tt0p8v25c
+                                  0.266400       2      0.532800  
+SAEDRVT14_FDPRBQ_V2LP_0P5
+                   saed14rvt_tt0p8v25c
+                                  1.065600       5      5.328000  n
+SAEDRVT14_FDPRBQ_V2_0P5
+                   saed14rvt_tt0p8v25c
+                                  1.065600      78     83.116803  n
+SAEDRVT14_INV_0P5  saed14rvt_tt0p8v25c
+                                  0.177600      30      5.328000  
+SAEDRVT14_MUX2_U_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.444000      66     29.304000  
+SAEDRVT14_ND2B_U_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.310800       1      0.310800  
+SAEDRVT14_ND2_CDC_1
+                   saed14rvt_tt0p8v25c
+                                  0.222000       7      1.554000  
+SAEDRVT14_ND3_0P5  saed14rvt_tt0p8v25c
+                                  0.444000       1      0.444000  
+SAEDRVT14_NR2_1    saed14rvt_tt0p8v25c
+                                  0.222000       6      1.332000  
+SAEDRVT14_OAI21_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.266400       3      0.799200  
+SAEDRVT14_OAI22_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.310800      16      4.972800  
+SAEDRVT14_OR4_1    saed14rvt_tt0p8v25c
+                                  0.399600       1      0.399600  
+SAEDRVT14_TIE0_V1_2
+                   saed14rvt_tt0p8v25c
+                                  0.488400       1      0.488400  
+SAEDRVT14_TIE1_4   saed14rvt_tt0p8v25c
+                                  0.399600       1      0.399600  
+spi_serializer_fsm              145.321202       1    145.321202  h, n
+-----------------------------------------------------------------------------
+Total 20 references                                   298.545606
+
+****************************************
+Design: spi_serializer_fsm 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+SAEDRVT14_AN2_MM_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.310800       1      0.310800  
+SAEDRVT14_AN4_0P5  saed14rvt_tt0p8v25c
+                                  0.399600       1      0.399600  
+SAEDRVT14_AO21B_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.355200      24      8.524800  
+SAEDRVT14_AO32_U_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.444000       8      3.552000  
+SAEDRVT14_AO222_1  saed14rvt_tt0p8v25c
+                                  0.754800       1      0.754800  
+SAEDRVT14_AOI21_0P75
+                   saed14rvt_tt0p8v25c
+                                  0.266400      36      9.590400  
+SAEDRVT14_AOI22_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.488400       8      3.907200  
+SAEDRVT14_BUF_U_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.266400       1      0.266400  
+SAEDRVT14_EO2_V1_0P75
+                   saed14rvt_tt0p8v25c
+                                  0.444000       1      0.444000  
+SAEDRVT14_FDPRBQ_V2LP_0P5
+                   saed14rvt_tt0p8v25c
+                                  1.065600       6      6.393600  n
+SAEDRVT14_FDPRBQ_V2_0P5
+                   saed14rvt_tt0p8v25c
+                                  1.065600      66     70.329602  n
+SAEDRVT14_FDPSBQ_0P5
+                   saed14rvt_tt0p8v25c
+                                  1.110000       1      1.110000  n
+SAEDRVT14_INV_0P5  saed14rvt_tt0p8v25c
+                                  0.177600      70     12.432000  
+SAEDRVT14_MUX2_U_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.444000       1      0.444000  
+SAEDRVT14_ND2B_U_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.310800       1      0.310800  
+SAEDRVT14_ND2_CDC_1
+                   saed14rvt_tt0p8v25c
+                                  0.222000      16      3.552000  
+SAEDRVT14_NR2_1    saed14rvt_tt0p8v25c
+                                  0.222000      11      2.442000  
+SAEDRVT14_OA21_1   saed14rvt_tt0p8v25c
+                                  0.355200       1      0.355200  
+SAEDRVT14_OAI21_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.266400       5      1.332000  
+SAEDRVT14_OAI22_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.310800      57     17.715599  
+SAEDRVT14_OAI31_0P75
+                   saed14rvt_tt0p8v25c
+                                  0.488400       1      0.488400  
+SAEDRVT14_OR2_MM_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.310800       1      0.310800  
+SAEDRVT14_OR3_0P5  saed14rvt_tt0p8v25c
+                                  0.355200       1      0.355200  
+-----------------------------------------------------------------------------
+Total 23 references                                   145.321202
+1

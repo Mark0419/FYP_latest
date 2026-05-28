@@ -1,0 +1,261 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : ahb_spi_legacy
+Version: V-2023.12-SP2
+Date   : Thu May 28 15:04:16 2026
+****************************************
+
+
+   min_delay/hold ('HCLK' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   u_spi_fsm/shift_tx_reg[13]/D
+                                0.14           0.07 f        -0.07  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[28]/D
+                                0.14           0.08 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[10]/D
+                                0.14           0.08 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[25]/D
+                                0.14           0.08 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[31]/D
+                                0.14           0.08 f        -0.06  (VIOLATED)
+   tx_data_reg_reg[27]/D        0.14           0.08 f        -0.06  (VIOLATED)
+   tx_data_reg_reg[12]/D        0.14           0.08 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[1]/D
+                                0.13           0.07 f        -0.06  (VIOLATED)
+   addr_reg_reg[1]/D            0.13           0.07 f        -0.06  (VIOLATED)
+   addr_reg_reg[6]/D            0.13           0.07 f        -0.06  (VIOLATED)
+   addr_reg_reg[0]/D            0.13           0.07 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[0]/D
+                                0.13           0.07 f        -0.06  (VIOLATED)
+   addr_reg_reg[4]/D            0.13           0.07 f        -0.06  (VIOLATED)
+   flash_addr_reg_reg[8]/D      0.14           0.08 f        -0.06  (VIOLATED)
+   flash_addr_reg_reg[23]/D     0.14           0.08 f        -0.06  (VIOLATED)
+   addr_reg_reg[7]/D            0.13           0.07 f        -0.06  (VIOLATED)
+   flash_addr_reg_reg[7]/D      0.13           0.07 f        -0.06  (VIOLATED)
+   addr_reg_reg[5]/D            0.13           0.07 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[2]/D
+                                0.13           0.07 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[3]/D
+                                0.13           0.07 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[4]/D
+                                0.13           0.07 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[5]/D
+                                0.13           0.07 f        -0.06  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[6]/D
+                                0.13           0.07 f        -0.06  (VIOLATED)
+   write_en_reg_reg/D           0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[24]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[25]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[26]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[28]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[29]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[30]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[31]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[7]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[9]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[10]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[11]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[12]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[14]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[15]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[16]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[17]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[18]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[19]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[20]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[21]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[22]/D
+                                0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[0]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[1]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[2]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[3]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[4]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[5]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[6]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[7]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[8]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[9]/D         0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[10]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[11]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[13]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[14]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[15]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[16]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[17]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[18]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[19]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[20]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[21]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[22]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   tx_data_reg_reg[23]/D        0.13           0.07 f        -0.05  (VIOLATED)
+   u_spi_fsm/bit_cnt_reg[0]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[24]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[25]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[26]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[27]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[28]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[29]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[30]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[31]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[9]/D      0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[10]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[11]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[12]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[13]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[14]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[15]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[16]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[17]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[18]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[19]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[20]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[21]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[22]/D     0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[0]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   addr_reg_reg[2]/D            0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[2]/D      0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[3]/D      0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[4]/D      0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[5]/D      0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[6]/D      0.13           0.08 f        -0.05  (VIOLATED)
+   cmd_reg_reg[7]/D             0.13           0.08 f        -0.05  (VIOLATED)
+   cmd_reg_reg[0]/D             0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[1]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/bit_cnt_reg[3]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[1]/D      0.13           0.08 f        -0.05  (VIOLATED)
+   cmd_reg_reg[1]/D             0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[3]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[4]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[5]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[6]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[7]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[8]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[2]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[9]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[12]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[13]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[14]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[15]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[16]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[17]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[18]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[19]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[20]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[21]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[22]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[23]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[24]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[27]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[28]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[29]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[30]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   flash_addr_reg_reg[0]/D      0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[11]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_rx_reg[26]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   cmd_reg_reg[2]/D             0.13           0.08 f        -0.05  (VIOLATED)
+   cmd_reg_reg[3]/D             0.13           0.08 f        -0.05  (VIOLATED)
+   cmd_reg_reg[4]/D             0.13           0.08 f        -0.05  (VIOLATED)
+   cmd_reg_reg[5]/D             0.13           0.08 f        -0.05  (VIOLATED)
+   addr_reg_reg[3]/D            0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/bit_cnt_reg[1]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[25]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/bit_cnt_reg[4]/D
+                                0.14           0.09 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[23]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[8]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   u_spi_fsm/bit_cnt_reg[2]/D
+                                0.13           0.08 f        -0.05  (VIOLATED)
+   cmd_reg_reg[6]/D             0.13           0.09 f        -0.05  (VIOLATED)
+   valid_trans_reg_reg/D        0.13           0.08 f        -0.04  (VIOLATED)
+   u_spi_fsm/state_reg[0]/D     0.13           0.08 f        -0.04  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[26]/D
+                                0.13           0.08 f        -0.04  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[27]/D
+                                0.13           0.08 f        -0.04  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[30]/D
+                                0.13           0.08 f        -0.04  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[31]/D
+                                0.13           0.08 f        -0.04  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[24]/D
+                                0.13           0.08 f        -0.04  (VIOLATED)
+   u_spi_fsm/state_reg[1]/D     0.13           0.09 f        -0.04  (VIOLATED)
+   u_spi_fsm/shift_tx_reg[29]/D
+                                0.13           0.09 f        -0.04  (VIOLATED)
+   ctrl_reg_reg[0]/D            0.13           0.09 f        -0.04  (VIOLATED)
+   u_spi_fsm/spi_cs_n_reg/D     0.13           0.11 f        -0.01  (VIOLATED)
+   u_spi_fsm/state_reg[2]/D     0.13           0.13 f         0.00  (VIOLATED: increase significant digits)
+
+
+   max_fanout
+
+                             Required        Actual
+   Net                        Fanout         Fanout          Slack
+   -----------------------------------------------------------------
+   HRESETn (dont_touch)        32.00         156.00        -124.00  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      1                -124.00  
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   ahb_spi_legacy               0.00         912.05        -912.05  (VIOLATED)
+
+
+1

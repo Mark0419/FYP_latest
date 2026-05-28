@@ -1,0 +1,28 @@
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12-SP2
+Date:        Thu May 28 16:59:01 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      5
+    Unconnected ports (LINT-28)                                     2
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     1
+    Connected to power or ground (LINT-32)                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'qspi_fsm', cell 'C1604' does not drive any nets. (LINT-1)
+Warning: In design 'ahb_wrapper', port 'HTRANS[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'qspi_fsm', port 'tx_empty' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', output port 'HRESP[1]' is connected directly to output port 'HRESP[0]'. (LINT-31)
+Warning: In design 'ahb_wrapper', a pin on submodule 'u_core' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'tx_empty' is connected to logic 0. 
+Warning: In design 'ahb_wrapper', output port 'HRESP[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ahb_wrapper', output port 'HRESP[0]' is connected directly to 'logic 0'. (LINT-52)
+1

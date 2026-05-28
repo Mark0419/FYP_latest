@@ -1,0 +1,703 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : ahb_wrapper
+Version: V-2023.12-SP2
+Date   : Thu May 28 16:59:46 2026
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
+Wire Load Model Mode: top
+
+  Startpoint: u_core/state_reg[3]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: qspi_data_out[0]
+            (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/state_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
+  u_core/state_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.06       0.06 r
+  u_core/U8/X (SAEDRVT14_INV_0P5)                         0.02       0.08 f
+  u_core/U46/X (SAEDRVT14_ND2_CDC_1)                      0.03       0.10 r
+  u_core/U6/X (SAEDRVT14_NR2_1)                           0.01       0.12 f
+  u_core/U3/X (SAEDRVT14_AOI21_0P75)                      0.01       0.13 r
+  u_core/U172/X (SAEDRVT14_OAI21_0P5)                     0.04       0.17 f
+  u_core/U173/X (SAEDRVT14_ND2_CDC_1)                     0.03       0.19 r
+  u_core/U180/X (SAEDRVT14_OAI22_0P5)                     0.06       0.25 f
+  u_core/qspi_io_out[0] (qspi_fsm)                        0.00       0.25 f
+  qspi_data_out[0] (out)                                  0.11       0.36 f
+  data arrival time                                                  0.36
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.14
+
+
+  Startpoint: u_core/state_reg[3]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: qspi_data_out[3]
+            (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/state_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
+  u_core/state_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 f
+  u_core/U8/X (SAEDRVT14_INV_0P5)                         0.02       0.08 r
+  u_core/U46/X (SAEDRVT14_ND2_CDC_1)                      0.03       0.10 f
+  u_core/U6/X (SAEDRVT14_NR2_1)                           0.01       0.12 r
+  u_core/U3/X (SAEDRVT14_AOI21_0P75)                      0.01       0.13 f
+  u_core/U172/X (SAEDRVT14_OAI21_0P5)                     0.03       0.16 r
+  u_core/U173/X (SAEDRVT14_ND2_CDC_1)                     0.02       0.19 f
+  u_core/U178/X (SAEDRVT14_NR2_1)                         0.04       0.23 r
+  u_core/qspi_io_out[3] (qspi_fsm)                        0.00       0.23 r
+  qspi_data_out[3] (out)                                  0.11       0.34 r
+  data arrival time                                                  0.34
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.16
+
+
+  Startpoint: u_core/state_reg[3]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: qspi_data_out[1]
+            (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/state_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
+  u_core/state_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 f
+  u_core/U8/X (SAEDRVT14_INV_0P5)                         0.02       0.08 r
+  u_core/U46/X (SAEDRVT14_ND2_CDC_1)                      0.03       0.10 f
+  u_core/U6/X (SAEDRVT14_NR2_1)                           0.01       0.12 r
+  u_core/U3/X (SAEDRVT14_AOI21_0P75)                      0.01       0.13 f
+  u_core/U172/X (SAEDRVT14_OAI21_0P5)                     0.03       0.16 r
+  u_core/U173/X (SAEDRVT14_ND2_CDC_1)                     0.02       0.19 f
+  u_core/U176/X (SAEDRVT14_NR2_1)                         0.04       0.23 r
+  u_core/qspi_io_out[1] (qspi_fsm)                        0.00       0.23 r
+  qspi_data_out[1] (out)                                  0.11       0.34 r
+  data arrival time                                                  0.34
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.16
+
+
+  Startpoint: u_core/state_reg[3]
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: qspi_data_out[2]
+            (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_core/state_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
+  u_core/state_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.06       0.06 r
+  u_core/U8/X (SAEDRVT14_INV_0P5)                         0.02       0.08 f
+  u_core/U46/X (SAEDRVT14_ND2_CDC_1)                      0.03       0.10 r
+  u_core/U6/X (SAEDRVT14_NR2_1)                           0.01       0.12 f
+  u_core/U3/X (SAEDRVT14_AOI21_0P75)                      0.01       0.13 r
+  u_core/U172/X (SAEDRVT14_OAI21_0P5)                     0.04       0.17 f
+  u_core/U173/X (SAEDRVT14_ND2_CDC_1)                     0.03       0.19 r
+  u_core/U174/X (SAEDRVT14_AN2B_MM_1)                     0.03       0.22 f
+  u_core/qspi_io_out[2] (qspi_fsm)                        0.00       0.22 f
+  qspi_data_out[2] (out)                                  0.11       0.33 f
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[31] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U176/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[31] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[30] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U175/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[30] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[29] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U174/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[29] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[27] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U166/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[27] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[23] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U172/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[23] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[22] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U171/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[22] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[21] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U170/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[21] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[20] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U169/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[20] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[19] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U168/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[19] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[18] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U173/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[18] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[17] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U167/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[17] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[16] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U161/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[16] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[15] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U163/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[15] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[14] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U164/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[14] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[13] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U162/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[13] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: w_reg_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: HRDATA[12] (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  w_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)                  0.00       0.00 r
+  w_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)                   0.06       0.06 f
+  U143/X (SAEDRVT14_INV_0P5)                              0.04       0.10 r
+  U160/X (SAEDRVT14_BUF_U_0P5)                            0.06       0.16 r
+  U165/X (SAEDRVT14_AN2_MM_0P5)                           0.06       0.22 r
+  HRDATA[12] (out)                                        0.11       0.33 r
+  data arrival time                                                  0.33
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                 -0.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+1

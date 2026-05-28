@@ -1,0 +1,1011 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+Design : ahb_spi_legacy
+Version: W-2024.09-SP3
+Date   : Thu May 28 15:59:43 2026
+****************************************
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_5_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U41/X (SAEDRVT14_OAI22_0P5)            0.05      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1209/X (SAEDRVT14_AO221_0P5)
+                                                   0.03      0.98 r
+  u_spi_fsm/copt_h_inst_3962/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      1.00 r
+  u_spi_fsm/shift_tx_reg_5_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      1.00 r
+  data arrival time                                          1.00
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_5_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -1.00
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.43
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_6_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U28/X (SAEDRVT14_OAI22_0P5)            0.05      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1210/X (SAEDRVT14_AO221_0P5)
+                                                   0.03      0.98 r
+  u_spi_fsm/copt_h_inst_3959/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      1.00 r
+  u_spi_fsm/shift_tx_reg_6_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      1.00 r
+  data arrival time                                          1.00
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_6_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -1.00
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.43
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_13_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U47/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1217/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/copt_h_inst_3965/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.99 r
+  u_spi_fsm/shift_tx_reg_13_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.99 r
+  data arrival time                                          0.99
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_13_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.99
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.44
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_3_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U31/X (SAEDRVT14_OAI22_0P5)            0.04      0.94 r
+  u_spi_fsm/ctmTdsLR_1_1207/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/copt_h_inst_3943/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.99 r
+  u_spi_fsm/shift_tx_reg_3_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.99 r
+  data arrival time                                          0.99
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_3_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.99
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.44
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_7_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U29/X (SAEDRVT14_OAI22_0P5)            0.03      0.94 r
+  u_spi_fsm/ctmTdsLR_1_1211/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/copt_gre_h_inst_3995/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.99 r
+  u_spi_fsm/shift_tx_reg_7_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.99 r
+  data arrival time                                          0.99
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_7_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.99
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.45
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_17_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U38/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1221/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/ropt_h_inst_4103/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.99 r
+  u_spi_fsm/shift_tx_reg_17_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.99 r
+  data arrival time                                          0.99
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.45     20.45
+  u_spi_fsm/shift_tx_reg_17_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.45 r
+  library setup time                              -0.01     20.44
+  data required time                                        20.44
+  ------------------------------------------------------------------------
+  data required time                                        20.44
+  data arrival time                                         -0.99
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.45
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_2_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U40/X (SAEDRVT14_OAI22_0P5)            0.03      0.94 r
+  u_spi_fsm/ctmTdsLR_1_1206/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.96 r
+  u_spi_fsm/copt_gre_h_inst_4070/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.98 r
+  u_spi_fsm/shift_tx_reg_2_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.98 r
+  data arrival time                                          0.98
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_2_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.98
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.45
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_11_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U36/X (SAEDRVT14_OAI22_0P5)            0.03      0.94 r
+  u_spi_fsm/ctmTdsLR_1_1215/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/ropt_h_inst_4156/X (SAEDRVT14_BUF_S_0P5)
+                                                   0.01      0.98 r
+  u_spi_fsm/shift_tx_reg_11_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.98 r
+  data arrival time                                          0.98
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_11_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.98
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.46
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_12_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U34/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1216/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/shift_tx_reg_12_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.97 r
+  data arrival time                                          0.97
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_12_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.97
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.46
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_10_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U37/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1214/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/shift_tx_reg_10_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.97 r
+  data arrival time                                          0.97
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_10_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.97
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.46
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_8_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U45/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1212/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/shift_tx_reg_8_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.97 r
+  data arrival time                                          0.97
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_8_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.97
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.46
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_16_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U27/X (SAEDRVT14_OAI22_0P5)            0.04      0.94 r
+  u_spi_fsm/copt_gre_h_inst_4092/X (SAEDRVT14_BUF_S_0P5)
+                                                   0.02      0.96 r
+  u_spi_fsm/ctmTdsLR_1_1220/X (SAEDRVT14_AO221_0P5)
+                                                   0.01      0.98 r
+  u_spi_fsm/ropt_h_inst_4145/X (SAEDRVT14_BUF_S_0P5)
+                                                   0.01      0.99 r
+  u_spi_fsm/shift_tx_reg_16_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.99 r
+  data arrival time                                          0.99
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.45     20.45
+  u_spi_fsm/shift_tx_reg_16_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.45 r
+  library setup time                              -0.00     20.45
+  data required time                                        20.45
+  ------------------------------------------------------------------------
+  data required time                                        20.45
+  data arrival time                                         -0.99
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.46
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_15_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U33/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1219/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/shift_tx_reg_15_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.97 r
+  data arrival time                                          0.97
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.45     20.45
+  u_spi_fsm/shift_tx_reg_15_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.45 r
+  library setup time                              -0.01     20.44
+  data required time                                        20.44
+  ------------------------------------------------------------------------
+  data required time                                        20.44
+  data arrival time                                         -0.97
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.46
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_4_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U43/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1208/X (SAEDRVT14_AO221_4)
+                                                   0.02      0.97 r
+  u_spi_fsm/shift_tx_reg_4_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.97 r
+  data arrival time                                          0.97
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_4_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.97
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.47
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_14_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U46/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1218/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/shift_tx_reg_14_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.97 r
+  data arrival time                                          0.97
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.45     20.45
+  u_spi_fsm/shift_tx_reg_14_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.45 r
+  library setup time                              -0.01     20.44
+  data required time                                        20.44
+  ------------------------------------------------------------------------
+  data required time                                        20.44
+  data arrival time                                         -0.97
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.47
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U42/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/U10/X (SAEDRVT14_AOI21_0P75)           0.02      0.96 f
+  u_spi_fsm/U188/X (SAEDRVT14_AO21B_0P5)           0.02      0.98 r
+  u_spi_fsm/shift_tx_reg_1_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.98 r
+  data arrival time                                          0.98
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.45     20.45
+  u_spi_fsm/shift_tx_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.45 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
+  ------------------------------------------------------------------------
+  data required time                                        20.45
+  data arrival time                                         -0.98
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.47
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_9_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U44/X (SAEDRVT14_OAI22_0P5)            0.03      0.94 r
+  u_spi_fsm/ctmTdsLR_1_1213/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.96 r
+  u_spi_fsm/shift_tx_reg_9_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.96 r
+  data arrival time                                          0.96
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_tx_reg_9_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.96
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.47
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_18_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U35/X (SAEDRVT14_OAI22_0P5)            0.05      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1222/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.98 r
+  u_spi_fsm/shift_tx_reg_18_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.98 r
+  data arrival time                                          0.98
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.45     20.45
+  u_spi_fsm/shift_tx_reg_18_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.45 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
+  ------------------------------------------------------------------------
+  data required time                                        20.45
+  data arrival time                                         -0.98
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.47
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_rx_reg_21_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/U120/X (SAEDRVT14_ND2_CDC_1)           0.12      0.87 f
+  u_spi_fsm/U79/X (SAEDRVT14_OAI22_0P5)            0.04      0.91 r
+  u_spi_fsm/copt_h_inst_3733/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.94 r
+  u_spi_fsm/copt_h_inst_3734/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.96 r
+  u_spi_fsm/shift_rx_reg_21_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.96 r
+  data arrival time                                          0.96
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.44     20.44
+  u_spi_fsm/shift_rx_reg_21_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.44 r
+  library setup time                              -0.01     20.43
+  data required time                                        20.43
+  ------------------------------------------------------------------------
+  data required time                                        20.43
+  data arrival time                                         -0.96
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.47
+
+
+
+  Startpoint: u_spi_fsm/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_spi_fsm/shift_tx_reg_19_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.47      0.47
+
+  u_spi_fsm/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.47 r
+  u_spi_fsm/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.50 r
+  u_spi_fsm/state_reg_1__Q_btd2442/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.53 r
+  u_spi_fsm/CDIBUF_16_f_1/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.55 r
+  u_spi_fsm/U162/X (SAEDRVT14_ND2B_U_0P5)          0.03      0.58 f
+  u_spi_fsm/U140/X (SAEDRVT14_NR2_ISO_1)           0.06      0.64 r
+  u_spi_fsm/U135/X (SAEDRVT14_INV_0P5)             0.03      0.67 f
+  u_spi_fsm/U130/X (SAEDRVT14_INV_0P5)             0.08      0.75 r
+  u_spi_fsm/ctmTdsLR_1_1231/X (SAEDRVT14_AO22_0P5)
+                                                   0.07      0.82 r
+  u_spi_fsm/U55/X (SAEDRVT14_INV_S_0P5)            0.09      0.91 f
+  u_spi_fsm/U48/X (SAEDRVT14_OAI22_0P5)            0.04      0.95 r
+  u_spi_fsm/ctmTdsLR_1_1223/X (SAEDRVT14_AO221_0P5)
+                                                   0.02      0.97 r
+  u_spi_fsm/shift_tx_reg_19_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.97 r
+  data arrival time                                          0.97
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.45     20.45
+  u_spi_fsm/shift_tx_reg_19_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.45 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
+  ------------------------------------------------------------------------
+  data required time                                        20.45
+  data arrival time                                         -0.97
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.48
+
+
+1

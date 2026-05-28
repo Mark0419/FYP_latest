@@ -1,0 +1,38 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+****************************************
+Report : clock qor
+        -type summary
+        -scenarios func_ff
+Design : ahb_wrapper
+Version: W-2024.09-SP3
+Date   : Thu May 28 16:41:31 2026
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+================================================
+==== Summary Reporting for Corner ff_corner ====
+================================================
+
+========================================================== Summary Table for Corner ff_corner ==========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func_mode, Scenario: func_ff
+HCLK                                    M,D       139     13       12      4.00     12.52      0.46      0.04         0         0    478.24
+ QSPI_CLK                                 G         0      0        0      0.00      0.00        --        --         0         0      0.00
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        139     13       12      4.00     12.52      0.46      0.04         0         0    478.24
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1

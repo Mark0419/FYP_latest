@@ -1,0 +1,61 @@
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort medium
+Design : ahb_wrapper
+Version: V-2023.12-SP2
+Date   : Thu May 28 16:27:52 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /data/synopsys/lib/saed14nm/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db)
+
+
+Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ahb_wrapper            8000              saed14rvt_tt0p8v25c
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   9.6889 uW   (97%)
+  Net Switching Power  = 290.1128 nW    (3%)
+                         ---------
+Total Dynamic Power    =   9.9791 uW  (100%)
+
+Cell Leakage Power     =  78.4268 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      9.5037            0.1601          148.2586            9.6640  (  96.09%)  i
+register           0.1489        3.3373e-02        4.9845e+04            0.2322  (   2.31%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.6275e-02        9.6601e-02        2.8434e+04            0.1613  (   1.60%)
+--------------------------------------------------------------------------------------------------
+Total              9.6889 uW         0.2901 uW     7.8427e+04 pW        10.0575 uW
+1

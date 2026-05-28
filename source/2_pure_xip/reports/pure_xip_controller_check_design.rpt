@@ -1,0 +1,57 @@
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12-SP2
+Date:        Thu May 28 16:25:43 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     37
+    Unconnected ports (LINT-28)                                    34
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'qspi_pure_xip', cell 'C801' does not drive any nets. (LINT-1)
+Warning: In design 'ahb_wrapper', port 'HWDATA[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWDATA[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HTRANS[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', port 'HWRITE' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_wrapper', output port 'HRESP[1]' is connected directly to output port 'HRESP[0]'. (LINT-31)
+Warning: In design 'ahb_wrapper', output port 'HRESP[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ahb_wrapper', output port 'HRESP[0]' is connected directly to 'logic 0'. (LINT-52)
+1

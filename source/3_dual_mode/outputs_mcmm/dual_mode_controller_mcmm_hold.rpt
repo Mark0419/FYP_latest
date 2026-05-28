@@ -1,0 +1,808 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 20
+        -report_by design
+Design : ahb_wrapper
+Version: W-2024.09-SP3
+Date   : Thu May 28 17:14:36 2026
+****************************************
+
+  Startpoint: u_core/state_reg_3_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/U4 (rising clock gating-check end-point clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.37      0.37
+
+  u_core/state_reg_3_/CK (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.00      0.37 r
+  u_core/state_reg_3_/Q (SAEDRVT14_FDPRBQ_V2_0P5)
+                                                   0.03      0.39 r
+  u_core/U8/X (SAEDRVT14_INV_0P5)                  0.01      0.40 f
+  u_core/U12/X (SAEDRVT14_ND2_CDC_1)               0.01      0.42 r
+  u_core/U4/A2 (SAEDRVT14_NR2_1)                   0.00      0.42 r
+  data arrival time                                          0.42
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.37      0.37
+  u_core/U4/A1 (SAEDRVT14_NR2_1)                   0.00      0.37 r
+  clock uncertainty                                0.10      0.47
+  library hold time                                0.00      0.47
+  data required time                                         0.47
+  ------------------------------------------------------------------------
+  data required time                                         0.47
+  data arrival time                                         -0.42
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.05
+
+
+
+  Startpoint: u_core/cnt_reg_5_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/cnt_reg_5_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  u_core/cnt_reg_5_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  u_core/cnt_reg_5_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.04      0.39 r
+  u_core/copt_gre_h_inst_4121/X (SAEDRVT14_BUF_U_0P5)
+                                                   0.02      0.40 r
+  u_core/U331/X (SAEDRVT14_AOI21_0P75)             0.01      0.41 f
+  u_core/copt_h_inst_3875/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.43 f
+  u_core/copt_h_inst_3877/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.46 f
+  u_core/cnt_reg_5_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  u_core/cnt_reg_5_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_core/sreg_reg_17_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_21_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  u_core/sreg_reg_17_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  u_core/sreg_reg_17_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.03      0.37 f
+  u_core/U258/X (SAEDRVT14_INV_S_0P5)              0.01      0.38 r
+  u_core/copt_h_inst_3854/X (SAEDRVT14_DEL_R2V3_1)
+                                                   0.03      0.42 r
+  u_core/U282/X (SAEDRVT14_OAI21_0P5)              0.02      0.44 f
+  u_core/U283/X (SAEDRVT14_AO21_U_0P5)             0.01      0.45 f
+  u_core/sreg_reg_21_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+  u_core/sreg_reg_21_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  clock uncertainty                                0.10      0.44
+  library hold time                                0.01      0.45
+  data required time                                         0.45
+  ------------------------------------------------------------------------
+  data required time                                         0.45
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_core/rx_reg_reg_6_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/rx_reg_reg_6_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  u_core/rx_reg_reg_6_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  u_core/rx_reg_reg_6_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.03      0.38 f
+  u_core/copt_h_inst_3713/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.40 f
+  u_core/copt_h_inst_3712/X (SAEDRVT14_DEL_R2V3_1)
+                                                   0.03      0.43 f
+  u_core/U89/X (SAEDRVT14_INV_S_0P5)               0.01      0.44 r
+  u_core/U91/X (SAEDRVT14_OAI22_0P5)               0.01      0.46 f
+  u_core/rx_reg_reg_6_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  u_core/rx_reg_reg_6_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_core/rx_reg_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: ahb_rdata_reg_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  u_core/rx_reg_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  u_core/rx_reg_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.04      0.38 f
+  u_core/copt_h_inst_3526/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.41 f
+  u_core/copt_h_inst_3527/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.43 f
+  u_core/ropt_h_inst_4210/X (SAEDRVT14_BUF_U_0P5)
+                                                   0.01      0.44 f
+  U244/X (SAEDRVT14_MUX2_U_0P5)                    0.02      0.46 f
+  ahb_rdata_reg_reg_0_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  ahb_rdata_reg_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_core/sreg_reg_10_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_14_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  u_core/sreg_reg_10_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  u_core/sreg_reg_10_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.03      0.37 f
+  u_core/U236/X (SAEDRVT14_INV_S_0P5)              0.01      0.38 r
+  u_core/copt_h_inst_3858/X (SAEDRVT14_BUF_UCDC_0P5)
+                                                   0.01      0.39 r
+  u_core/copt_h_inst_3906/X (SAEDRVT14_DEL_R2V3_1)
+                                                   0.03      0.43 r
+  u_core/U276/X (SAEDRVT14_OAI21_0P5)              0.01      0.44 f
+  u_core/U277/X (SAEDRVT14_AO21_U_0P5)             0.01      0.45 f
+  u_core/sreg_reg_14_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+  u_core/sreg_reg_14_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  clock uncertainty                                0.10      0.44
+  library hold time                                0.01      0.45
+  data required time                                         0.45
+  ------------------------------------------------------------------------
+  data required time                                         0.45
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: a_reg_reg_9_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_9_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  a_reg_reg_9_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.00      0.35 r
+  a_reg_reg_9_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)       0.04      0.38 f
+  copt_h_inst_3468/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.41 f
+  copt_h_inst_3469/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.43 f
+  copt_gre_h_inst_4126/X (SAEDRVT14_BUF_U_0P5)     0.02      0.44 f
+  u_core/U230/X (SAEDRVT14_AO21_U_0P5)             0.02      0.46 f
+  u_core/sreg_reg_9_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  u_core/sreg_reg_9_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.40 r
+  u_core/U162/X (SAEDRVT14_OA31_1)                 0.02      0.42 r
+  u_core/U163/X (SAEDRVT14_OAI21_0P5)              0.01      0.43 f
+  u_core/copt_h_inst_4031/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.46 f
+  u_core/state_reg_1_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: a_reg_reg_14_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: a_reg_reg_14_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  a_reg_reg_14_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.35 r
+  a_reg_reg_14_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.04      0.39 f
+  copt_h_inst_3532/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.41 f
+  copt_h_inst_3531/X (SAEDRVT14_DEL_R2V2_1)        0.03      0.44 f
+  U197/X (SAEDRVT14_MUX2_U_0P5)                    0.02      0.46 f
+  a_reg_reg_14_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  a_reg_reg_14_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_core/sreg_reg_23_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_24_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  u_core/sreg_reg_23_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  u_core/sreg_reg_23_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.03      0.37 f
+  u_core/copt_h_inst_3903/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.40 f
+  u_core/U377/X (SAEDRVT14_AOI21_0P75)             0.01      0.41 r
+  u_core/U379/X (SAEDRVT14_ND2_CDC_1)              0.01      0.42 f
+  u_core/U380/X (SAEDRVT14_AOI21_0P75)             0.01      0.42 r
+  u_core/U381/X (SAEDRVT14_OAI21_0P5)              0.01      0.43 f
+  u_core/copt_gre_h_inst_4131/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.45 f
+  u_core/sreg_reg_24_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  u_core/sreg_reg_24_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.45
+  data required time                                         0.45
+  ------------------------------------------------------------------------
+  data required time                                         0.45
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: ahb_wdata_reg_reg_8_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: ahb_wdata_reg_reg_8_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  ahb_wdata_reg_reg_8_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  ahb_wdata_reg_reg_8_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.03      0.38 f
+  copt_h_inst_3671/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.40 f
+  copt_h_inst_3670/X (SAEDRVT14_DEL_R2V2_1)        0.03      0.43 f
+  U269/X (SAEDRVT14_MUX2_MM_0P5)                   0.02      0.45 f
+  ahb_wdata_reg_reg_8_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  ahb_wdata_reg_reg_8_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: a_reg_reg_13_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: a_reg_reg_13_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  a_reg_reg_13_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.35 r
+  a_reg_reg_13_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.04      0.38 f
+  copt_h_inst_3521/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.41 f
+  copt_h_inst_3520/X (SAEDRVT14_DEL_R2V2_1)        0.03      0.44 f
+  U198/X (SAEDRVT14_MUX2_U_0P5)                    0.02      0.46 f
+  a_reg_reg_13_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  a_reg_reg_13_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: ahb_wdata_reg_reg_27_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: ahb_wdata_reg_reg_27_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  ahb_wdata_reg_reg_27_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  ahb_wdata_reg_reg_27_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.03      0.38 f
+  copt_gre_h_inst_4058/X (SAEDRVT14_DEL_R2V2_1)    0.03      0.41 f
+  copt_h_inst_3624/X (SAEDRVT14_BUF_UCDC_0P5)      0.01      0.42 f
+  copt_h_inst_3625/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.44 f
+  U250/X (SAEDRVT14_MUX2_MM_0P5)                   0.02      0.45 f
+  ahb_wdata_reg_reg_27_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  ahb_wdata_reg_reg_27_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_core/rx_reg_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/rx_reg_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  u_core/rx_reg_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  u_core/rx_reg_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.04      0.38 f
+  u_core/copt_h_inst_3526/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.41 f
+  u_core/copt_h_inst_3527/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.43 f
+  u_core/ropt_h_inst_4210/X (SAEDRVT14_BUF_U_0P5)
+                                                   0.01      0.44 f
+  u_core/U338/X (SAEDRVT14_MUX2_U_0P5)             0.02      0.46 f
+  u_core/rx_reg_reg_0_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  u_core/rx_reg_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: ahb_wdata_reg_reg_17_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: ahb_wdata_reg_reg_17_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  ahb_wdata_reg_reg_17_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  ahb_wdata_reg_reg_17_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.03      0.37 f
+  copt_h_inst_3589/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.40 f
+  copt_h_inst_3588/X (SAEDRVT14_DEL_R2V3_1)        0.04      0.43 f
+  U260/X (SAEDRVT14_MUX2_MM_0P5)                   0.02      0.45 f
+  ahb_wdata_reg_reg_17_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+  ahb_wdata_reg_reg_17_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  clock uncertainty                                0.10      0.44
+  library hold time                                0.01      0.45
+  data required time                                         0.45
+  ------------------------------------------------------------------------
+  data required time                                         0.45
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: ahb_wdata_reg_reg_16_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_16_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  ahb_wdata_reg_reg_16_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  ahb_wdata_reg_reg_16_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.03      0.37 f
+  copt_h_inst_3561/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.39 f
+  copt_h_inst_3560/X (SAEDRVT14_DEL_R2V2_1)        0.03      0.42 f
+  u_core/U296/X (SAEDRVT14_AOI21_0P75)             0.01      0.43 r
+  u_core/U297/X (SAEDRVT14_OAI21_0P5)              0.01      0.44 f
+  u_core/U298/X (SAEDRVT14_AO21_U_0P5)             0.01      0.45 f
+  u_core/sreg_reg_16_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+  u_core/sreg_reg_16_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  clock uncertainty                                0.10      0.44
+  library hold time                                0.01      0.45
+  data required time                                         0.45
+  ------------------------------------------------------------------------
+  data required time                                         0.45
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: a_reg_reg_18_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_18_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+
+  a_reg_reg_18_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.34 r
+  a_reg_reg_18_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.04      0.38 f
+  u_core/copt_h_inst_3493/X (SAEDRVT14_BUF_UCDC_0P5)
+                                                   0.01      0.39 f
+  u_core/copt_h_inst_3491/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.41 f
+  u_core/copt_h_inst_3971/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.44 f
+  u_core/U268/X (SAEDRVT14_AO21_U_0P5)             0.01      0.45 f
+  u_core/sreg_reg_18_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+  u_core/sreg_reg_18_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.34 r
+  clock uncertainty                                0.10      0.44
+  library hold time                                0.01      0.45
+  data required time                                         0.45
+  ------------------------------------------------------------------------
+  data required time                                         0.45
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: a_reg_reg_15_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: a_reg_reg_15_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  a_reg_reg_15_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.35 r
+  a_reg_reg_15_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.04      0.39 f
+  copt_h_inst_3540/X (SAEDRVT14_DEL_R2V2_1)        0.03      0.42 f
+  copt_h_inst_3542/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.44 f
+  U196/X (SAEDRVT14_MUX2_U_0P5)                    0.02      0.46 f
+  a_reg_reg_15_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  a_reg_reg_15_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: a_reg_reg_11_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: a_reg_reg_11_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  a_reg_reg_11_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.35 r
+  a_reg_reg_11_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.04      0.39 f
+  copt_h_inst_3499/X (SAEDRVT14_DEL_R2V2_1)        0.03      0.41 f
+  copt_h_inst_3500/X (SAEDRVT14_DEL_R2V2_1)        0.02      0.43 f
+  copt_gre_h_inst_4124/X (SAEDRVT14_BUF_S_0P5)     0.01      0.44 f
+  U200/X (SAEDRVT14_MUX2_U_0P5)                    0.02      0.46 f
+  a_reg_reg_11_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  a_reg_reg_11_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_core/cnt_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/cnt_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ff_corner
+  Scenario: func_ff
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+
+  u_core/cnt_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  u_core/cnt_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.04      0.38 r
+  u_core/copt_gre_h_inst_4054/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.41 r
+  u_core/U169/X (SAEDRVT14_NR2_MM_0P5)             0.01      0.42 f
+  u_core/copt_h_inst_3522/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.44 f
+  u_core/copt_h_inst_3523/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.02      0.46 f
+  u_core/cnt_reg_0_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 f
+  data arrival time                                          0.46
+
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  u_core/cnt_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.01      0.46
+  data required time                                         0.46
+  ------------------------------------------------------------------------
+  data required time                                         0.46
+  data arrival time                                         -0.46
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+1
