@@ -257,13 +257,13 @@ module tb_soc_top();
                         init_done_time = $time;
                     end
 
-                    if (sniff_addr == 32'h20008000 && HWDATAS == 32'hAABBCCDD) begin
+                    if (sniff_is_write && sniff_addr == 32'h20008000 && HWDATAS == 32'hAABBCCDD) begin
                         op_done_time = $time;
                         $display("\n*******************************************************");
                         $display("[%0t] PPA BENCH SUCCESS: LEGACY SPI SHADOWING COMMON DATASET PASSED", $time);
-                        $display("Init time       : %0t ps", init_done_time - reset_release_time);
-                        $display("Operation time  : %0t ps", op_done_time - init_done_time);
-                        $display("Total time      : %0t ps", op_done_time - reset_release_time);
+                        $display("Copy time       : %0t ps", init_done_time - reset_release_time);
+                        $display("Execution time  : %0t ps", op_done_time - init_done_time);
+                        $display("Total boot-done : %0t ps", op_done_time - reset_release_time);
                         $display("The Cortex-M3 successfully woke up from ROM, used the");
                         $display("Legacy SPI Controller to shadow 16 bytes of machine code");
                         $display("from Flash into SRAM, jumped to 0x20000001, and executed");

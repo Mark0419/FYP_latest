@@ -389,8 +389,8 @@ FLEXLM_BORROWFILE=/home/user18/.vecad-svr1-borrow.txt
 Runtime command line arguments:
 argv[0]=./simv
 307 profile - 100
-          CPU/Mem usage: 0.040 sys,  0.140 user,  271.01M mem
-308 Elapsed time:    0:00:21    Wed May 27 17:05:48 2026
+          CPU/Mem usage: 0.030 sys,  0.160 user,  271.01M mem
+308 Elapsed time:    0:00:21    Wed May 27 17:34:04 2026
 309 User CPU time used: 0 seconds
 310 System CPU time used: 0 seconds
 311 pliAppInit
@@ -428,7 +428,7 @@ argv[0]=./simv
 343 *Verdi* : Begin traversing the scope (tb_soc_top), layer (1).
 344 *Verdi* : End of traversing.
 345 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.160 user,  369.85M mem
+          CPU/Mem usage: 0.040 sys,  0.180 user,  369.85M mem
                    incr: 0.000 sys,  0.010 user,  8.34M mem
                    accu: 0.000 sys,  0.010 user,  8.34M mem
               accu incr: 0.000 sys,  0.010 user,  8.34M mem
@@ -438,11 +438,11 @@ argv[0]=./simv
                  accu: 55 var,  59 idcode,  50 callback
             accu incr: 55 var,  59 idcode,  50 callback
 346 Idcode  0 - bc1:0  mda:0
-347 Elapsed time:    0:00:21    Wed May 27 17:05:48 2026
+347 Elapsed time:    0:00:21    Wed May 27 17:34:04 2026
 348 User CPU time used: 0 seconds
 349 System CPU time used: 0 seconds
 350 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.160 user,  369.85M mem
+          CPU/Mem usage: 0.040 sys,  0.180 user,  369.85M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.010 user,  8.34M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -452,7 +452,7 @@ argv[0]=./simv
                  accu: 55 var,  59 idcode,  50 callback
             accu incr: 0 var,  0 idcode,  0 callback
 351 Idcode  0 - bc1:0  mda:0
-352 Elapsed time:    0:00:21    Wed May 27 17:05:48 2026
+352 Elapsed time:    0:00:21    Wed May 27 17:34:04 2026
 353 User CPU time used: 0 seconds
 354 System CPU time used: 0 seconds
 355 sps_call_fsdbDumpvars_vd_main at 0 : tb_soc_top.sv(288)
@@ -461,7 +461,7 @@ argv[0]=./simv
 358 *Verdi* : Begin traversing the scope (tb_soc_top.u_spi), layer (0).
 359 *Verdi* : End of traversing.
 360 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.160 user,  370.90M mem
+          CPU/Mem usage: 0.040 sys,  0.180 user,  370.90M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
                    accu: 0.000 sys,  0.000 user,  1.05M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
@@ -471,11 +471,11 @@ argv[0]=./simv
                  accu: 50 var,  38 idcode,  17 callback
             accu incr: 50 var,  38 idcode,  17 callback
 361 Idcode  0 - bc1:0  mda:0
-362 Elapsed time:    0:00:21    Wed May 27 17:05:48 2026
+362 Elapsed time:    0:00:21    Wed May 27 17:34:04 2026
 363 User CPU time used: 0 seconds
 364 System CPU time used: 0 seconds
 365 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.160 user,  370.90M mem
+          CPU/Mem usage: 0.040 sys,  0.180 user,  370.90M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  1.05M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -485,33 +485,33 @@ argv[0]=./simv
                  accu: 50 var,  38 idcode,  17 callback
             accu incr: 0 var,  0 idcode,  0 callback
 366 Idcode  0 - bc1:0  mda:0
-367 Elapsed time:    0:00:21    Wed May 27 17:05:48 2026
+367 Elapsed time:    0:00:21    Wed May 27 17:34:04 2026
 368 User CPU time used: 0 seconds
 369 System CPU time used: 0 seconds
 370 End of simulation at 8210000
 371 Memory usage: 370.901 M
 372 Maximum resident set size: 131 MB
-373 Hard page faults: 19
-374 Soft page faults: 17800
-375 Elapsed time:    0:00:21    Wed May 27 17:05:48 2026
+373 Hard page faults: 8
+374 Soft page faults: 17805
+375 Elapsed time:    0:00:21    Wed May 27 17:34:04 2026
 376 User CPU time used: 0 seconds
 377 System CPU time used: 0 seconds
 378 Begin FSDB profile info:
 379 FSDB Writer : bc1(2803) bcn(2942) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.002275) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer elapsed time : flush(0.002294) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 380 End FSDB profile info
 381 FSDB closed. Name: tb_soc_top.fsdb Size: 183641
 382 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
 383                      - BlockUsed:1 Acquire:0 BufferUsed:109087
 384                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
-385                      - MainProducerTime:0.269986068 TotalConsumerTime:0.000000000
-386                      - ElapsedTime:0.070464000
+385                      - MainProducerTime:0.280502949 TotalConsumerTime:0.000000000
+386                      - ElapsedTime:0.075128000
 387 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:109087
 388 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
 389                      - BlockUsed:2 Acquire:0 BufferUsed:109087
 390 SimExit
-391 Elapsed time:    0:00:21    Wed May 27 17:05:48 2026
+391 Elapsed time:    0:00:22    Wed May 27 17:34:05 2026
 392 User CPU time used: 0 seconds
 393 System CPU time used: 0 seconds
 394 Sim process exit
