@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Thu May 28 15:04:16 2026
+# Created by write_sdc on Thu May 28 17:59:34 2026
 
 ###################################################################
 set sdc_version 2.1
@@ -70,9 +70,6 @@ set_clock_transition -max -rise 0.2 [get_clocks HCLK]
 set_clock_transition -max -fall 0.2 [get_clocks HCLK]
 set_clock_transition -min -rise 0.2 [get_clocks HCLK]
 set_clock_transition -min -fall 0.2 [get_clocks HCLK]
-create_generated_clock [get_ports spi_clk]  -name SPI_CLK  -source [get_ports HCLK]  -divide_by 1
-set_clock_uncertainty -setup 0.5  [get_clocks SPI_CLK]
-set_clock_uncertainty -hold 0.1  [get_clocks SPI_CLK]
 set_input_delay -clock HCLK  -max 8  [get_ports HSEL]
 set_input_delay -clock HCLK  -min 1  [get_ports HSEL]
 set_input_delay -clock HCLK  -max 8  [get_ports {HADDR[31]}]
@@ -345,6 +342,8 @@ set_output_delay -clock HCLK  -max 8  [get_ports {HSPLIT[1]}]
 set_output_delay -clock HCLK  -min 1  [get_ports {HSPLIT[1]}]
 set_output_delay -clock HCLK  -max 8  [get_ports {HSPLIT[0]}]
 set_output_delay -clock HCLK  -min 1  [get_ports {HSPLIT[0]}]
+set_output_delay -clock HCLK  -max 8  [get_ports spi_clk]
+set_output_delay -clock HCLK  -min 1  [get_ports spi_clk]
 set_output_delay -clock HCLK  -max 8  [get_ports spi_cs_n]
 set_output_delay -clock HCLK  -min 1  [get_ports spi_cs_n]
 set_output_delay -clock HCLK  -max 8  [get_ports spi_mosi]

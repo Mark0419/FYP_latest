@@ -2,45 +2,46 @@
 Report : qor
 Design : ahb_spi_legacy
 Version: W-2024.09-SP3
-Date   : Thu May 28 15:59:42 2026
+Date   : Thu May 28 18:10:16 2026
 ****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'legacy_spi_controller_mcmm.nlib:ahb_spi_legacy.design'. (TIM-125)
+Information: Design ahb_spi_legacy has 623 nets, 0 global routed, 621 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
 Information: The RC mode used is DR for design 'ahb_spi_legacy'. (NEX-022)
+---extraction options---
+Corner: ss_corner
+Corner: ff_corner
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.enable_coupling_cap    : false
 Extracting design: ahb_spi_legacy 
 Information: coupling capacitance is lumped to ground. (NEX-030)
-Information: 1094 nets are successfully extracted. (NEX-028)
+Information: 621 nets are successfully extracted. (NEX-028)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
 Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 621, routed nets = 621, across physical hierarchy nets = 0, parasitics cached nets = 621, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
 
-
-Scenario           'func_ff'
-Timing Path Group  '**in2reg_default**'
-----------------------------------------
-Worst Hold Violation:              0.00
-Total Hold Violation:              0.00
-No. of Hold Violations:               0
-----------------------------------------
-
-Scenario           'func_ff'
-Timing Path Group  '**reg2out_default**'
-----------------------------------------
-Worst Hold Violation:              0.00
-Total Hold Violation:              0.00
-No. of Hold Violations:               0
-----------------------------------------
 
 Scenario           'func_ff'
 Timing Path Group  'HCLK'
 ----------------------------------------
-Worst Hold Violation:            -10.07
-Total Hold Violation:            -30.22
-No. of Hold Violations:              15
+Worst Hold Violation:             -9.95
+Total Hold Violation:            -29.84
+No. of Hold Violations:               3
 ----------------------------------------
 
 Scenario           'func_ss'
 Timing Path Group  'HCLK'
 ----------------------------------------
 Levels of Logic:                     11
-Critical Path Length:              0.53
-Critical Path Slack:              19.43
+Critical Path Length:              0.45
+Critical Path Slack:              19.55
 Critical Path Clk Period:         20.00
 Total Negative Slack:              0.00
 No. of Violating Paths:               0
@@ -51,11 +52,11 @@ Cell Count
 ----------------------------------------
 Hierarchical Cell Count:              1
 Hierarchical Port Count:            123
-Leaf Cell Count:                   1047
-Buf/Inv Cell Count:                 586
-Buf Cell Count:                     487
-Inv Cell Count:                      99
-Combinational Cell Count:           891
+Leaf Cell Count:                    574
+Buf/Inv Cell Count:                 122
+Buf Cell Count:                      17
+Inv Cell Count:                     105
+Combinational Cell Count:           418
    Single-bit Isolation Cell Count:                        0
    Multi-bit Isolation Cell Count:                         0
    Isolation Cell Banking Ratio:                           0.00%
@@ -78,24 +79,24 @@ Macro Count:                          0
 
 Area
 ----------------------------------------
-Combinational Area:              309.60
+Combinational Area:              143.81
 Noncombinational Area:           166.28
-Buf/Inv Area:                    189.10
-Total Buffer Area:               170.63
-Total Inverter Area:              18.47
+Buf/Inv Area:                     25.66
+Total Buffer Area:                 5.77
+Total Inverter Area:              19.89
 Macro/Black Box Area:              0.00
 Net Area:                             0
-Net XLength:                    3038.76
-Net YLength:                    3509.33
+Net XLength:                    2779.08
+Net YLength:                    3184.16
 ----------------------------------------
-Cell Area (netlist):                            475.88
-Cell Area (netlist and physical only):          529.78
-Net Length:                     6548.10
+Cell Area (netlist):                            310.09
+Cell Area (netlist and physical only):          737.26
+Net Length:                     5963.24
 
 
 Design Rules
 ----------------------------------------
-Total Number of Nets:              1136
+Total Number of Nets:               663
 Nets with Violations:                 0
 Max Trans Violations:                 0
 Max Cap Violations:                   0

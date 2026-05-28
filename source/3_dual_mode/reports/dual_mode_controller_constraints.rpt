@@ -4,7 +4,7 @@ Report : constraint
         -all_violators
 Design : ahb_wrapper
 Version: V-2023.12-SP2
-Date   : Thu May 28 16:59:46 2026
+Date   : Thu May 28 17:59:18 2026
 ****************************************
 
 
@@ -180,11 +180,11 @@ Date   : Thu May 28 16:59:46 2026
    u_core/sreg_reg[2]/D         0.13           0.08 f        -0.05  (VIOLATED)
    u_core/cmd_latched_reg[2]/D
                                 0.13           0.08 f        -0.05  (VIOLATED)
-   fsm_done_q_reg/D             0.13           0.08 f        -0.05  (VIOLATED)
    u_core/sreg_reg[26]/D        0.13           0.08 f        -0.05  (VIOLATED)
    u_core/sreg_reg[24]/D        0.13           0.08 f        -0.05  (VIOLATED)
    u_core/sreg_reg[27]/D        0.13           0.08 f        -0.05  (VIOLATED)
    u_core/sreg_reg[30]/D        0.13           0.08 f        -0.05  (VIOLATED)
+   fsm_done_q_reg/D             0.13           0.08 f        -0.05  (VIOLATED)
    u_core/sreg_reg[17]/D        0.13           0.08 f        -0.05  (VIOLATED)
    w_reg_reg/D                  0.13           0.09 f        -0.04  (VIOLATED)
    u_core/sreg_reg[25]/D        0.13           0.09 f        -0.04  (VIOLATED)
@@ -217,7 +217,7 @@ Date   : Thu May 28 16:59:46 2026
                              Required        Actual
    Design                      Area           Area           Slack
    -----------------------------------------------------------------
-   ahb_wrapper                  0.00        1050.95       -1050.95  (VIOLATED)
+   ahb_wrapper                  0.00        1051.78       -1051.78  (VIOLATED)
 
 
 1

@@ -3,7 +3,7 @@
 Report : reference
 Design : ahb_wrapper
 Version: V-2023.12-SP2
-Date   : Thu May 28 16:59:46 2026
+Date   : Thu May 28 17:59:18 2026
 ****************************************
 
 Attributes:
@@ -47,9 +47,9 @@ SAEDRVT14_ND2_CDC_1
 SAEDRVT14_TIE0_V1_2
                    saed14rvt_tt0p8v25c
                                   0.488400       1      0.488400  
-qspi_fsm                        191.541603       1    191.541603  h, n
+qspi_fsm                        191.852403       1    191.852403  h, n
 -----------------------------------------------------------------------------
-Total 11 references                                   353.734806
+Total 11 references                                   354.045606
 
 ****************************************
 Design: qspi_fsm 
@@ -63,7 +63,7 @@ SAEDRVT14_AN2_MM_0P5
                    saed14rvt_tt0p8v25c
                                   0.310800       3      0.932400  
 SAEDRVT14_AN3_0P5  saed14rvt_tt0p8v25c
-                                  0.355200       6      2.131200  
+                                  0.355200       7      2.486400  
 SAEDRVT14_AN4_0P5  saed14rvt_tt0p8v25c
                                   0.399600      15      5.994000  
 SAEDRVT14_AO21B_0P5
@@ -91,6 +91,9 @@ SAEDRVT14_FDPSBQ_0P5
                                   1.110000       1      1.110000  n
 SAEDRVT14_INV_0P5  saed14rvt_tt0p8v25c
                                   0.177600      99     17.582400  
+SAEDRVT14_INV_S_0P75
+                   saed14rvt_tt0p8v25c
+                                  0.177600       1      0.177600  
 SAEDRVT14_MUX2_U_0P5
                    saed14rvt_tt0p8v25c
                                   0.444000       5      2.220000  
@@ -104,7 +107,7 @@ SAEDRVT14_ND2_CDC_1
                    saed14rvt_tt0p8v25c
                                   0.222000      27      5.994000  
 SAEDRVT14_NR2_1    saed14rvt_tt0p8v25c
-                                  0.222000      22      4.884000  
+                                  0.222000      21      4.662000  
 SAEDRVT14_NR4_0P75 saed14rvt_tt0p8v25c
                                   0.488400       1      0.488400  
 SAEDRVT14_OA21B_1  saed14rvt_tt0p8v25c
@@ -125,5 +128,5 @@ SAEDRVT14_OR3_0P5  saed14rvt_tt0p8v25c
 SAEDRVT14_OR4_1    saed14rvt_tt0p8v25c
                                   0.399600       3      1.198800  
 -----------------------------------------------------------------------------
-Total 26 references                                   191.541603
+Total 27 references                                   191.852403
 1

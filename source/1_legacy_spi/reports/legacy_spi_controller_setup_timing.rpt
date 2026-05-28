@@ -6,11 +6,43 @@ Report : timing
         -max_paths 20
 Design : ahb_spi_legacy
 Version: V-2023.12-SP2
-Date   : Thu May 28 15:04:16 2026
+Date   : Thu May 28 17:59:33 2026
 ****************************************
 
 Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
 Wire Load Model Mode: top
+
+  Startpoint: HCLK (clock source 'HCLK')
+  Endpoint: spi_clk (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_spi_legacy     8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock HCLK (fall edge)                                 10.00      10.00
+  HCLK (in)                                               0.00      10.00 f
+  u_spi_fsm/clk (spi_serializer_fsm)                      0.00      10.00 f
+  u_spi_fsm/U238/X (SAEDRVT14_OAI21_0P5)                  0.07      10.07 r
+  u_spi_fsm/U136/X (SAEDRVT14_NR2_1)                      0.05      10.12 f
+  u_spi_fsm/spi_clk (spi_serializer_fsm)                  0.00      10.12 f
+  spi_clk (out)                                           0.11      10.23 f
+  data arrival time                                                 10.23
+
+  clock HCLK (rise edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.50      19.50
+  output external delay                                  -8.00      11.50
+  data required time                                                11.50
+  --------------------------------------------------------------------------
+  data required time                                                11.50
+  data arrival time                                                -10.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.27
+
 
   Startpoint: valid_trans_reg_reg
               (rising edge-triggered flip-flop clocked by HCLK)
@@ -30,12 +62,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U226/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U228/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
   HRDATA[7] (out)                                         0.11       0.39 r
   data arrival time                                                  0.39
 
@@ -69,12 +101,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U229/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U227/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
   HRDATA[6] (out)                                         0.11       0.39 r
   data arrival time                                                  0.39
 
@@ -108,12 +140,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U231/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U254/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
   HRDATA[5] (out)                                         0.11       0.39 r
   data arrival time                                                  0.39
 
@@ -147,12 +179,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U227/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U247/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
   HRDATA[4] (out)                                         0.11       0.39 r
   data arrival time                                                  0.39
 
@@ -186,12 +218,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U248/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U234/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
   HRDATA[3] (out)                                         0.11       0.39 r
   data arrival time                                                  0.39
 
@@ -225,12 +257,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U247/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U243/X (SAEDRVT14_AO222_1)                              0.08       0.28 r
   HRDATA[2] (out)                                         0.11       0.39 r
   data arrival time                                                  0.39
 
@@ -244,45 +276,6 @@ Wire Load Model Mode: top
   data arrival time                                                 -0.39
   --------------------------------------------------------------------------
   slack (MET)                                                       11.11
-
-
-  Startpoint: valid_trans_reg_reg
-              (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: HRDATA[21] (output port clocked by HCLK)
-  Path Group: HCLK
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  ahb_spi_legacy     8000                  saed14rvt_tt0p8v25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock HCLK (rise edge)                                  0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  valid_trans_reg_reg/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
-  valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
-  U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
-  U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
-  U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
-  U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
-  U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U246/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
-  HRDATA[21] (out)                                        0.11       0.38 r
-  data arrival time                                                  0.38
-
-  clock HCLK (rise edge)                                 20.00      20.00
-  clock network delay (ideal)                             0.00      20.00
-  clock uncertainty                                      -0.50      19.50
-  output external delay                                  -8.00      11.50
-  data required time                                                11.50
-  --------------------------------------------------------------------------
-  data required time                                                11.50
-  data arrival time                                                 -0.38
-  --------------------------------------------------------------------------
-  slack (MET)                                                       11.12
 
 
   Startpoint: valid_trans_reg_reg
@@ -303,12 +296,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U242/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U255/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[20] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -342,12 +335,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U245/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U250/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[19] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -381,12 +374,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U232/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U242/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[18] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -420,12 +413,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U237/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U239/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[17] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -459,12 +452,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U230/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U240/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[16] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -498,12 +491,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U225/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U238/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[15] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -537,12 +530,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U233/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U226/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[14] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -576,12 +569,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U235/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U236/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[13] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -615,12 +608,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U239/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U231/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[12] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -654,12 +647,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U234/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U249/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[11] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -693,12 +686,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U240/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U253/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[10] (out)                                        0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -732,12 +725,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U241/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U246/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[9] (out)                                         0.11       0.38 r
   data arrival time                                                  0.38
 
@@ -771,12 +764,12 @@ Wire Load Model Mode: top
   valid_trans_reg_reg/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 r
   U346/X (SAEDRVT14_INV_0P5)                              0.01       0.06 f
   U347/X (SAEDRVT14_OR4_1)                                0.03       0.09 f
-  U306/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
+  U305/X (SAEDRVT14_NR2_1)                                0.01       0.10 r
   U348/X (SAEDRVT14_ND2_CDC_1)                            0.01       0.11 f
   U304/X (SAEDRVT14_NR2_1)                                0.02       0.13 r
   U302/X (SAEDRVT14_ND2_CDC_1)                            0.02       0.15 f
-  U297/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
-  U228/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
+  U266/X (SAEDRVT14_INV_0P5)                              0.04       0.20 r
+  U248/X (SAEDRVT14_AO22_0P5)                             0.07       0.27 r
   HRDATA[8] (out)                                         0.11       0.38 r
   data arrival time                                                  0.38
 

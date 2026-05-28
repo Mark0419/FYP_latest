@@ -6,7 +6,7 @@ Report : clock qor
         -scenarios func_ff
 Design : ahb_wrapper
 Version: W-2024.09-SP3
-Date   : Thu May 28 17:14:36 2026
+Date   : Thu May 28 18:19:12 2026
 ****************************************
 
 Attributes
@@ -28,10 +28,9 @@ Skew Group                                                   Repeater  Repeater 
                                                                 Count      Area      Area
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Mode: func_mode, Scenario: func_ff
-HCLK                                    M,D       179     10       13      4.48     12.25      0.35      0.01         0         0    482.20
- QSPI_CLK                                 G         0      0        0      0.00      0.00        --        --         0         0      0.00
+HCLK                                    M,D       182      9        2      1.33      4.08      0.28      0.00         0         0    492.98
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-All Clocks                                        179     10       13      4.48     12.25      0.35      0.01         0         0    482.20
+All Clocks                                        182      9        2      1.33      4.08      0.28      0.00         0         0    492.98
 
 
 Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)

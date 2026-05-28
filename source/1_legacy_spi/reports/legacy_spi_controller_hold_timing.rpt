@@ -6,7 +6,7 @@ Report : timing
         -max_paths 20
 Design : ahb_spi_legacy
 Version: V-2023.12-SP2
-Date   : Thu May 28 15:04:16 2026
+Date   : Thu May 28 17:59:33 2026
 ****************************************
 
 Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
@@ -30,7 +30,7 @@ Wire Load Model Mode: top
   flash_addr_reg_reg[13]/CK (SAEDRVT14_FDPRBQ_V2_0P5)     0.00       0.00 r
   flash_addr_reg_reg[13]/Q (SAEDRVT14_FDPRBQ_V2_0P5)      0.05       0.05 f
   u_spi_fsm/flash_addr[13] (spi_serializer_fsm)           0.00       0.05 f
-  u_spi_fsm/U212/X (SAEDRVT14_AO21B_0P5)                  0.02       0.07 f
+  u_spi_fsm/U211/X (SAEDRVT14_AO21B_0P5)                  0.02       0.07 f
   u_spi_fsm/shift_tx_reg[13]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
                                                           0.01       0.07 f
   data arrival time                                                  0.07
@@ -68,7 +68,7 @@ Wire Load Model Mode: top
                                                           0.00       0.00 r
   u_spi_fsm/shift_tx_reg[27]/Q (SAEDRVT14_FDPRBQ_V2_0P5)
                                                           0.05       0.05 f
-  u_spi_fsm/U59/X (SAEDRVT14_AOI21_0P75)                  0.02       0.07 r
+  u_spi_fsm/U60/X (SAEDRVT14_AOI21_0P75)                  0.02       0.07 r
   u_spi_fsm/U241/X (SAEDRVT14_ND2_CDC_1)                  0.01       0.08 f
   u_spi_fsm/shift_tx_reg[28]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
                                                           0.01       0.08 f
@@ -107,8 +107,8 @@ Wire Load Model Mode: top
                                                           0.00       0.00 r
   u_spi_fsm/shift_rx_reg[9]/Q (SAEDRVT14_FDPRBQ_V2_0P5)
                                                           0.05       0.05 f
-  u_spi_fsm/U169/X (SAEDRVT14_INV_0P5)                    0.01       0.06 r
-  u_spi_fsm/U87/X (SAEDRVT14_OAI22_0P5)                   0.01       0.07 f
+  u_spi_fsm/U171/X (SAEDRVT14_INV_0P5)                    0.01       0.06 r
+  u_spi_fsm/U112/X (SAEDRVT14_OAI22_0P5)                  0.01       0.07 f
   u_spi_fsm/shift_rx_reg[10]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
                                                           0.01       0.08 f
   data arrival time                                                  0.08
@@ -146,7 +146,7 @@ Wire Load Model Mode: top
                                                           0.00       0.00 r
   u_spi_fsm/shift_rx_reg[24]/Q (SAEDRVT14_FDPRBQ_V2_0P5)
                                                           0.05       0.05 f
-  u_spi_fsm/U148/X (SAEDRVT14_INV_0P5)                    0.01       0.06 r
+  u_spi_fsm/U151/X (SAEDRVT14_INV_0P5)                    0.01       0.06 r
   u_spi_fsm/U108/X (SAEDRVT14_OAI22_0P5)                  0.01       0.07 f
   u_spi_fsm/shift_rx_reg[25]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
                                                           0.01       0.08 f
@@ -185,7 +185,7 @@ Wire Load Model Mode: top
                                                           0.00       0.00 r
   u_spi_fsm/shift_rx_reg[30]/Q (SAEDRVT14_FDPRBQ_V2_0P5)
                                                           0.05       0.05 f
-  u_spi_fsm/U146/X (SAEDRVT14_INV_0P5)                    0.01       0.06 r
+  u_spi_fsm/U148/X (SAEDRVT14_INV_0P5)                    0.01       0.06 r
   u_spi_fsm/U94/X (SAEDRVT14_OAI22_0P5)                   0.01       0.07 f
   u_spi_fsm/shift_rx_reg[31]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
                                                           0.01       0.08 f
@@ -222,7 +222,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   tx_data_reg_reg[27]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.00       0.00 r
   tx_data_reg_reg[27]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)       0.06       0.06 f
-  U285/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
+  U270/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
   tx_data_reg_reg[27]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)       0.01       0.08 f
   data arrival time                                                  0.08
 
@@ -256,7 +256,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   tx_data_reg_reg[12]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)      0.00       0.00 r
   tx_data_reg_reg[12]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)       0.06       0.06 f
-  U284/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
+  U265/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
   tx_data_reg_reg[12]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)       0.01       0.08 f
   data arrival time                                                  0.08
 
@@ -291,7 +291,7 @@ Wire Load Model Mode: top
   flash_addr_reg_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)      0.00       0.00 r
   flash_addr_reg_reg[1]/Q (SAEDRVT14_FDPRBQ_V2_0P5)       0.05       0.05 f
   u_spi_fsm/flash_addr[1] (spi_serializer_fsm)            0.00       0.05 f
-  u_spi_fsm/U188/X (SAEDRVT14_AO21B_0P5)                  0.02       0.07 f
+  u_spi_fsm/U187/X (SAEDRVT14_AO21B_0P5)                  0.02       0.07 f
   u_spi_fsm/shift_tx_reg[1]/D (SAEDRVT14_FDPRBQ_V2_0P5)
                                                           0.01       0.07 f
   data arrival time                                                  0.07
@@ -327,7 +327,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   addr_reg_reg[6]/CK (SAEDRVT14_FDPRBQ_V2_0P5)            0.00       0.00 r
   addr_reg_reg[6]/Q (SAEDRVT14_FDPRBQ_V2_0P5)             0.05       0.05 f
-  U332/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
+  U334/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
   addr_reg_reg[6]/D (SAEDRVT14_FDPRBQ_V2_0P5)             0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -361,7 +361,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   addr_reg_reg[1]/CK (SAEDRVT14_FDPRBQ_V2_0P5)            0.00       0.00 r
   addr_reg_reg[1]/Q (SAEDRVT14_FDPRBQ_V2_0P5)             0.05       0.05 f
-  U329/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
+  U323/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
   addr_reg_reg[1]/D (SAEDRVT14_FDPRBQ_V2_0P5)             0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -395,7 +395,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   addr_reg_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)            0.00       0.00 r
   addr_reg_reg[0]/Q (SAEDRVT14_FDPRBQ_V2_0P5)             0.05       0.05 f
-  U321/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
+  U327/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
   addr_reg_reg[0]/D (SAEDRVT14_FDPRBQ_V2_0P5)             0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -467,7 +467,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   addr_reg_reg[4]/CK (SAEDRVT14_FDPRBQ_V2_0P5)            0.00       0.00 r
   addr_reg_reg[4]/Q (SAEDRVT14_FDPRBQ_V2_0P5)             0.05       0.05 f
-  U322/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
+  U328/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
   addr_reg_reg[4]/D (SAEDRVT14_FDPRBQ_V2_0P5)             0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -503,7 +503,7 @@ Wire Load Model Mode: top
                                                           0.00       0.00 r
   flash_addr_reg_reg[23]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
                                                           0.06       0.06 f
-  U206/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
+  U214/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
   flash_addr_reg_reg[23]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
                                                           0.01       0.08 f
   data arrival time                                                  0.08
@@ -540,7 +540,7 @@ Wire Load Model Mode: top
   flash_addr_reg_reg[8]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
                                                           0.00       0.00 r
   flash_addr_reg_reg[8]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.06       0.06 f
-  U187/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
+  U196/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
   flash_addr_reg_reg[8]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)     0.01       0.08 f
   data arrival time                                                  0.08
 
@@ -575,7 +575,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   addr_reg_reg[7]/CK (SAEDRVT14_FDPRBQ_V2_0P5)            0.00       0.00 r
   addr_reg_reg[7]/Q (SAEDRVT14_FDPRBQ_V2_0P5)             0.05       0.05 f
-  U334/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
+  U335/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
   addr_reg_reg[7]/D (SAEDRVT14_FDPRBQ_V2_0P5)             0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -609,7 +609,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   flash_addr_reg_reg[7]/CK (SAEDRVT14_FDPRBQ_V2_0P5)      0.00       0.00 r
   flash_addr_reg_reg[7]/Q (SAEDRVT14_FDPRBQ_V2_0P5)       0.05       0.05 f
-  U189/X (SAEDRVT14_AO22_0P5)                             0.02       0.07 f
+  U192/X (SAEDRVT14_AO22_0P5)                             0.02       0.07 f
   flash_addr_reg_reg[7]/D (SAEDRVT14_FDPRBQ_V2_0P5)       0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -643,7 +643,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   addr_reg_reg[5]/CK (SAEDRVT14_FDPRBQ_V2_0P5)            0.00       0.00 r
   addr_reg_reg[5]/Q (SAEDRVT14_FDPRBQ_V2_0P5)             0.05       0.05 f
-  U325/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
+  U329/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.07 f
   addr_reg_reg[5]/D (SAEDRVT14_FDPRBQ_V2_0P5)             0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -678,7 +678,7 @@ Wire Load Model Mode: top
   flash_addr_reg_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)      0.00       0.00 r
   flash_addr_reg_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_0P5)       0.05       0.05 f
   u_spi_fsm/flash_addr[2] (spi_serializer_fsm)            0.00       0.05 f
-  u_spi_fsm/U190/X (SAEDRVT14_AO21B_0P5)                  0.02       0.07 f
+  u_spi_fsm/U189/X (SAEDRVT14_AO21B_0P5)                  0.02       0.07 f
   u_spi_fsm/shift_tx_reg[2]/D (SAEDRVT14_FDPRBQ_V2_0P5)
                                                           0.01       0.07 f
   data arrival time                                                  0.07
@@ -715,7 +715,7 @@ Wire Load Model Mode: top
   flash_addr_reg_reg[3]/CK (SAEDRVT14_FDPRBQ_V2_0P5)      0.00       0.00 r
   flash_addr_reg_reg[3]/Q (SAEDRVT14_FDPRBQ_V2_0P5)       0.05       0.05 f
   u_spi_fsm/flash_addr[3] (spi_serializer_fsm)            0.00       0.05 f
-  u_spi_fsm/U192/X (SAEDRVT14_AO21B_0P5)                  0.02       0.07 f
+  u_spi_fsm/U191/X (SAEDRVT14_AO21B_0P5)                  0.02       0.07 f
   u_spi_fsm/shift_tx_reg[3]/D (SAEDRVT14_FDPRBQ_V2_0P5)
                                                           0.01       0.07 f
   data arrival time                                                  0.07

@@ -3,7 +3,7 @@
 Report : area
 Design : ahb_wrapper
 Version: V-2023.12-SP2
-Date   : Thu May 28 16:59:46 2026
+Date   : Thu May 28 17:59:18 2026
 ****************************************
 
 Library(s) Used:
@@ -11,22 +11,22 @@ Library(s) Used:
     saed14rvt_tt0p8v25c (File: /data/synopsys/lib/saed14nm/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db)
 
 Number of ports:                          231
-Number of nets:                           894
-Number of cells:                          709
-Number of combinational cells:            526
+Number of nets:                           895
+Number of cells:                          710
+Number of combinational cells:            527
 Number of sequential cells:               182
 Number of macros/black boxes:               0
-Number of buf/inv:                        102
+Number of buf/inv:                        103
 Number of references:                      11
 
-Combinational area:                159.751200
-Buf/Inv area:                       18.292800
+Combinational area:                160.062000
+Buf/Inv area:                       18.470400
 Noncombinational area:             193.983607
 Macro/Black Box area:                0.000000
-Net Interconnect area:             697.219716
+Net Interconnect area:             697.732816
 
-Total cell area:                   353.734806
-Total area:                       1050.954523
+Total cell area:                   354.045606
+Total area:                       1051.778423
 
 Hierarchical area distribution
 ------------------------------
@@ -36,9 +36,9 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
                                   Total      Total    national  national   boxes   Design
 --------------------------------  ---------  -------  --------  ---------  ------  ---------
-ahb_wrapper                        353.7348    100.0   55.6332   106.5600  0.0000  ahb_wrapper
-u_core                             191.5416     54.1  104.1180    87.4236  0.0000  qspi_fsm
+ahb_wrapper                        354.0456    100.0   55.6332   106.5600  0.0000  ahb_wrapper
+u_core                             191.8524     54.2  104.4288    87.4236  0.0000  qspi_fsm
 --------------------------------  ---------  -------  --------  ---------  ------  ---------
-Total                                                 159.7512   193.9836  0.0000
+Total                                                 160.0620   193.9836  0.0000
 
 1

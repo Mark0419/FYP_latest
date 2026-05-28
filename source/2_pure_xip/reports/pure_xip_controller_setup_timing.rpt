@@ -6,11 +6,43 @@ Report : timing
         -max_paths 20
 Design : ahb_wrapper
 Version: V-2023.12-SP2
-Date   : Thu May 28 16:27:51 2026
+Date   : Thu May 28 18:00:56 2026
 ****************************************
 
 Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
 Wire Load Model Mode: top
+
+  Startpoint: HCLK (clock source 'HCLK')
+  Endpoint: qspi_clk (output port clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock HCLK (fall edge)                  10.00      10.00
+  HCLK (in)                                0.00      10.00 f
+  u_core/clk (qspi_pure_xip)               0.00      10.00 f
+  u_core/I_45/X (SAEDRVT14_INV_0P5)        0.06      10.06 r
+  u_core/U260/X (SAEDRVT14_OA21_1)         0.04      10.10 r
+  u_core/qspi_clk (qspi_pure_xip)          0.00      10.10 r
+  qspi_clk (out)                           0.11      10.21 r
+  data arrival time                                  10.21
+
+  clock HCLK (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.50      19.50
+  output external delay                   -8.00      11.50
+  data required time                                 11.50
+  -----------------------------------------------------------
+  data required time                                 11.50
+  data arrival time                                 -10.21
+  -----------------------------------------------------------
+  slack (MET)                                         1.29
+
 
   Startpoint: u_core/state_reg[0]
               (rising edge-triggered flip-flop clocked by HCLK)
@@ -29,9 +61,9 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   u_core/state_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
   u_core/state_reg[0]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.06       0.06 r
-  u_core/U24/X (SAEDRVT14_ND2_CDC_1)                      0.03       0.09 f
-  u_core/U48/X (SAEDRVT14_OR2_MM_0P5)                     0.02       0.12 f
-  u_core/U245/X (SAEDRVT14_OAI22_0P5)                     0.05       0.17 r
+  u_core/U74/X (SAEDRVT14_ND2_CDC_1)                      0.03       0.09 f
+  u_core/U110/X (SAEDRVT14_OR2_MM_0P5)                    0.02       0.12 f
+  u_core/U252/X (SAEDRVT14_OAI22_0P5)                     0.05       0.17 r
   u_core/qspi_io_out[0] (qspi_pure_xip)                   0.00       0.17 r
   qspi_data_out[0] (out)                                  0.11       0.28 r
   data arrival time                                                  0.28
@@ -66,7 +98,7 @@ Wire Load Model Mode: top
   u_core/state_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
   u_core/state_reg[0]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.06       0.06 r
   u_core/U3/X (SAEDRVT14_INV_1P5)                         0.03       0.09 f
-  u_core/U4/X (SAEDRVT14_AOI21_0P75)                      0.05       0.13 r
+  u_core/U72/X (SAEDRVT14_AOI21_0P75)                     0.05       0.13 r
   u_core/qspi_io_oe (qspi_pure_xip)                       0.00       0.13 r
   qspi_data_oen (out)                                     0.13       0.26 r
   data arrival time                                                  0.26
@@ -100,9 +132,9 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   u_core/state_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
   u_core/state_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 f
-  u_core/U16/X (SAEDRVT14_INV_0P5)                        0.01       0.07 r
-  u_core/U17/X (SAEDRVT14_ND2_CDC_1)                      0.02       0.09 f
-  u_core/U244/X (SAEDRVT14_NR2_1)                         0.04       0.13 r
+  u_core/U82/X (SAEDRVT14_INV_0P5)                        0.01       0.07 r
+  u_core/U83/X (SAEDRVT14_ND2_CDC_1)                      0.02       0.09 f
+  u_core/U67/X (SAEDRVT14_NR2_1)                          0.04       0.13 r
   u_core/qspi_io_out[3] (qspi_pure_xip)                   0.00       0.13 r
   qspi_data_out[3] (out)                                  0.11       0.24 r
   data arrival time                                                  0.24
@@ -136,9 +168,9 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   u_core/state_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
   u_core/state_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 f
-  u_core/U16/X (SAEDRVT14_INV_0P5)                        0.01       0.07 r
-  u_core/U17/X (SAEDRVT14_ND2_CDC_1)                      0.02       0.09 f
-  u_core/U243/X (SAEDRVT14_NR2_1)                         0.04       0.13 r
+  u_core/U82/X (SAEDRVT14_INV_0P5)                        0.01       0.07 r
+  u_core/U83/X (SAEDRVT14_ND2_CDC_1)                      0.02       0.09 f
+  u_core/U66/X (SAEDRVT14_NR2_1)                          0.04       0.13 r
   u_core/qspi_io_out[2] (qspi_pure_xip)                   0.00       0.13 r
   qspi_data_out[2] (out)                                  0.11       0.24 r
   data arrival time                                                  0.24
@@ -172,9 +204,9 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   u_core/state_reg[2]/CK (SAEDRVT14_FDPRBQ_V2_0P5)        0.00       0.00 r
   u_core/state_reg[2]/Q (SAEDRVT14_FDPRBQ_V2_0P5)         0.05       0.05 f
-  u_core/U16/X (SAEDRVT14_INV_0P5)                        0.01       0.07 r
-  u_core/U17/X (SAEDRVT14_ND2_CDC_1)                      0.02       0.09 f
-  u_core/U242/X (SAEDRVT14_NR2_1)                         0.04       0.13 r
+  u_core/U82/X (SAEDRVT14_INV_0P5)                        0.01       0.07 r
+  u_core/U83/X (SAEDRVT14_ND2_CDC_1)                      0.02       0.09 f
+  u_core/U68/X (SAEDRVT14_NR2_1)                          0.04       0.13 r
   u_core/qspi_io_out[1] (qspi_pure_xip)                   0.00       0.13 r
   qspi_data_out[1] (out)                                  0.11       0.24 r
   data arrival time                                                  0.24
@@ -284,41 +316,6 @@ Wire Load Model Mode: top
   data arrival time                                                 -0.21
   --------------------------------------------------------------------------
   slack (MET)                                                       11.29
-
-
-  Startpoint: HREADY (input port clocked by HCLK)
-  Endpoint: a_reg_reg[20]
-            (rising edge-triggered flip-flop clocked by HCLK)
-  Path Group: HCLK
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  ahb_wrapper        8000                  saed14rvt_tt0p8v25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock HCLK (rise edge)                                  0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  input external delay                                    8.00       8.00 f
-  HREADY (in)                                             0.00       8.00 f
-  U72/X (SAEDRVT14_AN3_0P5)                               0.08       8.08 f
-  U86/X (SAEDRVT14_BUF_U_0P5)                             0.06       8.15 f
-  U87/X (SAEDRVT14_MUX2_U_0P5)                            0.04       8.19 r
-  a_reg_reg[20]/D (SAEDRVT14_FDPRBQ_V2_0P5)               0.01       8.19 r
-  data arrival time                                                  8.19
-
-  clock HCLK (rise edge)                                 20.00      20.00
-  clock network delay (ideal)                             0.00      20.00
-  clock uncertainty                                      -0.50      19.50
-  a_reg_reg[20]/CK (SAEDRVT14_FDPRBQ_V2_0P5)              0.00      19.50 r
-  library setup time                                     -0.01      19.49
-  data required time                                                19.49
-  --------------------------------------------------------------------------
-  data required time                                                19.49
-  data arrival time                                                 -8.19
-  --------------------------------------------------------------------------
-  slack (MET)                                                       11.30
 
 
   Startpoint: HREADY (input port clocked by HCLK)

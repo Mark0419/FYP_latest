@@ -7,7 +7,7 @@ Report : power
         -analysis_effort medium
 Design : ahb_wrapper
 Version: V-2023.12-SP2
-Date   : Thu May 28 16:59:46 2026
+Date   : Thu May 28 17:59:18 2026
 ****************************************
 
 
@@ -38,12 +38,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  =  12.3727 uW   (97%)
-  Net Switching Power  = 323.7410 nW    (3%)
+  Cell Internal Power  =  12.3768 uW   (98%)
+  Net Switching Power  = 193.8333 nW    (2%)
                          ---------
-Total Dynamic Power    =  12.6965 uW  (100%)
+Total Dynamic Power    =  12.5706 uW  (100%)
 
-Cell Leakage Power     = 109.6823 nW
+Cell Leakage Power     = 109.7932 nW
 
 
                  Internal         Switching           Leakage            Total
@@ -52,10 +52,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network     12.1625            0.1601           38.0386           12.3227  (  96.22%)  i
-register           0.1528        3.4807e-02        6.3758e+04            0.2514  (   1.96%)
+clock_network     12.1674        3.0759e-02          132.6747           12.1983  (  96.20%)  i
+register           0.1523        3.4872e-02        6.3751e+04            0.2509  (   1.98%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  5.7408e-02            0.1288        4.5886e+04            0.2321  (   1.81%)
+combinational  5.7043e-02            0.1282        4.5909e+04            0.2312  (   1.82%)
 --------------------------------------------------------------------------------------------------
-Total             12.3727 uW         0.3237 uW     1.0968e+05 pW        12.8062 uW
+Total             12.3768 uW         0.1938 uW     1.0979e+05 pW        12.6804 uW
 1

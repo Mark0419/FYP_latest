@@ -4,15 +4,15 @@ Information: Updating design information... (UID-85)
 Report : qor
 Design : ahb_spi_legacy
 Version: V-2023.12-SP2
-Date   : Thu May 28 15:04:15 2026
+Date   : Thu May 28 17:59:33 2026
 ****************************************
 
 
   Timing Path Group 'HCLK'
   -----------------------------------
-  Levels of Logic:               8.00
-  Critical Path Length:          0.39
-  Critical Path Slack:          11.11
+  Levels of Logic:               2.00
+  Critical Path Length:          0.23
+  Critical Path Slack:           1.27
   Critical Path Clk Period:     20.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
@@ -65,12 +65,12 @@ Date   : Thu May 28 15:04:15 2026
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.20
-  Logic Optimization:                  0.29
-  Mapping Optimization:                1.45
+  Resource Sharing:                    0.21
+  Logic Optimization:                  0.31
+  Mapping Optimization:                1.58
   -----------------------------------------
-  Overall Compile Time:               13.10
-  Overall Compile Wall Clock Time:    13.57
+  Overall Compile Time:               13.86
+  Overall Compile Wall Clock Time:    14.36
 
   --------------------------------------------------------------------
 

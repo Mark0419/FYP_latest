@@ -6,7 +6,7 @@ Report : timing
         -max_paths 20
 Design : ahb_wrapper
 Version: V-2023.12-SP2
-Date   : Thu May 28 16:59:46 2026
+Date   : Thu May 28 17:59:18 2026
 ****************************************
 
 Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
@@ -65,7 +65,7 @@ Wire Load Model Mode: top
   a_reg_reg[16]/CK (SAEDRVT14_FDPRBQ_V2_0P5)              0.00       0.00 r
   a_reg_reg[16]/Q (SAEDRVT14_FDPRBQ_V2_0P5)               0.05       0.05 f
   u_core/addr_in[16] (qspi_fsm)                           0.00       0.05 f
-  u_core/U298/X (SAEDRVT14_AO21_U_0P5)                    0.02       0.07 f
+  u_core/U291/X (SAEDRVT14_AO21_U_0P5)                    0.02       0.07 f
   u_core/sreg_reg[16]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)       0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -171,8 +171,8 @@ Wire Load Model Mode: top
   a_reg_reg[31]/CK (SAEDRVT14_FDPRBQ_V2_0P5)              0.00       0.00 r
   a_reg_reg[31]/Q (SAEDRVT14_FDPRBQ_V2_0P5)               0.05       0.05 f
   u_core/addr_in[31] (qspi_fsm)                           0.00       0.05 f
-  u_core/U348/X (SAEDRVT14_AOI21_0P75)                    0.02       0.07 r
-  u_core/U349/X (SAEDRVT14_OAI21_0P5)                     0.01       0.08 f
+  u_core/U354/X (SAEDRVT14_AOI21_0P75)                    0.02       0.07 r
+  u_core/U355/X (SAEDRVT14_OAI21_0P5)                     0.01       0.08 f
   u_core/sreg_reg[31]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)       0.01       0.08 f
   data arrival time                                                  0.08
 
@@ -206,7 +206,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   a_reg_reg[17]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)            0.00       0.00 r
   a_reg_reg[17]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)             0.06       0.06 f
-  U194/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
+  U195/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
   a_reg_reg[17]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)             0.01       0.08 f
   data arrival time                                                  0.08
 
@@ -240,7 +240,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   u_core/cnt_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_0P5)          0.00       0.00 r
   u_core/cnt_reg[0]/Q (SAEDRVT14_FDPRBQ_V2_0P5)           0.05       0.05 r
-  u_core/U169/X (SAEDRVT14_NR2_1)                         0.01       0.06 f
+  u_core/U212/X (SAEDRVT14_NR2_1)                         0.01       0.06 f
   u_core/cnt_reg[0]/D (SAEDRVT14_FDPRBQ_V2_0P5)           0.01       0.07 f
   data arrival time                                                  0.07
 
@@ -274,7 +274,7 @@ Wire Load Model Mode: top
   clock network delay (ideal)                             0.00       0.00
   a_reg_reg[2]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)             0.00       0.00 r
   a_reg_reg[2]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)              0.06       0.06 f
-  U209/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
+  U210/X (SAEDRVT14_MUX2_U_0P5)                           0.02       0.08 f
   a_reg_reg[2]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)              0.01       0.08 f
   data arrival time                                                  0.08
 

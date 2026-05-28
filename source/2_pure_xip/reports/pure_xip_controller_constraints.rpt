@@ -4,7 +4,7 @@ Report : constraint
         -all_violators
 Design : ahb_wrapper
 Version: V-2023.12-SP2
-Date   : Thu May 28 16:27:52 2026
+Date   : Thu May 28 18:00:56 2026
 ****************************************
 
 
@@ -170,7 +170,7 @@ Date   : Thu May 28 16:27:52 2026
                              Required        Actual
    Design                      Area           Area           Slack
    -----------------------------------------------------------------
-   ahb_wrapper                  0.00         751.30        -751.30  (VIOLATED)
+   ahb_wrapper                  0.00         751.61        -751.61  (VIOLATED)
 
 
 1

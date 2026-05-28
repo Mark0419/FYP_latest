@@ -3,7 +3,7 @@
 Report : reference
 Design : ahb_wrapper
 Version: V-2023.12-SP2
-Date   : Thu May 28 16:27:51 2026
+Date   : Thu May 28 18:00:56 2026
 ****************************************
 
 Attributes:
@@ -39,9 +39,9 @@ SAEDRVT14_ND2B_U_0P5
 SAEDRVT14_TIE0_V1_2
                    saed14rvt_tt0p8v25c
                                   0.488400       1      0.488400  
-qspi_pure_xip                   150.116402       1    150.116402  h, n
+qspi_pure_xip                   150.294002       1    150.294002  h, n
 -----------------------------------------------------------------------------
-Total 8 references                                    251.925605
+Total 8 references                                    252.103205
 
 ****************************************
 Design: qspi_pure_xip 
@@ -75,7 +75,7 @@ SAEDRVT14_FDPSBQ_0P5
                    saed14rvt_tt0p8v25c
                                   1.110000       1      1.110000  n
 SAEDRVT14_INV_0P5  saed14rvt_tt0p8v25c
-                                  0.177600      81     14.385600  
+                                  0.177600      82     14.563200  
 SAEDRVT14_INV_1P5  saed14rvt_tt0p8v25c
                                   0.177600       1      0.177600  
 SAEDRVT14_INV_S_0P75
@@ -89,7 +89,7 @@ SAEDRVT14_ND2_CDC_1
                                   0.222000      12      2.664000  
 SAEDRVT14_NR2_1    saed14rvt_tt0p8v25c
                                   0.222000      11      2.442000  
-SAEDRVT14_OA21B_1  saed14rvt_tt0p8v25c
+SAEDRVT14_OA21_1   saed14rvt_tt0p8v25c
                                   0.355200       1      0.355200  
 SAEDRVT14_OA31_1   saed14rvt_tt0p8v25c
                                   0.399600       2      0.799200  
@@ -107,5 +107,5 @@ SAEDRVT14_OR3_0P5  saed14rvt_tt0p8v25c
 SAEDRVT14_OR4_1    saed14rvt_tt0p8v25c
                                   0.399600       1      0.399600  
 -----------------------------------------------------------------------------
-Total 22 references                                   150.116402
+Total 22 references                                   150.294002
 1
