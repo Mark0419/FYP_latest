@@ -1,0 +1,7 @@
+*******************************************************
+[3210000] PPA BENCH SUCCESS: PURE XIP DIRECT READ PASSED
+Init time       : 945000 ps
+Operation time  : 1500000 ps
+Total read time : 2445000 ps
+Marker latency  : 360000 ps
+*******************************************************

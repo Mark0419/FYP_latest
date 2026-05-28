@@ -1,0 +1,11 @@
+*******************************************************
+[8110000] PPA BENCH SUCCESS: LEGACY SPI SHADOWING COMMON DATASET PASSED
+Copy time       : 7425000 ps
+Execution time  : 280000 ps
+Total boot-done : 7705000 ps
+The Cortex-M3 successfully woke up from ROM, used the
+Legacy SPI Controller to shadow 16 bytes of machine code
+from Flash into SRAM, jumped to 0x20000001, and executed
+the payload natively from SRAM!
+Caught Magic Word 0xaabbccdd at Address 0x20008000
+*******************************************************

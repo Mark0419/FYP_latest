@@ -1,0 +1,7 @@
+*******************************************************
+[3310000] DUAL MODE READ BENCH SUCCESS: COMMON 16-BYTE DATASET PASSED
+First read latency : 1045000 ps
+4-word read time   : 2545000 ps
+Post-read latency  : 360000 ps
+Total boot-to-done : 2905000 ps
+*******************************************************
