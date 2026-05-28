@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : area
+Design : ahb_spi_legacy
+Version: V-2023.12-SP2
+Date   : Thu May 28 14:34:08 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /data/synopsys/lib/saed14nm/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db)
+
+Number of ports:                          277
+Number of nets:                           545
+Number of cells:                          369
+Number of combinational cells:            199
+Number of sequential cells:               163
+Number of macros/black boxes:               0
+Number of buf/inv:                         25
+Number of references:                      21
+
+Combinational area:                 79.786801
+Buf/Inv area:                        4.706400
+Noncombinational area:             172.094406
+Macro/Black Box area:                0.000000
+Net Interconnect area:             434.843487
+
+Total cell area:                   251.881207
+Total area:                        686.724694
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------------------------------
+ahb_spi_legacy                     251.8812    100.0   27.0396    88.4448  0.0000  ahb_spi_legacy
+clk_gate_addr_reg_reg                0.7992      0.3    0.0000     0.7992  0.0000  SNPS_CLOCK_GATE_HIGH_ahb_spi_legacy_0
+clk_gate_cmd_reg_reg                 0.7992      0.3    0.0000     0.7992  0.0000  SNPS_CLOCK_GATE_HIGH_ahb_spi_legacy_2
+clk_gate_flash_addr_reg_reg          0.7992      0.3    0.0000     0.7992  0.0000  SNPS_CLOCK_GATE_HIGH_ahb_spi_legacy_1
+clk_gate_tx_data_reg_reg             0.7992      0.3    0.0000     0.7992  0.0000  SNPS_CLOCK_GATE_HIGH_ahb_spi_legacy_3
+u_spi_fsm                          133.2000     52.9   52.7472    78.8544  0.0000  spi_serializer_fsm
+u_spi_fsm/clk_gate_bit_cnt_reg       0.7992      0.3    0.0000     0.7992  0.0000  SNPS_CLOCK_GATE_HIGH_spi_serializer_fsm_0
+u_spi_fsm/clk_gate_shift_rx_reg      0.7992      0.3    0.0000     0.7992  0.0000  SNPS_CLOCK_GATE_HIGH_spi_serializer_fsm_1
+--------------------------------  ---------  -------  --------  ---------  ------  -----------------------------------------
+Total                                                  79.7868   172.0944  0.0000
+
+1
