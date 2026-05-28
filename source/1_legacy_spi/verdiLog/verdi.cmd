@@ -637,3 +637,4 @@ wvSetCursor -win $_nWave2 7783443.979451 -snap {("System" 3)}
 wvZoom -win $_nWave2 7785564.537175 8207180.819467
 wvSetCursor -win $_nWave2 8088954.877527 -snap {("System" 7)}
 wvSetCursor -win $_nWave2 8109089.083453 -snap {("System" 7)}
+debExit

@@ -222,7 +222,10 @@ Selection-LineWidth = 1
 [FSM_Dlg-Print]
 Orientation = Landscape
 [FileBrowser]
-nWaveRestoreRCDirHistory = "\"/home/user18/Projects/Flash_controller/source/5_legacy_backup/signal.rc\""
+nWaveOpenFsdbDirHistory = "\"/home/user18/Projects/Flash_controller/FYP_latest/source/2_pure_xip/soc_full.fsdb\"" "\"/home/user18/Projects/Flash_controller/FYP_latest/source/3_dual_mode/soc_full.fsdb\"" "\"/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/tb_soc\
+_top.fsdb\"" "\"/home/user18/Projects/Flash_controller/FYP_latest/source/3_dual_mode/soc_dual_read_bench.fsdb\"" "\"/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/tb_spi.fsdb\""
+nWaveRestoreRCDirHistory = "\"/home/user18/Projects/Flash_controller/source/5_legacy_backup/signal.rc\"" "\"/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/signal.rc\"" "\"/home/user18/Projects/Flash_controller/FYP_latest/source/2_pure_xip/signal.rc\"" "\"/home\
+/user18/Projects/Flash_controller/FYP_latest/source/3_dual_mode/signal.rc\""
 [Form]
 version = Verdi_W-2024.09-SP2
 [General]
@@ -231,10 +234,10 @@ TclAutoSource =
 cmd_enter_form = FALSE
 SyncBrowserDir = TRUE
 FindBarVisible = 
-recent_commands_Verdi = nsFullScreen
 ColorTheme = classic
 version = Verdi_W-2024.09-SP2
-recent_commands_nWave = saveSignal,zoomAll,getSignal,restoreSignal,openFile,editCut,nextEvent,zoomOut,previousEvent,digitalFHex
+recent_commands_Verdi = nsFullScreen
+recent_commands_nWave = digitalFHex,digitalFBin,zoomIn,zoomOut,nextEvent,getSignal,zoomAll,renameSignal,editCut,restoreSignal
 prevColorTheme = classic
 SignalCaseInSensitive = FALSE
 [GlobalProp]
@@ -385,11 +388,11 @@ saveWaveformStat = TRUE
 savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
-openFileDlg = 667,222,602,483
-restoreSigDlg = 693,245,551,438
-qWaveSignalDialog = 568,224,800,479
 saveSigDlg = 693,271,551,386
-QwUserAskDlg = 806,438,324,125
+openFileDlg = 667,148,602,483
+restoreSigDlg = 693,171,551,438
+qWaveSignalDialog = 133,221,800,479
+QwUserAskDlg = 796,418,324,125
 [Relationship]
 hideRecursiceNode = FALSE
 [Safety]
@@ -404,7 +407,7 @@ HighlightSafetyObject = TRUE
 3 = string (session file name)
 4 = string (session file name)
 5 = string (session file name)
-1 = /home/user18/Projects/Flash_controller/source/5_legacy_backup/verdiLog/novas_autosave.ses
+1 = /home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/verdiLog/novas_autosave.ses
 2 = /home/user18/Projects/Flash_controller/source/1_legacy_spi/verdiLog/novas_autosave.ses
 [Simulation]
 scsPath = scsim
@@ -586,7 +589,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = FIXED12
 [Text.1]
-viewport = 90 114 1757 700 45
+viewport = 80 94 1757 700 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -684,31 +687,31 @@ isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = "Time"
-width = 60
-visualIndex = 0
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
-name = "Code"
-width = 60
-visualIndex = 3
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
 name = "Type"
 width = 60
 visualIndex = 4
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
 name = "Message"
 width = 2000
 visualIndex = 5
 isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+isColFilterColorCoding = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = "Time"
+width = 60
+visualIndex = 0
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+isColFilterColorCoding = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = "Code"
+width = 60
+visualIndex = 3
+isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 isColFilterColorCoding = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
@@ -794,8 +797,8 @@ AutoApplySeverityColor = TRUE
 scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
-getSignalForm = 568 187 800 479 165 387 393 5
-viewPort = 0 25 1757 602 144 134
+getSignalForm = 133 221 800 479 165 387 393 5
+viewPort = 0 25 1757 602 144 198
 legendBackground = -c ID_BLACK
 valueBackground = -c ID_BLACK
 curveBackground = -c ID_BLACK
@@ -961,9 +964,11 @@ printBasic = 1 0 0 FALSE FALSE
 printDest = -printer {}
 printSignature = {%f %h %t} {}
 curveWindow_Drag&Drop_Mode = TRUE
-RecentFile1 = "\"/home/user18/Projects/Flash_controller/source/5_legacy_backup/signal.rc\""
-RecentFile2 = "\"/home/user18/Projects/Flash_controller/source/5_legacy_backup/tb_soc_top.fsdb\""
-RecentFile3 = "\"/home/user18/Projects/Flash_controller/source/1_legacy_spi/tb_spi.fsdb\""
+RecentFile1 = "\"/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/signal.rc\""
+RecentFile2 = "\"/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/tb_soc_top.fsdb\""
+RecentFile3 = "\"/home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/tb_spi.fsdb\""
+RecentFile4 = "\"/home/user18/Projects/Flash_controller/FYP_latest/source/3_dual_mode/signal.rc\""
+RecentFile5 = "\"/home/user18/Projects/Flash_controller/FYP_latest/source/3_dual_mode/soc_dual_read_bench.fsdb\""
 open_file_time_range = FALSE
 legend_window_font = -f COURIER12 -c ID_CYAN5
 value_window_font = -f COURIER12 -c ID_CYAN5
@@ -1337,7 +1342,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 25 1757 602 144 134
+viewPort = 0 25 1757 602 144 198
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]
