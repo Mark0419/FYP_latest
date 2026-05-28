@@ -567,10 +567,10 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_lic_defs/verilog/cm3_lic_defs.v
 1779862510 ./0_shared_ip/flash_model_final.sv
 1778574183 ./0_shared_ip/sync_fifo_full.sv
-1779691923 ./3_dual_mode/qspi_dual.sv
+1779871412 ./3_dual_mode/qspi_dual.sv
 1779532832 ./3_dual_mode/ahb_wrapper_dual.sv
 1779162722 ./0_shared_ip/boot_rom.v
-1779864480 ./3_dual_mode/tb_top_soc.sv
+1779871412 ./3_dual_mode/tb_top_soc.sv
 1279150494 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3/verilog/CORTEXM3.v
 1279056726 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cortexm3_integration/verilog/CORTEXM3INTEGRATION.v
 1741065587 /data/synopsys/verdi/W-2024.09-SP2/share/PLI/VCS/LINUX64/verdi.tab
@@ -580,5 +580,5 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 1740889567 /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/liberrorinf.so
 1740889560 /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/libsnpsmalloc.so
 1740889556 /data/synopsys/vcs/W-2024.09-SP2/linux64/lib/libvfs.so
-1779866230 simv.daidir
+1779871475 simv.daidir
 -1 partitionlib

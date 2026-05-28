@@ -1,4 +1,6 @@
+
 #!/bin/bash
+set -e
 
 echo "======================================================="
 echo " PHASE 1: COMPILING C-CODE BOOTLOADER (SOFTWARE)"
@@ -67,6 +69,11 @@ vcs +lint=TFIPC-L -sverilog -debug_access+all -timescale=1ns/1ps +libext+.v \
 
 echo "Hardware compilation complete."
 echo ""
+
+if [[ ! -x ./simv ]]; then
+  echo "ERROR: VCS completed but ./simv was not generated."
+  exit 1
+fi
 
 echo "======================================================="
 echo " PHASE 3: RUNNING SoC SIMULATION"
