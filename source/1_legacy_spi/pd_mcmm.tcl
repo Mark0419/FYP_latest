@@ -15,7 +15,7 @@ if {[info exists ::env(SAED14_PATH)]} {
 
 set NETLIST_FILE "outputs/${DESIGN_NAME}_mapped.v"
 set DDC_FILE     "outputs/${DESIGN_NAME}.ddc"
-set SDC_FILE     "outputs/${DESIGN_NAME}.sdc"
+set SDC_FILE     "dc_constraints.sdc"
 
 set search_path ". $SAED_PATH/lib/stdcell_rvt/db_nldm $SAED_PATH/lib/stdcell_rvt/ndm"
 set target_library "saed14rvt_tt0p8v25c.db"
@@ -68,8 +68,9 @@ read_sdc $SDC_FILE
 set_scenario_status func_ss -active true -setup true  -hold false -leakage_power true
 set_scenario_status func_ff -active true -setup false -hold true  -leakage_power false
 
-# Leave margin for CTS/hold buffers; tiny blocks can overfill after clock_opt.
-initialize_floorplan -core_utilization 0.55 -shape R -side_ratio {1.0 1.0}
+# Leave margin for CTS/hold buffers and detail-route repair; these controller
+# blocks are tiny, so a conservative density gives the router breathing room.
+initialize_floorplan -core_utilization 0.40 -shape R -side_ratio {1.0 1.0}
 place_pins -ports *
 
 create_net -power VDD
@@ -84,8 +85,8 @@ create_pg_std_cell_conn_pattern rail_pat -layers {M1}
 set_pg_strategy rail_strat -core -pattern {{name: rail_pat} {nets: {VDD VSS}}}
 
 create_pg_mesh_pattern mesh_pat -layers { \
-    { {vertical_layer: M6} {width: 0.4} {spacing: 0.4} {pitch: 3.0} } \
-    { {horizontal_layer: M7} {width: 0.4} {spacing: 0.4} {pitch: 3.0} } \
+    { {vertical_layer: M6} {width: 0.08} {spacing: 0.08} {pitch: 8.0} } \
+    { {horizontal_layer: M7} {width: 0.08} {spacing: 0.08} {pitch: 8.0} } \
 }
 set_pg_strategy mesh_strat -core -pattern {{name: mesh_pat} {nets: {VDD VSS}}}
 
@@ -106,6 +107,13 @@ route_opt
 
 create_stdcell_fillers -lib_cells [get_lib_cells */*FILL*]
 connect_pg_net -automatic
+
+if {[catch {route_detail -incremental true -initial_drc_from_input true} drc_msg]} {
+    puts "INFO: Incremental detail-route DRC cleanup is unavailable: $drc_msg"
+}
+if {[catch {route_opt -incremental true} route_opt_msg]} {
+    puts "INFO: Incremental route optimization is unavailable: $route_opt_msg"
+}
 
 file mkdir outputs_mcmm
 write_verilog -hierarchy all outputs_mcmm/${DESIGN_NAME}_final.v

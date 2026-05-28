@@ -18,9 +18,10 @@ module qspi_pure_xip (
     logic [31:0] sreg, rx_reg;
     logic xip_active;
     
-    // X-Masking for stable post-synthesis gate-level simulation
+    // Keep synthesizable RTL free of X/Z comparisons; testbench flash models
+    // should drive known values for gate-level simulation.
     wire [3:0] clean_io_in;
-    assign clean_io_in = (qspi_io_in === 4'bx || qspi_io_in === 4'bz) ? 4'b0000 : qspi_io_in;
+    assign clean_io_in = qspi_io_in;
 
     assign rx_data = rx_reg;
 

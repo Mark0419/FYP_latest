@@ -27,9 +27,11 @@ All three architectures use the same:
 - Output load: 5 fF.
 - Max fanout: 32.
 - Max transition: 1.5 ns.
-- Physical floorplan utilization: 70 percent.
+- Physical floorplan utilization: 40 percent. The controller blocks are small,
+  so the lower density leaves margin for CTS, hold buffers, and route DRC
+  cleanup.
 - Physical floorplan shape: square, side ratio 1:1.
-- Power grid style: M1 rails plus M6/M7 micro-mesh.
+- Power grid style: M1 rails plus a light M6/M7 micro-mesh.
 - MCMM scenarios: setup scenario with max TLU+ and hold scenario with min TLU+.
 
 Only the protocol-specific pins differ:
@@ -37,6 +39,11 @@ Only the protocol-specific pins differ:
 - Legacy SPI uses `spi_clk`, `spi_cs_n`, `spi_mosi`, and `spi_miso`.
 - Pure XIP and dual-mode use `qspi_clk`, `qspi_cs_n`, `qspi_data_out`,
   `qspi_data_oen`, and `qspi_data_in`.
+
+The forwarded `spi_clk` and `qspi_clk` pins are constrained as HCLK-referenced
+protocol outputs. They are not modeled as internal generated capture clocks,
+because doing so creates false clock-gating hold checks inside the controller
+and leaves the forwarded clock output endpoint unconstrained.
 
 ## Library path
 
@@ -64,4 +71,3 @@ icc2_shell -f pd_mcmm.tcl
 The constraints target the synthesizable controller IP only, not the Cortex-M3,
 testbench, boot ROM, flash model, or behavioral SRAM model. This keeps area,
 timing, and power comparisons focused on the flash-access controller logic.
-

@@ -19,9 +19,10 @@ module qspi_fsm (
     logic [7:0] cmd_latched;
     logic xip_active;
     
-    // X-Masking for post-synthesis / gate-level simulation stability
+    // Keep synthesizable RTL free of X/Z comparisons; testbench flash models
+    // should drive known values for gate-level simulation.
     wire [3:0] clean_io_in;
-    assign clean_io_in = (qspi_io_in === 4'bx || qspi_io_in === 4'bz) ? 4'b0000 : qspi_io_in;
+    assign clean_io_in = qspi_io_in;
 
     assign rx_data = rx_reg;
     assign tx_pop  = (state == PROG && cnt == 0) ? 1'b1 : 1'b0;

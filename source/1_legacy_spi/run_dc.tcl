@@ -30,6 +30,7 @@ link
 uniquify
 
 source dc_constraints.sdc
+set_fix_hold [get_clocks HCLK]
 check_design > reports/${DESIGN_NAME}_check_design.rpt
 check_timing > reports/${DESIGN_NAME}_check_timing_precompile.rpt
 
