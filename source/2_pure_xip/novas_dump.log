@@ -387,8 +387,8 @@ FLEXLM_BORROWFILE=/home/user18/.vecad-svr1-borrow.txt
 Runtime command line arguments:
 argv[0]=./simv
 305 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.140 user,  271.03M mem
-306 Elapsed time:    0:00:21    Wed May 27 17:56:54 2026
+          CPU/Mem usage: 0.030 sys,  0.140 user,  271.04M mem
+306 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
 307 User CPU time used: 0 seconds
 308 System CPU time used: 0 seconds
 309 pliAppInit
@@ -425,23 +425,23 @@ argv[0]=./simv
 340 *Verdi* : Begin traversing the scope (tb_soc_top), layer (0).
 341 *Verdi* : End of traversing.
 342 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.310 user,  372.20M mem
-                   incr: 0.010 sys,  0.160 user,  10.68M mem
-                   accu: 0.010 sys,  0.160 user,  10.68M mem
-              accu incr: 0.010 sys,  0.160 user,  10.68M mem
+          CPU/Mem usage: 0.050 sys,  0.280 user,  372.21M mem
+                   incr: 0.010 sys,  0.140 user,  10.68M mem
+                   accu: 0.010 sys,  0.140 user,  10.68M mem
+              accu incr: 0.010 sys,  0.140 user,  10.68M mem
 
           Count usage: 24014 var,  17305 idcode,  3213 callback
                  incr: 24014 var,  17305 idcode,  3213 callback
                  accu: 24014 var,  17305 idcode,  3213 callback
             accu incr: 24014 var,  17305 idcode,  3213 callback
 343 Idcode  0 - bc1:0  mda:0
-344 Elapsed time:    0:00:21    Wed May 27 17:56:54 2026
+344 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
 345 User CPU time used: 0 seconds
 346 System CPU time used: 0 seconds
 347 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.310 user,  372.20M mem
+          CPU/Mem usage: 0.050 sys,  0.280 user,  372.21M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.010 sys,  0.160 user,  10.68M mem
+                   accu: 0.010 sys,  0.140 user,  10.68M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
           Count usage: 24014 var,  17305 idcode,  3213 callback
@@ -449,7 +449,7 @@ argv[0]=./simv
                  accu: 24014 var,  17305 idcode,  3213 callback
             accu incr: 0 var,  0 idcode,  0 callback
 348 Idcode  0 - bc1:0  mda:0
-349 Elapsed time:    0:00:21    Wed May 27 17:56:54 2026
+349 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
 350 User CPU time used: 0 seconds
 351 System CPU time used: 0 seconds
 352 sps_call_fsdbDumpMDA_vd_main at 0 : ./2_pure_xip/tb_top_soc.sv(187)
@@ -457,23 +457,23 @@ argv[0]=./simv
 354 *Verdi* : Enable +mda and +packedmda dumping.
 355 *Verdi* : End of traversing the MDAs.
 356 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.310 user,  372.20M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+          CPU/Mem usage: 0.050 sys,  0.290 user,  372.21M mem
+                   incr: 0.000 sys,  0.010 user,  0.00M mem
+                   accu: 0.000 sys,  0.010 user,  0.00M mem
+              accu incr: 0.000 sys,  0.010 user,  0.00M mem
 
           Count usage: 32214 var,  17305 idcode,  3216 callback
                  incr: 8200 var,  0 idcode,  3 callback
                  accu: 8200 var,  0 idcode,  3 callback
             accu incr: 8200 var,  0 idcode,  3 callback
 357 Idcode  0 - bc1:0  mda:8203
-358 Elapsed time:    0:00:21    Wed May 27 17:56:54 2026
+358 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
 359 User CPU time used: 0 seconds
 360 System CPU time used: 0 seconds
 361 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.310 user,  372.20M mem
+          CPU/Mem usage: 0.050 sys,  0.290 user,  372.21M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.010 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
           Count usage: 32214 var,  17305 idcode,  3216 callback
@@ -481,33 +481,33 @@ argv[0]=./simv
                  accu: 8200 var,  0 idcode,  3 callback
             accu incr: 0 var,  0 idcode,  0 callback
 362 Idcode  0 - bc1:0  mda:8203
-363 Elapsed time:    0:00:21    Wed May 27 17:56:54 2026
+363 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
 364 User CPU time used: 0 seconds
 365 System CPU time used: 0 seconds
 366 End of simulation at 3310001
-367 Memory usage: 372.662 M
-368 Maximum resident set size: 144 MB
+367 Memory usage: 372.675 M
+368 Maximum resident set size: 141 MB
 369 Hard page faults: 0
-370 Soft page faults: 16985
-371 Elapsed time:    0:00:21    Wed May 27 17:56:54 2026
+370 Soft page faults: 20824
+371 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
 372 User CPU time used: 0 seconds
 373 System CPU time used: 0 seconds
 374 Begin FSDB profile info:
 375 FSDB Writer : bc1(3448) bcn(12190) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.008182) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer elapsed time : flush(0.007318) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 376 End FSDB profile info
 377 FSDB closed. Name: soc_full.fsdb Size: 469239
 378 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
 379                      - BlockUsed:1 Acquire:0 BufferUsed:303750
 380                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
-381                      - MainProducerTime:0.397904182 TotalConsumerTime:0.000000000
-382                      - ElapsedTime:0.207566000
+381                      - MainProducerTime:0.372459808 TotalConsumerTime:0.000000000
+382                      - ElapsedTime:0.190872000
 383 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:303750
 384 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
 385                      - BlockUsed:2 Acquire:0 BufferUsed:303750
 386 SimExit
-387 Elapsed time:    0:00:21    Wed May 27 17:56:54 2026
+387 Elapsed time:    0:00:21    Wed May 27 14:58:12 2026
 388 User CPU time used: 0 seconds
 389 System CPU time used: 0 seconds
 390 Sim process exit

@@ -1,9 +1,9 @@
 /home/user18/Projects/Flash_controller/FYP_latest/source/0_shared_ip/boot_rom.v
+/home/user18/Projects/Flash_controller/FYP_latest/source/0_shared_ip/flash_model_final.sv
 /home/user18/Projects/Flash_controller/FYP_latest/source/0_shared_ip/sync_fifo_full.sv
-/home/user18/Projects/Flash_controller/FYP_latest/source/2_pure_xip/ahb_wrapper_pure.sv
-/home/user18/Projects/Flash_controller/FYP_latest/source/2_pure_xip/flash_model_pure.sv
-/home/user18/Projects/Flash_controller/FYP_latest/source/2_pure_xip/qspi_pure_xip.sv
-/home/user18/Projects/Flash_controller/FYP_latest/source/2_pure_xip/tb_top_soc.sv
+/home/user18/Projects/Flash_controller/FYP_latest/source/3_dual_mode/ahb_wrapper_dual.sv
+/home/user18/Projects/Flash_controller/FYP_latest/source/3_dual_mode/qspi_dual.sv
+/home/user18/Projects/Flash_controller/FYP_latest/source/3_dual_mode/tb_top_soc.sv
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_bus_matrix.v
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_bit_master.v
 /home/user18/Projects/Flash_controller/arm_soc_project/ARM_IPs/Cortex-M3/AT425-BU-50000-r2p1-00rel1/logical/cm3_bus_matrix/verilog/cm3_mtx_decode_dap.v
