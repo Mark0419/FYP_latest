@@ -33,7 +33,8 @@ source dc_constraints.sdc
 check_design > reports/${DESIGN_NAME}_check_design.rpt
 check_timing > reports/${DESIGN_NAME}_check_timing_precompile.rpt
 
-compile_ultra -gate_clock -no_autoungroup
+# Keep automatic clock gating disabled for a fair, compact block-level comparison.
+compile_ultra -no_autoungroup
 
 report_qor > reports/${DESIGN_NAME}_qor.rpt
 report_reference -hierarchy > reports/${DESIGN_NAME}_references.rpt

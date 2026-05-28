@@ -68,7 +68,8 @@ read_sdc $SDC_FILE
 set_scenario_status func_ss -active true -setup true  -hold false -leakage_power true
 set_scenario_status func_ff -active true -setup false -hold true  -leakage_power false
 
-initialize_floorplan -core_utilization 0.70 -shape R -side_ratio {1.0 1.0}
+# Leave margin for CTS/hold buffers; tiny blocks can overfill after clock_opt.
+initialize_floorplan -core_utilization 0.55 -shape R -side_ratio {1.0 1.0}
 place_pins -ports *
 
 create_net -power VDD
