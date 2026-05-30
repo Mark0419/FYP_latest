@@ -2,7 +2,7 @@
 #
 # Design name:  ahb_spi_legacy
 #
-# Created by fc write_sdc on Thu May 28 18:10:16 2026
+# Created by fc write_sdc on Sun May 31 00:07:44 2026
 #
 ################################################################################
 
@@ -25,14 +25,1167 @@ set_units -time ns -resistance MOhm -capacitance fF -voltage V -current uA
 # Corner: ff_corner
 # Scenario: func_ff
 
-# /home/user18/Projects/Flash_controller/FYP_latest/source/1_legacy_spi/dc_constraints.sdc, \
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
 #   line 13
 create_clock -name HCLK -period 20 -waveform {0 10} [get_ports {HCLK}]
 set_propagated_clock [get_clocks {HCLK}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 25
+set_false_path -from [get_ports {HRESETn}]
+set_load -pin_load 5 [get_ports {HRDATA[31]}]
+set_load -pin_load 5 [get_ports {HRDATA[30]}]
+set_load -pin_load 5 [get_ports {HRDATA[29]}]
+set_load -pin_load 5 [get_ports {HRDATA[28]}]
+set_load -pin_load 5 [get_ports {HRDATA[27]}]
+set_load -pin_load 5 [get_ports {HRDATA[26]}]
+set_load -pin_load 5 [get_ports {HRDATA[25]}]
+set_load -pin_load 5 [get_ports {HRDATA[24]}]
+set_load -pin_load 5 [get_ports {HRDATA[23]}]
+set_load -pin_load 5 [get_ports {HRDATA[22]}]
+set_load -pin_load 5 [get_ports {HRDATA[21]}]
+set_load -pin_load 5 [get_ports {HRDATA[20]}]
+set_load -pin_load 5 [get_ports {HRDATA[19]}]
+set_load -pin_load 5 [get_ports {HRDATA[18]}]
+set_load -pin_load 5 [get_ports {HRDATA[17]}]
+set_load -pin_load 5 [get_ports {HRDATA[16]}]
+set_load -pin_load 5 [get_ports {HRDATA[15]}]
+set_load -pin_load 5 [get_ports {HRDATA[14]}]
+set_load -pin_load 5 [get_ports {HRDATA[13]}]
+set_load -pin_load 5 [get_ports {HRDATA[12]}]
+set_load -pin_load 5 [get_ports {HRDATA[11]}]
+set_load -pin_load 5 [get_ports {HRDATA[10]}]
+set_load -pin_load 5 [get_ports {HRDATA[9]}]
+set_load -pin_load 5 [get_ports {HRDATA[8]}]
+set_load -pin_load 5 [get_ports {HRDATA[7]}]
+set_load -pin_load 5 [get_ports {HRDATA[6]}]
+set_load -pin_load 5 [get_ports {HRDATA[5]}]
+set_load -pin_load 5 [get_ports {HRDATA[4]}]
+set_load -pin_load 5 [get_ports {HRDATA[3]}]
+set_load -pin_load 5 [get_ports {HRDATA[2]}]
+set_load -pin_load 5 [get_ports {HRDATA[1]}]
+set_load -pin_load 5 [get_ports {HRDATA[0]}]
+set_load -pin_load 5 [get_ports {HREADYOUT}]
+set_load -pin_load 5 [get_ports {HRESP[1]}]
+set_load -pin_load 5 [get_ports {HRESP[0]}]
+set_load -pin_load 5 [get_ports {HSPLIT[15]}]
+set_load -pin_load 5 [get_ports {HSPLIT[14]}]
+set_load -pin_load 5 [get_ports {HSPLIT[13]}]
+set_load -pin_load 5 [get_ports {HSPLIT[12]}]
+set_load -pin_load 5 [get_ports {HSPLIT[11]}]
+set_load -pin_load 5 [get_ports {HSPLIT[10]}]
+set_load -pin_load 5 [get_ports {HSPLIT[9]}]
+set_load -pin_load 5 [get_ports {HSPLIT[8]}]
+set_load -pin_load 5 [get_ports {HSPLIT[7]}]
+set_load -pin_load 5 [get_ports {HSPLIT[6]}]
+set_load -pin_load 5 [get_ports {HSPLIT[5]}]
+set_load -pin_load 5 [get_ports {HSPLIT[4]}]
+set_load -pin_load 5 [get_ports {HSPLIT[3]}]
+set_load -pin_load 5 [get_ports {HSPLIT[2]}]
+set_load -pin_load 5 [get_ports {HSPLIT[1]}]
+set_load -pin_load 5 [get_ports {HSPLIT[0]}]
+set_load -pin_load 5 [get_ports {spi_cs_n}]
+set_load -pin_load 5 [get_ports {spi_clk}]
+set_load -pin_load 5 [get_ports {spi_mosi}]
 # Warning: Libcell power domain derates are skipped!
 
 # Set latency for io paths.
-# -origin user
-set_clock_latency 0.502968 [get_clocks {HCLK}]
+# -origin useful_skew
+set_clock_latency 0.508653 [get_clocks {HCLK}]
 # Set propagated on clock sources to avoid removing latency for IO paths.
 set_propagated_clock  [get_ports {HCLK}]
+set_clock_uncertainty -setup 0.5 [get_clocks {HCLK}]
+set_clock_uncertainty -hold 0.1 [get_clocks {HCLK}]
+set_clock_transition 0.2 [get_clocks {HCLK}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 44
+set_input_transition 0.2 [get_ports {HRESETn}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HSEL}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[31]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[30]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[29]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[28]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[27]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[26]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[25]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[24]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[23]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[22]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[21]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[20]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[19]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[18]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[17]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[16]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[15]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[14]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[13]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[12]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[11]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[10]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[9]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[8]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[7]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[6]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[5]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[4]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HADDR[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HTRANS[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HTRANS[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWRITE}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HSIZE[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HSIZE[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HSIZE[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HBURST[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HBURST[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HBURST[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HPROT[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HPROT[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HPROT[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HPROT[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HMASTER[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HMASTER[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HMASTER[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HMASTER[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HMASTLOCK}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[31]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[30]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[29]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[28]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[27]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[26]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[25]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[24]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[23]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[22]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[21]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[20]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[19]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[18]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[17]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[16]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[15]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[14]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[13]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[12]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[11]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[10]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[9]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[8]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[7]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[6]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[5]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[4]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HWDATA[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 42
+set_input_transition 0.2 [get_ports {HREADY}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 43
+set_input_transition 0.2 [get_ports {spi_miso}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSEL}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSEL}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[31]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[31]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[30]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[30]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[29]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[29]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[28]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[28]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[27]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[27]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[26]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[26]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[25]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[25]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[24]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[24]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[23]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[23]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[22]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[22]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[21]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[21]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[20]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[20]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[19]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[19]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[18]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[18]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[17]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[17]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[16]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[16]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[15]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[15]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[14]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[14]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[13]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[13]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[12]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[12]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[11]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[11]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[10]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[10]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[9]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[9]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[8]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[8]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[7]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[7]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[6]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[6]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[5]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[5]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[4]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[4]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[3]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[2]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[1]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HADDR[0]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HADDR[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HTRANS[1]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HTRANS[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HTRANS[0]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HTRANS[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWRITE}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWRITE}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSIZE[2]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSIZE[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSIZE[1]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSIZE[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSIZE[0]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSIZE[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HBURST[2]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HBURST[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HBURST[1]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HBURST[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HBURST[0]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HBURST[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HPROT[3]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HPROT[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HPROT[2]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HPROT[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HPROT[1]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HPROT[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HPROT[0]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HPROT[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HMASTER[3]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HMASTER[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HMASTER[2]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HMASTER[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HMASTER[1]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HMASTER[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HMASTER[0]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HMASTER[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HMASTLOCK}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HMASTLOCK}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[31]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[31]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[30]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[30]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[29]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[29]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[28]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[28]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[27]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[27]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[26]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[26]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[25]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[25]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[24]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[24]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[23]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[23]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[22]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[22]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[21]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[21]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[20]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[20]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[19]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[19]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[18]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[18]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[17]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[17]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[16]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[16]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[15]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[15]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[14]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[14]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[13]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[13]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[12]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[12]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[11]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[11]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[10]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[10]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[9]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[9]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[8]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[8]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[7]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[7]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[6]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[6]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[5]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[5]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[4]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[4]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[3]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[2]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[1]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HWDATA[0]}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HWDATA[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 34; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 35
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HREADY}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HREADY}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[31]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[31]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[30]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[30]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[29]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[29]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[28]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[28]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[27]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[27]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[26]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[26]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[25]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[25]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[24]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[24]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[23]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[23]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[22]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[22]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[21]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[21]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[20]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[20]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[19]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[19]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[18]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[18]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[17]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[17]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[16]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[16]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[15]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[15]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[14]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[14]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[13]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[13]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[12]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[12]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[11]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[11]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[10]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[10]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[9]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[9]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[8]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[8]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[7]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[7]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[6]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[6]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[5]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[5]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[4]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[4]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[3]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[2]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[1]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRDATA[0]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRDATA[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HREADYOUT}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HREADYOUT}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRESP[1]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRESP[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HRESP[0]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HRESP[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[15]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[15]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[14]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[14]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[13]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[13]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[12]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[12]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[11]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[11]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[10]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[10]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[9]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[9]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[8]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[8]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[7]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[7]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[6]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[6]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[5]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[5]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[4]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[4]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[3]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[3]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[2]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[2]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[1]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[1]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 52; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 53
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {HSPLIT[0]}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {HSPLIT[0]}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 55; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 56
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {spi_cs_n}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {spi_cs_n}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 55; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 56
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {spi_clk}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {spi_clk}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 55; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 56
+set_output_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {spi_mosi}]
+set_output_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {spi_mosi}]
+# /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 39; \
+#   /home/user18/Projects/Flash_controller/FYP_Fixing/source/1_legacy_spi/dc_constraints.sdc, \
+#   line 40
+set_input_delay -clock [get_clocks {HCLK}] -min 1 [get_ports {spi_miso}]
+set_input_delay -clock [get_clocks {HCLK}] -max 8 [get_ports {spi_miso}]
+set_max_transition 1.5 [current_design]

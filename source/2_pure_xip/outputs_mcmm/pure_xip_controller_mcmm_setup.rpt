@@ -6,43 +6,8 @@ Report : timing
         -report_by design
 Design : ahb_wrapper
 Version: W-2024.09-SP3
-Date   : Thu May 28 19:47:50 2026
+Date   : Sun May 31 01:12:18 2026
 ****************************************
-
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/U260 (rising clock gating-check end-point clocked by HCLK')
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U72/X (SAEDRVT14_AOI21_0P75)              0.02      0.50 r
-  u_core/U260/A2 (SAEDRVT14_OA21_1)                0.00      0.50 r
-  data arrival time                                          0.50
-
-  clock HCLK' (rise edge)                         10.00     10.00
-  clock network delay (propagated)                 0.39     10.39
-  u_core/U260/B (SAEDRVT14_OA21_1)                 0.00     10.39 r
-  library setup time                              -0.00     10.39
-  data required time                                        10.39
-  ------------------------------------------------------------------------
-  data required time                                        10.39
-  data arrival time                                         -0.50
-  ------------------------------------------------------------------------
-  slack (MET)                                                9.88
-
-
 
   Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
   Endpoint: u_core/U260 (rising clock gating-check end-point clocked by HCLK')
@@ -55,32 +20,71 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
   u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
+                                                   0.00      0.46 r
   u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.04      0.43 f
-  u_core/U75/X (SAEDRVT14_INV_S_0P5)               0.02      0.45 r
-  u_core/U73/X (SAEDRVT14_ND2_CDC_1)               0.02      0.47 f
-  u_core/U100/X (SAEDRVT14_INV_0P5)                0.03      0.50 r
-  u_core/U260/A1 (SAEDRVT14_OA21_1)                0.00      0.50 r
-  data arrival time                                          0.50
+                                                   0.04      0.50 f
+  u_core/U75/X (SAEDRVT14_INV_S_0P5)               0.02      0.52 r
+  u_core/U73/X (SAEDRVT14_ND2_CDC_1)               0.02      0.55 f
+  u_core/U100/X (SAEDRVT14_INV_0P5)                0.03      0.57 r
+  u_core/copt_h_inst_3169/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.60 r
+  u_core/U260/A1 (SAEDRVT14_OA21_U_0P5)            0.00      0.60 r
+  data arrival time                                          0.60
 
   clock HCLK' (rise edge)                         10.00     10.00
-  clock network delay (propagated)                 0.39     10.39
-  u_core/U260/B (SAEDRVT14_OA21_1)                 0.00     10.39 r
-  library setup time                              -0.00     10.39
-  data required time                                        10.39
+  clock network delay (propagated)                 0.44     10.44
+  u_core/U260/B (SAEDRVT14_OA21_U_0P5)             0.00     10.44 r
+  library setup time                              -0.00     10.44
+  data required time                                        10.44
   ------------------------------------------------------------------------
-  data required time                                        10.39
-  data arrival time                                         -0.50
+  data required time                                        10.44
+  data arrival time                                         -0.60
   ------------------------------------------------------------------------
-  slack (MET)                                                9.89
+  slack (MET)                                                9.84
 
 
 
-  Startpoint: u_core/state_reg_2_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/U260 (rising clock gating-check end-point clocked by HCLK')
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.52 r
+  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.55 f
+  u_core/U72/X (SAEDRVT14_AOI21_0P75)              0.02      0.57 r
+  u_core/copt_h_inst_3188/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.60 r
+  u_core/U260/A2 (SAEDRVT14_OA21_U_0P5)            0.00      0.60 r
+  data arrival time                                          0.60
+
+  clock HCLK' (rise edge)                         10.00     10.00
+  clock network delay (propagated)                 0.44     10.44
+  u_core/U260/B (SAEDRVT14_OA21_U_0P5)             0.00     10.44 r
+  library setup time                              -0.00     10.44
+  data required time                                        10.44
+  ------------------------------------------------------------------------
+  data required time                                        10.44
+  data arrival time                                         -0.60
+  ------------------------------------------------------------------------
+  slack (MET)                                                9.84
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
   Endpoint: u_core/sreg_reg_30_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
@@ -91,41 +95,44 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_2_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_2_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.05      0.43 f
-  u_core/ctmTdsLR_1_10/X (SAEDRVT14_ND2B_U_0P5)    0.04      0.47 f
-  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.51 r
-  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.53 f
-  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.56 f
-  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.66 r
-  u_core/U27/X (SAEDRVT14_OAI21_0P5)               0.05      0.71 f
-  u_core/U268/X (SAEDRVT14_AOI21_0P75)             0.02      0.73 r
-  u_core/U269/X (SAEDRVT14_AOI21_0P75)             0.01      0.74 f
-  u_core/U270/X (SAEDRVT14_AOI21_0P75)             0.01      0.75 r
-  u_core/U271/X (SAEDRVT14_OAI21_0P5)              0.01      0.76 f
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U27/X (SAEDRVT14_OAI21_0P5)               0.05      0.79 f
+  u_core/U268/X (SAEDRVT14_AOI21_0P75)             0.03      0.82 r
+  u_core/U269/X (SAEDRVT14_AOI21_0P75)             0.01      0.84 f
+  u_core/U270/X (SAEDRVT14_AOI21_0P75)             0.01      0.85 r
+  u_core/U271/X (SAEDRVT14_OAI21_0P5)              0.01      0.86 f
+  u_core/copt_h_inst_3425/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.89 f
   u_core/sreg_reg_30_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.76 f
-  data arrival time                                          0.76
+                                                   0.00      0.89 f
+  data arrival time                                          0.89
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
+  clock network delay (propagated)                 0.46     20.46
   u_core/sreg_reg_30_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                               0.00     20.39
-  data required time                                        20.39
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
   ------------------------------------------------------------------------
-  data required time                                        20.39
-  data arrival time                                         -0.76
+  data required time                                        20.46
+  data arrival time                                         -0.89
   ------------------------------------------------------------------------
-  slack (MET)                                               19.63
+  slack (MET)                                               19.57
 
 
 
-  Startpoint: u_core/state_reg_2_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
   Endpoint: u_core/sreg_reg_27_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
@@ -136,42 +143,319 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_2_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_2_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.05      0.43 f
-  u_core/ctmTdsLR_1_10/X (SAEDRVT14_ND2B_U_0P5)    0.04      0.47 f
-  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.51 r
-  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.53 f
-  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.56 f
-  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.66 r
-  u_core/U27/X (SAEDRVT14_OAI21_0P5)               0.05      0.71 f
-  u_core/U256/X (SAEDRVT14_AOI21_0P75)             0.02      0.73 r
-  u_core/U257/X (SAEDRVT14_AOI21_0P75)             0.01      0.74 f
-  u_core/U258/X (SAEDRVT14_AOI21_0P75)             0.01      0.75 r
-  u_core/U259/X (SAEDRVT14_OAI21_0P5)              0.01      0.76 f
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U27/X (SAEDRVT14_OAI21_0P5)               0.05      0.79 f
+  u_core/U256/X (SAEDRVT14_AOI21_0P5)              0.02      0.81 r
+  u_core/U257/X (SAEDRVT14_AOI21_0P75)             0.01      0.83 f
+  u_core/U258/X (SAEDRVT14_AOI21_0P75)             0.01      0.84 r
+  u_core/U259/X (SAEDRVT14_OAI21_0P5)              0.01      0.85 f
+  u_core/copt_gre_h_inst_3432/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.88 f
   u_core/sreg_reg_27_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.76 f
-  data arrival time                                          0.76
+                                                   0.00      0.88 f
+  data arrival time                                          0.88
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
+  clock network delay (propagated)                 0.46     20.46
   u_core/sreg_reg_27_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                               0.00     20.39
-  data required time                                        20.39
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
   ------------------------------------------------------------------------
-  data required time                                        20.39
-  data arrival time                                         -0.76
+  data required time                                        20.46
+  data arrival time                                         -0.88
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.58
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_21_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U184/X (SAEDRVT14_OAI22_0P5)              0.05      0.79 f
+  u_core/U185/X (SAEDRVT14_AOI21_0P5)              0.02      0.81 r
+  u_core/U186/X (SAEDRVT14_OAI21_0P5)              0.02      0.82 f
+  u_core/copt_gre_h_inst_3482/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.85 f
+  u_core/sreg_reg_21_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.85 f
+  data arrival time                                          0.85
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_21_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
+  ------------------------------------------------------------------------
+  data required time                                        20.46
+  data arrival time                                         -0.85
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.61
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_8_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U208/X (SAEDRVT14_OAI22_0P5)              0.04      0.78 f
+  u_core/U17/X (SAEDRVT14_AOI21_0P5)               0.02      0.80 r
+  u_core/U209/X (SAEDRVT14_OAI21_0P5)              0.02      0.81 f
+  u_core/copt_h_inst_3420/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.03      0.84 f
+  u_core/sreg_reg_8_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.84 f
+  data arrival time                                          0.84
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_8_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
+  ------------------------------------------------------------------------
+  data required time                                        20.46
+  data arrival time                                         -0.84
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.61
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_18_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U24/X (SAEDRVT14_OAI22_0P5)               0.05      0.79 f
+  u_core/U189/X (SAEDRVT14_AOI21_0P75)             0.03      0.83 r
+  u_core/U190/X (SAEDRVT14_OAI21_V1_6)             0.01      0.84 f
+  u_core/sreg_reg_18_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.84 f
+  data arrival time                                          0.84
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_18_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
+  ------------------------------------------------------------------------
+  data required time                                        20.46
+  data arrival time                                         -0.84
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.62
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_6_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U202/X (SAEDRVT14_OAI22_0P5)              0.04      0.78 f
+  u_core/U26/X (SAEDRVT14_AOI21_0P75)              0.02      0.80 r
+  u_core/U203/X (SAEDRVT14_OAI21_0P5)              0.02      0.82 f
+  u_core/copt_gre_h_inst_3498/X (SAEDRVT14_DEL_R2V1_1)
+                                                   0.02      0.84 f
+  u_core/sreg_reg_6_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.84 f
+  data arrival time                                          0.84
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_6_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                               0.00     20.46
+  data required time                                        20.46
+  ------------------------------------------------------------------------
+  data required time                                        20.46
+  data arrival time                                         -0.84
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.62
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_11_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U194/X (SAEDRVT14_OAI22_0P5)              0.04      0.78 f
+  u_core/U23/X (SAEDRVT14_AOI21_0P75)              0.02      0.80 r
+  u_core/U11/X (SAEDRVT14_OAI21_0P5)               0.01      0.82 f
+  u_core/ropt_h_inst_3516/X (SAEDRVT14_DEL_R2V1_1)
+                                                   0.02      0.84 f
+  u_core/sreg_reg_11_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.84 f
+  data arrival time                                          0.84
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_11_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
+  ------------------------------------------------------------------------
+  data required time                                        20.46
+  data arrival time                                         -0.84
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.62
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_20_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U216/X (SAEDRVT14_OAI22_0P5)              0.04      0.78 f
+  u_core/U217/X (SAEDRVT14_AOI21_0P75)             0.02      0.80 r
+  u_core/ropt_h_inst_3526/X (SAEDRVT14_BUF_U_0P5)
+                                                   0.02      0.82 r
+  u_core/U218/X (SAEDRVT14_OAI21_0P5)              0.01      0.83 f
+  u_core/sreg_reg_20_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.83 f
+  data arrival time                                          0.83
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_20_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
+  ------------------------------------------------------------------------
+  data required time                                        20.45
+  data arrival time                                         -0.83
   ------------------------------------------------------------------------
   slack (MET)                                               19.63
 
 
 
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_18_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_23_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
   Scenario: func_ss
@@ -181,36 +465,43 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U36/X (SAEDRVT14_OAI22_0P5)               0.05      0.73 r
-  u_core/rx_reg_reg_18_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.73 r
-  data arrival time                                          0.73
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U246/X (SAEDRVT14_OAI22_0P5)              0.04      0.78 f
+  u_core/U247/X (SAEDRVT14_AOI21_0P5)              0.02      0.80 r
+  u_core/ropt_h_inst_3569/X (SAEDRVT14_BUF_U_0P5)
+                                                   0.01      0.81 r
+  u_core/U248/X (SAEDRVT14_OAI21_0P5)              0.01      0.83 f
+  u_core/sreg_reg_23_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.83 f
+  data arrival time                                          0.83
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_18_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.02     20.37
-  data required time                                        20.37
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_23_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
   ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.73
+  data required time                                        20.45
+  data arrival time                                         -0.83
   ------------------------------------------------------------------------
-  slack (MET)                                               19.64
+  slack (MET)                                               19.63
 
 
 
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_15_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_17_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
   Scenario: func_ss
@@ -220,36 +511,41 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U50/X (SAEDRVT14_OAI22_0P5)               0.05      0.73 r
-  u_core/rx_reg_reg_15_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.73 r
-  data arrival time                                          0.73
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U25/X (SAEDRVT14_OAI22_0P5)               0.06      0.80 f
+  u_core/U232/X (SAEDRVT14_AOI21_0P75)             0.02      0.82 r
+  u_core/U233/X (SAEDRVT14_OAI21_0P5)              0.01      0.83 f
+  u_core/sreg_reg_17_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.83 f
+  data arrival time                                          0.83
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_15_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.02     20.37
-  data required time                                        20.37
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_17_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
   ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.73
+  data required time                                        20.46
+  data arrival time                                         -0.83
   ------------------------------------------------------------------------
-  slack (MET)                                               19.64
+  slack (MET)                                               19.63
 
 
 
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_30_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_29_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
   Scenario: func_ss
@@ -259,36 +555,41 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U33/X (SAEDRVT14_OAI22_0P5)               0.05      0.73 r
-  u_core/rx_reg_reg_30_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.73 r
-  data arrival time                                          0.73
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U9/X (SAEDRVT14_OAI22_0P5)                0.05      0.79 f
+  u_core/copt_gre_h_inst_3434/X (SAEDRVT14_DEL_R2V2_1)
+                                                   0.04      0.83 f
+  u_core/sreg_reg_29_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.83 f
+  data arrival time                                          0.83
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_30_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.02     20.37
-  data required time                                        20.37
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_29_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
   ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.73
+  data required time                                        20.46
+  data arrival time                                         -0.83
   ------------------------------------------------------------------------
-  slack (MET)                                               19.64
+  slack (MET)                                               19.63
 
 
 
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_23_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_16_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
   Scenario: func_ss
@@ -298,35 +599,176 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U45/X (SAEDRVT14_OAI22_0P5)               0.04      0.73 r
-  u_core/rx_reg_reg_23_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.73 r
-  data arrival time                                          0.73
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U15/X (SAEDRVT14_OAI22_0P5)               0.05      0.79 f
+  u_core/U179/X (SAEDRVT14_AOI21_0P75)             0.02      0.81 r
+  u_core/U180/X (SAEDRVT14_OAI21_0P5)              0.01      0.83 f
+  u_core/sreg_reg_16_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.83 f
+  data arrival time                                          0.83
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_23_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.02     20.37
-  data required time                                        20.37
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_16_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
   ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.73
+  data required time                                        20.46
+  data arrival time                                         -0.83
   ------------------------------------------------------------------------
-  slack (MET)                                               19.64
+  slack (MET)                                               19.63
 
 
 
-  Startpoint: u_core/state_reg_2_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_5_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U198/X (SAEDRVT14_OAI22_0P5)              0.04      0.78 f
+  u_core/U18/X (SAEDRVT14_AOI21_0P75)              0.02      0.80 r
+  u_core/U199/X (SAEDRVT14_OAI21_0P5)              0.01      0.81 f
+  u_core/ropt_h_inst_3556/X (SAEDRVT14_BUF_U_0P5)
+                                                   0.01      0.83 f
+  u_core/sreg_reg_5_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.83 f
+  data arrival time                                          0.83
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_5_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.00     20.46
+  data required time                                        20.46
+  ------------------------------------------------------------------------
+  data required time                                        20.46
+  data arrival time                                         -0.83
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.63
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_12_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U20/X (SAEDRVT14_OAI22_0P5)               0.04      0.78 f
+  u_core/ropt_h_inst_3534/X (SAEDRVT14_BUF_S_0P5)
+                                                   0.02      0.80 f
+  u_core/U219/X (SAEDRVT14_AOI21_0P75)             0.01      0.81 r
+  u_core/U220/X (SAEDRVT14_OAI21_0P5)              0.01      0.82 f
+  u_core/sreg_reg_12_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.82 f
+  data arrival time                                          0.82
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_12_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
+  ------------------------------------------------------------------------
+  data required time                                        20.45
+  data arrival time                                         -0.82
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.63
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_22_ (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: func_mode
+  Corner: ss_corner
+  Scenario: func_ss
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock HCLK (rise edge)                           0.00      0.00
+  clock network delay (propagated)                 0.46      0.46
+
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U249/X (SAEDRVT14_OAI22_0P5)              0.04      0.78 f
+  u_core/U250/X (SAEDRVT14_AOI21_0P75)             0.03      0.81 r
+  u_core/U251/X (SAEDRVT14_OAI21_0P5)              0.02      0.82 f
+  u_core/sreg_reg_22_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.82 f
+  data arrival time                                          0.82
+
+  clock HCLK (rise edge)                          20.00     20.00
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_22_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.01     20.46
+  data required time                                        20.46
+  ------------------------------------------------------------------------
+  data required time                                        20.46
+  data arrival time                                         -0.82
+  ------------------------------------------------------------------------
+  slack (MET)                                               19.63
+
+
+
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
   Endpoint: u_core/sreg_reg_15_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
@@ -337,40 +779,41 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_2_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_2_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.05      0.43 f
-  u_core/ctmTdsLR_1_10/X (SAEDRVT14_ND2B_U_0P5)    0.04      0.47 f
-  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.51 r
-  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.53 f
-  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.56 f
-  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.66 r
-  u_core/U227/X (SAEDRVT14_OAI22_0P5)              0.04      0.70 f
-  u_core/U228/X (SAEDRVT14_AOI21_0P75)             0.02      0.72 r
-  u_core/U229/X (SAEDRVT14_OAI21_0P5)              0.01      0.73 f
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U227/X (SAEDRVT14_OAI22_0P5)              0.05      0.79 f
+  u_core/U228/X (SAEDRVT14_AOI21_0P75)             0.02      0.81 r
+  u_core/U229/X (SAEDRVT14_OAI21_0P5)              0.01      0.82 f
   u_core/sreg_reg_15_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.73 f
-  data arrival time                                          0.73
+                                                   0.00      0.82 f
+  data arrival time                                          0.82
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.38     20.38
+  clock network delay (propagated)                 0.46     20.46
   u_core/sreg_reg_15_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.38 r
-  library setup time                              -0.00     20.38
-  data required time                                        20.38
+                                                   0.00     20.46 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
   ------------------------------------------------------------------------
-  data required time                                        20.38
-  data arrival time                                         -0.73
+  data required time                                        20.45
+  data arrival time                                         -0.82
   ------------------------------------------------------------------------
-  slack (MET)                                               19.65
+  slack (MET)                                               19.63
 
 
 
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_16_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_core/sreg_reg_7_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
   Scenario: func_ss
@@ -380,152 +823,40 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U61/X (SAEDRVT14_OAI22_0P5)               0.04      0.73 r
-  u_core/rx_reg_reg_16_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.73 r
-  data arrival time                                          0.73
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_16_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.02     20.37
-  data required time                                        20.37
-  ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.73
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_21_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U39/X (SAEDRVT14_OAI22_0P5)               0.04      0.72 r
-  u_core/rx_reg_reg_21_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.72 r
-  data arrival time                                          0.72
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U205/X (SAEDRVT14_OAI22_0P5)              0.04      0.78 f
+  u_core/U206/X (SAEDRVT14_AOI21_0P75)             0.02      0.80 r
+  u_core/U12/X (SAEDRVT14_OAI21_0P5)               0.02      0.82 f
+  u_core/sreg_reg_7_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.82 f
+  data arrival time                                          0.82
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_21_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.02     20.37
-  data required time                                        20.37
+  clock network delay (propagated)                 0.46     20.46
+  u_core/sreg_reg_7_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00     20.46 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
   ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.72
+  data required time                                        20.45
+  data arrival time                                         -0.82
   ------------------------------------------------------------------------
-  slack (MET)                                               19.65
+  slack (MET)                                               19.63
 
 
 
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_20_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U56/X (SAEDRVT14_OAI22_0P5)               0.04      0.72 r
-  u_core/rx_reg_reg_20_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.72 r
-  data arrival time                                          0.72
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_20_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.02     20.37
-  data required time                                        20.37
-  ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.72
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_10_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U47/X (SAEDRVT14_OAI22_0P5)               0.04      0.72 r
-  u_core/rx_reg_reg_10_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.72 r
-  data arrival time                                          0.72
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_10_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.02     20.37
-  data required time                                        20.37
-  ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.72
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_2_ (rising edge-triggered flip-flop clocked by HCLK)
+  Startpoint: u_core/state_reg_1_ (rising edge-triggered flip-flop clocked by HCLK)
   Endpoint: u_core/sreg_reg_25_ (rising edge-triggered flip-flop clocked by HCLK)
   Mode: func_mode
   Corner: ss_corner
@@ -536,273 +867,36 @@ Date   : Thu May 28 19:47:50 2026
   Point                                            Incr      Path  
   ------------------------------------------------------------------------
   clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
+  clock network delay (propagated)                 0.46      0.46
 
-  u_core/state_reg_2_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_2_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.05      0.43 f
-  u_core/ctmTdsLR_1_10/X (SAEDRVT14_ND2B_U_0P5)    0.04      0.47 f
-  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.51 r
-  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.53 f
-  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.56 f
-  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.66 r
-  u_core/U21/X (SAEDRVT14_OAI22_0P5)               0.05      0.71 f
-  u_core/U242/X (SAEDRVT14_AOI21_0P5)              0.02      0.72 r
-  u_core/U243/X (SAEDRVT14_OAI21_0P5)              0.01      0.74 f
+  u_core/state_reg_1_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.00      0.46 r
+  u_core/state_reg_1_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                                   0.05      0.51 r
+  u_core/ctmTdsLR_1_1197/X (SAEDRVT14_ND2B_U_0P5)
+                                                   0.04      0.54 f
+  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.58 r
+  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.61 f
+  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.64 f
+  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.74 r
+  u_core/U21/X (SAEDRVT14_OAI22_0P5)               0.04      0.78 f
+  u_core/U242/X (SAEDRVT14_AOI21_0P5)              0.02      0.80 r
+  u_core/U243/X (SAEDRVT14_OAI21_0P5)              0.02      0.82 f
   u_core/sreg_reg_25_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.74 f
-  data arrival time                                          0.74
+                                                   0.00      0.82 f
+  data arrival time                                          0.82
 
   clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
+  clock network delay (propagated)                 0.46     20.46
   u_core/sreg_reg_25_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                               0.00     20.39
-  data required time                                        20.39
+                                                   0.00     20.46 r
+  library setup time                              -0.01     20.45
+  data required time                                        20.45
   ------------------------------------------------------------------------
-  data required time                                        20.39
-  data arrival time                                         -0.74
+  data required time                                        20.45
+  data arrival time                                         -0.82
   ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_17_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U38/X (SAEDRVT14_OAI22_0P5)               0.04      0.72 r
-  u_core/rx_reg_reg_17_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.72 r
-  data arrival time                                          0.72
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_17_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.01     20.37
-  data required time                                        20.37
-  ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.72
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_6_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U54/X (SAEDRVT14_OAI22_0P5)               0.04      0.72 r
-  u_core/rx_reg_reg_6_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.72 r
-  data arrival time                                          0.72
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_6_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.01     20.37
-  data required time                                        20.37
-  ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.72
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_2_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/sreg_reg_19_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_2_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_2_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.05      0.43 f
-  u_core/ctmTdsLR_1_10/X (SAEDRVT14_ND2B_U_0P5)    0.04      0.47 f
-  u_core/U69/X (SAEDRVT14_OAI21_0P5)               0.04      0.51 r
-  u_core/U109/X (SAEDRVT14_INV_S_0P5)              0.02      0.53 f
-  u_core/U111/X (SAEDRVT14_AN3_0P5)                0.03      0.56 f
-  u_core/U117/X (SAEDRVT14_INV_S_0P5)              0.10      0.66 r
-  u_core/U239/X (SAEDRVT14_OAI22_0P5)              0.04      0.70 f
-  u_core/U240/X (SAEDRVT14_AOI21_0P5)              0.01      0.71 r
-  u_core/U241/X (SAEDRVT14_OAI21_0P5)              0.01      0.73 f
-  u_core/sreg_reg_19_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.73 f
-  data arrival time                                          0.73
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.38     20.38
-  u_core/sreg_reg_19_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.38 r
-  library setup time                              -0.00     20.38
-  data required time                                        20.38
-  ------------------------------------------------------------------------
-  data required time                                        20.38
-  data arrival time                                         -0.73
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_5_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U30/X (SAEDRVT14_OAI22_0P5)               0.04      0.72 r
-  u_core/rx_reg_reg_5_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.72 r
-  data arrival time                                          0.72
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_5_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.01     20.37
-  data required time                                        20.37
-  ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.72
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_9_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U37/X (SAEDRVT14_OAI22_0P5)               0.04      0.72 r
-  u_core/rx_reg_reg_9_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.72 r
-  data arrival time                                          0.72
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_9_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.01     20.37
-  data required time                                        20.37
-  ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.72
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
-
-
-
-  Startpoint: u_core/state_reg_0_ (rising edge-triggered flip-flop clocked by HCLK)
-  Endpoint: u_core/rx_reg_reg_14_ (rising edge-triggered flip-flop clocked by HCLK)
-  Mode: func_mode
-  Corner: ss_corner
-  Scenario: func_ss
-  Path Group: HCLK
-  Path Type: max
-
-  Point                                            Incr      Path  
-  ------------------------------------------------------------------------
-  clock HCLK (rise edge)                           0.00      0.00
-  clock network delay (propagated)                 0.39      0.39
-
-  u_core/state_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.39 r
-  u_core/state_reg_0_/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.06      0.44 r
-  u_core/U3/X (SAEDRVT14_INV_S_0P5)                0.03      0.48 f
-  u_core/U71/X (SAEDRVT14_NR2_MM_1)                0.08      0.56 r
-  u_core/HFSINV_1178_0/X (SAEDRVT14_INV_S_0P5)     0.13      0.68 f
-  u_core/U41/X (SAEDRVT14_OAI22_0P5)               0.04      0.72 r
-  u_core/rx_reg_reg_14_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00      0.72 r
-  data arrival time                                          0.72
-
-  clock HCLK (rise edge)                          20.00     20.00
-  clock network delay (propagated)                 0.39     20.39
-  u_core/rx_reg_reg_14_/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)
-                                                   0.00     20.39 r
-  library setup time                              -0.01     20.37
-  data required time                                        20.37
-  ------------------------------------------------------------------------
-  data required time                                        20.37
-  data arrival time                                         -0.72
-  ------------------------------------------------------------------------
-  slack (MET)                                               19.65
+  slack (MET)                                               19.64
 
 
 1

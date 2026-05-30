@@ -3,7 +3,7 @@ Report : constraint
         -all_violators
 Design : ahb_spi_legacy
 Version: W-2024.09-SP3
-Date   : Thu May 28 18:10:17 2026
+Date   : Sun May 31 00:07:44 2026
 ****************************************
 
    late_timing
@@ -20,12 +20,52 @@ No paths.
 Warning: Scenario func_ss is not configured for hold analysis: skipping. (UIC-058)
 Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
 ----------------------------------------------------------------------------------------------------------
-u_spi_fsm/U136/A1 (SAEDRVT14_NR2_1)
-                                   0.42 f        10.38           0.00    -9.95   HCLK     func_ff
-u_spi_fsm/U238/A1 (SAEDRVT14_OAI21_0P5)
-                                   0.42 f        10.36           0.00    -9.94   HCLK     func_ff
+u_spi_fsm/U136/CK (SAEDRVT14_NR2_ISO_1)
+                                   0.39 f        10.11           0.00    -9.73   HCLK     func_ff
 u_spi_fsm/U238/A2 (SAEDRVT14_OAI21_0P5)
-                                   0.42 f        10.36           0.00    -9.94   HCLK     func_ff
+                                   0.39 f        10.11           0.00    -9.72   HCLK     func_ff
+u_spi_fsm/U238/A1 (SAEDRVT14_OAI21_0P5)
+                                   0.39 f        10.11           0.00    -9.72   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_26_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.01   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_9_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_29_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_21_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_1_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_rx_reg_1_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+flash_addr_reg_reg_26_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+flash_addr_reg_reg_9_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+tx_data_reg_reg_8_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/state_reg_0_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_rx_reg_7_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+tx_data_reg_reg_21_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+cmd_reg_reg_6_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/state_reg_1_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_14_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_25_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_4_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_tx_reg_2_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+u_spi_fsm/shift_rx_reg_13_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
+flash_addr_reg_reg_22_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.45 f         0.45           0.00    -0.00   HCLK     func_ff
 
    Mode: func_mode Corner: ff_corner
    Scenario: func_ff

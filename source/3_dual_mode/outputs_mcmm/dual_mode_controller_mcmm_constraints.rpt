@@ -3,7 +3,7 @@ Report : constraint
         -all_violators
 Design : ahb_wrapper
 Version: W-2024.09-SP3
-Date   : Thu May 28 18:19:12 2026
+Date   : Sun May 31 01:41:19 2026
 ****************************************
 
    late_timing
@@ -20,7 +20,46 @@ No paths.
 Warning: Scenario func_ss is not configured for hold analysis: skipping. (UIC-058)
 Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
 ----------------------------------------------------------------------------------------------------------
-No paths.
+ahb_wdata_reg_reg_19_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+ahb_wdata_reg_reg_25_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_30_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_19_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.52 f         0.52           0.00    -0.00   HCLK     func_ff
+ahb_wdata_reg_reg_17_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_18_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.52 f         0.52           0.00    -0.00   HCLK     func_ff
+ahb_rdata_reg_reg_30_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_25_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_23_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+a_reg_reg_9_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.52 f         0.52           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_9_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.52 f         0.52           0.00    -0.00   HCLK     func_ff
+a_reg_reg_30_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_10_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.52 f         0.52           0.00    -0.00   HCLK     func_ff
+ahb_wdata_reg_reg_6_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/rx_reg_reg_30_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+ahb_rdata_reg_reg_25_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_2_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+a_reg_reg_31_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+a_reg_reg_2_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.51 f         0.51           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_11_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.52 f         0.52           0.00    -0.00   HCLK     func_ff
 
    Mode: func_mode Corner: ff_corner
    Scenario: func_ff
@@ -43,57 +82,17 @@ No paths.
                              Required        Actual                            
    Net                      Capacitance    Capacitance       Slack  Violation  
   ---------------------------------------------------------------------------
-   u_core/n366                 19.18          20.01          -0.83  (VIOLATED) 
-     PIN : u_core/U227/X       19.18          20.01          -0.83  (VIOLATED) 
-
-   n105                        25.50          25.53          -0.03  (VIOLATED) 
-     PIN : U140/X              25.50          25.53          -0.03  (VIOLATED) 
+   u_core/n368                 22.19          22.42          -0.23  (VIOLATED) 
+     PIN : u_core/U46/X        22.19          22.42          -0.23  (VIOLATED) 
 
   ---------------------------------------------------------------------------
-   Number of max_capacitance violation(s): 2
+   Number of max_capacitance violation(s): 1
 
 
    Mode: func_mode Corner: ff_corner
    Scenario: func_ff
-   min_capacitance                                                             
-                             Required        Actual                            
-   Net                      Capacitance    Capacitance       Slack  Violation  
   ---------------------------------------------------------------------------
-   HRDATA[1]                    0.15           0.02          -0.13  (VIOLATED) 
-     PIN : U152/X               0.15           0.02          -0.13  (VIOLATED) 
-
-   HRDATA[2]                    0.15           0.02          -0.13  (VIOLATED) 
-     PIN : U153/X               0.15           0.02          -0.13  (VIOLATED) 
-
-   HRDATA[0]                    0.15           0.04          -0.11  (VIOLATED) 
-     PIN : U151/X               0.15           0.04          -0.11  (VIOLATED) 
-
-   HRDATA[3]                    0.15           0.04          -0.11  (VIOLATED) 
-     PIN : U145/X               0.15           0.04          -0.11  (VIOLATED) 
-
-   HRDATA[12]                   0.15           0.04          -0.11  (VIOLATED) 
-     PIN : U165/X               0.15           0.04          -0.11  (VIOLATED) 
-
-   HRDATA[11]                   0.15           0.05          -0.10  (VIOLATED) 
-     PIN : U157/X               0.15           0.05          -0.10  (VIOLATED) 
-
-   HRDATA[13]                   0.15           0.08          -0.07  (VIOLATED) 
-     PIN : U171/X               0.15           0.08          -0.07  (VIOLATED) 
-
-   HRDATA[4]                    0.15           0.11          -0.04  (VIOLATED) 
-     PIN : U148/X               0.15           0.11          -0.04  (VIOLATED) 
-
-   HRDATA[16]                   0.15           0.12          -0.03  (VIOLATED) 
-     PIN : U177/X               0.15           0.12          -0.03  (VIOLATED) 
-
-   HRDATA[25]                   0.15           0.12          -0.03  (VIOLATED) 
-     PIN : U159/X               0.15           0.12          -0.03  (VIOLATED) 
-
-   HRDATA[7]                    0.15           0.13          -0.02  (VIOLATED) 
-     PIN : U146/X               0.15           0.13          -0.02  (VIOLATED) 
-
-  ---------------------------------------------------------------------------
-   Number of min_capacitance violation(s): 11
+   Number of min_capacitance violation(s): 0
 
   Mode: func_mode
   Corner: ff_corner
@@ -107,5 +106,5 @@ No paths.
 
   ---------------------------------------------------------------------------
    Number of min_pulse_width violation(s): 0
-   Total number of violation(s): 13
+   Total number of violation(s): 1
 1

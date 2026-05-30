@@ -3,7 +3,7 @@ Report : constraint
         -all_violators
 Design : ahb_wrapper
 Version: W-2024.09-SP3
-Date   : Thu May 28 19:47:50 2026
+Date   : Sun May 31 01:12:18 2026
 ****************************************
 
    late_timing
@@ -20,7 +20,28 @@ No paths.
 Warning: Scenario func_ss is not configured for hold analysis: skipping. (UIC-058)
 Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
 ----------------------------------------------------------------------------------------------------------
-No paths.
+u_core/sreg_reg_28_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.53 f         0.54           0.00    -0.01   HCLK     func_ff
+a_reg_reg_21_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+ahb_rdata_reg_reg_18_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+u_core/sreg_reg_16_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+a_reg_reg_29_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+ahb_rdata_reg_reg_14_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+u_core/xip_active_reg/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+a_reg_reg_28_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+ahb_rdata_reg_reg_0_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+a_reg_reg_22_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
+a_reg_reg_25_/D (SAEDRVT14_FDPRBQ_V2LP_0P5)
+                                   0.54 f         0.54           0.00    -0.00   HCLK     func_ff
 
    Mode: func_mode Corner: ff_corner
    Scenario: func_ff
@@ -39,16 +60,8 @@ No paths.
 
    Mode: func_mode Corner: ss_corner
    Scenario: func_ss
-   max_capacitance                                                             
-                             Required        Actual                            
-   Net                      Capacitance    Capacitance       Slack  Violation  
   ---------------------------------------------------------------------------
-   u_core/HFSNET_0             19.65          19.72          -0.07  (VIOLATED) 
-     PIN : u_core/HFSINV_1178_0/X
-                               19.65          19.72          -0.07  (VIOLATED) 
-
-  ---------------------------------------------------------------------------
-   Number of max_capacitance violation(s): 1
+   Number of max_capacitance violation(s): 0
 
 
    Mode: func_mode Corner: ff_corner
@@ -68,5 +81,5 @@ No paths.
 
   ---------------------------------------------------------------------------
    Number of min_pulse_width violation(s): 0
-   Total number of violation(s): 1
+   Total number of violation(s): 0
 1

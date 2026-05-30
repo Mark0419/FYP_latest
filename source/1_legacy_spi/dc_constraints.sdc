@@ -13,11 +13,7 @@ set_units -time ns -resistance MOhm -capacitance fF -voltage V -current uA
 create_clock -name HCLK -period 20.000 -waveform {0.000 10.000} [get_ports HCLK]
 
 # spi_clk is a forwarded protocol output from this block, not an internal
-# capture clock. Remove any stale generated-clock definition from imported DDCs
-# and constrain it as an output below to avoid false clock-gating hold checks.
-if {[sizeof_collection [get_clocks -quiet SPI_CLK]] > 0} {
-    remove_clock [get_clocks SPI_CLK]
-}
+# capture clock. 
 
 set_clock_uncertainty -setup 0.500 [get_clocks HCLK]
 set_clock_uncertainty -hold  0.100 [get_clocks HCLK]
@@ -27,7 +23,7 @@ set_clock_transition  0.200 [get_clocks HCLK]
 # 2. Reset and non-functional timing exceptions
 # --------------------------------------------------------------------------
 set_false_path -from [get_ports HRESETn]
-set_dont_touch_network [get_ports HRESETn]
+
 
 # --------------------------------------------------------------------------
 # 3. Input delays
@@ -43,7 +39,9 @@ set_input_delay -min 1.000 -clock HCLK $AHB_IN_PORTS
 set_input_delay -max 8.000 -clock HCLK $SPI_IN_PORTS
 set_input_delay -min 1.000 -clock HCLK $SPI_IN_PORTS
 
-set_input_transition 0.200 [remove_from_collection [all_inputs] [get_ports HCLK]]
+set_input_transition 0.200 $AHB_IN_PORTS
+set_input_transition 0.200 $SPI_IN_PORTS
+set_input_transition 0.200 [get_ports HRESETn]
 
 # --------------------------------------------------------------------------
 # 4. Output delays

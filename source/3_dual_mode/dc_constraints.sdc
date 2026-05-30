@@ -10,18 +10,13 @@ set_units -time ns -resistance MOhm -capacitance fF -voltage V -current uA
 create_clock -name HCLK -period 20.000 -waveform {0.000 10.000} [get_ports HCLK]
 
 # qspi_clk is a forwarded protocol output from this block, not an internal
-# capture clock. Remove any stale generated-clock definition from imported DDCs
-# and constrain it as an output below to avoid false clock-gating hold checks.
-if {[sizeof_collection [get_clocks -quiet QSPI_CLK]] > 0} {
-    remove_clock [get_clocks QSPI_CLK]
-}
+# capture clock. 
 
 set_clock_uncertainty -setup 0.500 [get_clocks HCLK]
 set_clock_uncertainty -hold  0.100 [get_clocks HCLK]
 set_clock_transition  0.200 [get_clocks HCLK]
 
 set_false_path -from [get_ports HRESETn]
-set_dont_touch_network [get_ports HRESETn]
 
 set AHB_IN_PORTS  [get_ports {HSEL HADDR HTRANS HWRITE HWDATA HREADY}]
 set QSPI_IN_PORTS [get_ports {qspi_data_in}]
@@ -31,7 +26,10 @@ set_input_delay -min 1.000 -clock HCLK $AHB_IN_PORTS
 set_input_delay -max 8.000 -clock HCLK $QSPI_IN_PORTS
 set_input_delay -min 1.000 -clock HCLK $QSPI_IN_PORTS
 
-set_input_transition 0.200 [remove_from_collection [all_inputs] [get_ports HCLK]]
+# Replaced Tcl collection logic with explicit standard SDC commands
+set_input_transition 0.200 $AHB_IN_PORTS
+set_input_transition 0.200 $QSPI_IN_PORTS
+set_input_transition 0.200 [get_ports HRESETn]
 
 set AHB_OUT_PORTS  [get_ports {HRDATA HREADYOUT HRESP}]
 set QSPI_OUT_PORTS [get_ports {qspi_clk qspi_cs_n qspi_data_out qspi_data_oen}]

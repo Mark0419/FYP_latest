@@ -68,10 +68,19 @@ read_sdc $SDC_FILE
 set_scenario_status func_ss -active true -setup true  -hold false -leakage_power true
 set_scenario_status func_ff -active true -setup false -hold true  -leakage_power false
 
-# Leave margin for CTS/hold buffers and detail-route repair; these controller
-# blocks are tiny, so a conservative density gives the router breathing room.
-initialize_floorplan -core_utilization 0.40 -shape R -side_ratio {1.0 1.0}
-place_pins -ports *
+# =========================================================================
+# FLOORPLAN & POWER GRID: "Tiny Macro" Strategy with Pin Spreading
+# =========================================================================
+# 1. 2-micron halo to keep standard cells safely inside the boundary
+initialize_floorplan -core_utilization 0.40 -shape R -side_ratio {1.0 1.0} -core_offset {2.0 2.0 2.0 2.0}
+
+# 2. Restrict the router to M1-M5 (Prevents M8/M9/MRDL via DRCs on tiny blocks)
+set_ignored_layers -max_routing_layer M5
+
+# 3. High-Density Pin Placement: Spread pins across M2, M3, and M4 on-grid!
+set signal_ports [get_ports * -filter "name !~ VDD && name !~ VSS"]
+set_block_pin_constraints -allowed_layers {M2 M3 M4}
+place_pins -ports $signal_ports
 
 create_net -power VDD
 create_net -ground VSS
@@ -81,23 +90,13 @@ connect_pg_net -net VSS [get_pins -hierarchical */VSS]
 remove_pg_strategies -all
 remove_pg_patterns -all
 
+# 4. Use M1 rails for power. No upper-metal mesh to eliminate off-grid DRCs.
 create_pg_std_cell_conn_pattern rail_pat -layers {M1}
 set_pg_strategy rail_strat -core -pattern {{name: rail_pat} {nets: {VDD VSS}}}
 
-create_pg_mesh_pattern mesh_pat -layers { \
-    { {vertical_layer: M6} {width: 0.08} {spacing: 0.08} {pitch: 8.0} } \
-    { {horizontal_layer: M7} {width: 0.08} {spacing: 0.08} {pitch: 8.0} } \
-}
-set_pg_strategy mesh_strat -core -pattern {{name: mesh_pat} {nets: {VDD VSS}}}
-
 compile_pg -strategies rail_strat
-compile_pg -strategies mesh_strat
 check_pg_connectivity
-
-if {[catch {set_app_options -name route_opt.flow.enable_hold -value true} hold_msg]} {
-    puts "INFO: route_opt.flow.enable_hold is not supported in this Fusion Compiler build."
-    puts "INFO: Continuing with func_ff active for hold optimization. Tool message: $hold_msg"
-}
+# =========================================================================
 
 place_opt
 set_clock_tree_options -target_skew 0.1 -target_latency 0.5
