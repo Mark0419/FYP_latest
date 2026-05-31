@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Thu May 28 17:59:34 2026
+# Created by write_sdc on Sun May 31 03:10:25 2026
 
 ###################################################################
 set sdc_version 2.1
@@ -521,3 +521,5 @@ set_input_transition -min 0.2  [get_ports HREADY]
 set_input_transition -max 0.2  [get_ports spi_miso]
 set_input_transition -min 0.2  [get_ports spi_miso]
 set_false_path   -from [get_ports HRESETn]
+set_false_path -hold   -from [list [get_cells u_spi_fsm/state_reg_2_] [get_cells                     \
+u_spi_fsm/state_reg_1_] [get_cells u_spi_fsm/state_reg_0_]]

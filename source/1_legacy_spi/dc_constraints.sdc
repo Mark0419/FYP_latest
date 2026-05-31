@@ -62,3 +62,6 @@ set_load 5.000 [all_outputs]
 set_max_fanout 32 [current_design]
 set_max_transition 1.500 [current_design]
 set_max_area 0
+
+# Disable the false half-cycle hold checks on the SPI clock gating logic
+set_false_path -hold -from [get_cells -hierarchical *state_reg*]

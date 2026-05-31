@@ -32,54 +32,53 @@ Information: When applicable Min-max layer allow_pin_connection mode will allow 
 Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 1.47 outside the layer range on clock nets. (ZRT-718)
 Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
 Warning: Standard cell pin SAEDRVT14_AO32_1/A3 has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AO221_4/A1 has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AO221_4/B1 has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_OA221_U_0P5/B1 has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_OA221_U_0P5/B2 has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AO221_0P5/B1 has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_OAI22_0P5/A1 has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_OA31_1/B has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_OA31_1/X has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_OAI21_1P5/A1 has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_OAI21_1P5/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI22_0P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO21B_2/A1 has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_8/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_8/VDDL has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_4/VDDH has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_4/VDDL has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_1/VDDH has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_1/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_6/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_6/VDDL has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_2/VDDH has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_2/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_3/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_3/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_1/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_1/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_2/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_2/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_12/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_12/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI21_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI21_1P5/B has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_10/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_10/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AN3_0P75/X has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_12/VDDH has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_12/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_4/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOLVLUBUF_IY2V1_4/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_MUXI2_U_0P5/D1 has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_ND2B_U_0P5/A has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_ND2_0P5/A1 has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_INV_PS_6/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_INV_PS_2/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_NR2_1P5/A1 has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_NR2_1P5/X has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_INV_PECO_8/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_INV_PECO_2/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_INV_PECO_12/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PS_3/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_INV_PS_1/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_INV_PECO_4/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_INV_PS_3/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PS_6/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_12/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_8/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2_0P5/A1 has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_8/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_8/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PS_2/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_4/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_4/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_6/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_6/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_2/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_2/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_3/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_3/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_12/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_12/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_1/VDDH has no valid via regions. (ZRT-044)
@@ -90,8 +89,8 @@ Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_10/VDDH has no valid via regi
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_10/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_4/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_4/VDDL has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_3/VDDH has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2V1_3/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_6/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_6/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_2/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_2/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_3/VDDH has no valid via regions. (ZRT-044)
@@ -102,8 +101,8 @@ Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_1/VDDH has no valid via regions
 Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_1/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_8/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_8/VDDL has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_6/VDDH has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_6/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_10/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_10/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_4/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_4/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_6/VDDH has no valid via regions. (ZRT-044)
@@ -114,27 +113,25 @@ Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_3/VDDH has no valid via regio
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_3/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_12/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_12/VDDL has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_10/VDDH has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_10/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_1/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_1/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_DEL_PR2V2_1/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_10/VDDH has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_10/VDDL has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_PS_3/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_PS_6/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_PS_0P75/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_1/VDDH has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_1/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PS_1P5/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_PECO_4/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_PECO_8/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_PECO_1/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_PECO_2/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOBUF_IW_6/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_BUF_PS_1P5/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PECO_12/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOBUF_IW_1P5/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOBUF_IW_3/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_AOBUF_IW_0P75/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_BUF_PECO_12/VDD has no valid via regions. (ZRT-044)
-Warning: Standard cell pin SAEDRVT14_INV_PECO_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_2/VDD has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_S_4/A has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_ECO_1/A has no valid via regions. (ZRT-044)
 Warning: Standard cell pin SAEDRVT14_BUF_S_1P5/X has no valid via regions. (ZRT-044)
@@ -142,10 +139,10 @@ Warning: Standard cell pin SAEDRVT14_BUF_S_1P5/X has no valid via regions. (ZRT-
 
 Start checking for open nets ... 
 
-Total number of nets = 1381, of which 0 are not extracted
+Total number of nets = 1366, of which 0 are not extracted
 Total number of open nets = 0, of which 0 are frozen
 
-Check 1381 nets, 0 have Errors
+Check 1366 nets, 0 have Errors
 
 [CHECK OPEN NETS] Elapsed real time: 0:00:00 
 [CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
@@ -164,123 +161,122 @@ Printing options for 'route.auto_via_ladder.*'
 Begin full DRC check ...
 
 Information: Using 1 threads for routing. (ZRT-444)
-Checked	1/4 Partitions, Violations =	39
-Checked	2/4 Partitions, Violations =	420
-Checked	3/4 Partitions, Violations =	616
-Checked	4/4 Partitions, Violations =	2226
+Checked	1/4 Partitions, Violations =	45
+Checked	2/4 Partitions, Violations =	385
+Checked	3/4 Partitions, Violations =	529
+Checked	4/4 Partitions, Violations =	2300
 [DRC CHECK] Elapsed real time: 0:00:00 
 [DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
 [DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
 [DRC CHECK] Total (MB): Used  127  Alloctr  128  Proc 5370 
 Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
-Information: Merged away 1098 aligned/redundant DRCs. (ZRT-305)
+Information: Merged away 1175 aligned/redundant DRCs. (ZRT-305)
 
 DRC-SUMMARY:
-	@@@@@@@ TOTAL VIOLATIONS =	1128
-	Diff net spacing : 388
-	Diff net via-cut spacing : 8
-	Less than minimum area : 1
-	Off-grid : 580
-	Same net spacing : 28
-	Same net via-cut spacing : 9
-	Short : 114
+	@@@@@@@ TOTAL VIOLATIONS =	1125
+	Diff net spacing : 372
+	Diff net via-cut spacing : 11
+	Less than minimum area : 2
+	Off-grid : 585
+	Same net spacing : 36
+	Same net via-cut spacing : 11
+	Short : 108
 
 Information: The app option "route.detail.report_soft_drc_separately" will be on-by-default in future release. (ZRT-807)
 	@@@@@@@ TOTAL SOFT VIOLATIONS =	0
 
 
-Total Wire Length =                    6249 micron
-Total Number of Contacts =             6232
-Total Number of Wires =                9642
-Total Number of PtConns =              1300
-Total Number of Routed Wires =       9023
-Total Routed Wire Length =           5595 micron
-Total Number of Routed Contacts =       6232
-	Layer                 M1 :        344 micron
-	Layer                 M2 :       2548 micron
-	Layer                 M3 :       2592 micron
-	Layer                 M4 :        106 micron
-	Layer                 M5 :          4 micron
+Total Wire Length =                    6255 micron
+Total Number of Contacts =             6166
+Total Number of Wires =                9643
+Total Number of PtConns =              1272
+Total Number of Routed Wires =       9006
+Total Routed Wire Length =           5588 micron
+Total Number of Routed Contacts =       6166
+	Layer                 M1 :        350 micron
+	Layer                 M2 :       2549 micron
+	Layer                 M3 :       2564 micron
+	Layer                 M4 :        100 micron
+	Layer                 M5 :         24 micron
 	Layer                 M6 :          0 micron
 	Layer                 M7 :          0 micron
 	Layer                 M8 :          0 micron
 	Layer                 M9 :          0 micron
 	Layer               MRDL :          0 micron
-	Via              VIA45SQ :          2
-	Via            VIA34SQ_C :          2
-	Via       VIA34SQ_C(rot) :         53
-	Via              VIA34SQ :          4
-	Via     VIA3_34SQ_C(rot) :          2
-	Via            VIA3_34SQ :          3
-	Via            VIA23SQ_C :       1778
+	Via              VIA45SQ :          5
+	Via            VIA34SQ_C :          1
+	Via       VIA34SQ_C(rot) :         28
+	Via              VIA34SQ :         12
+	Via     VIA3_34SQ_C(rot) :          6
+	Via            VIA3_34SQ :          8
+	Via            VIA23SQ_C :       1621
 	Via              VIA23SQ :          3
 	Via         VIA23SQ(rot) :          3
-	Via          VIA2_33SQ_C :        905
-	Via          VIA23_3SQ_C :        318
-	Via        VIA2_33_3SQ_C :        196
-	Via            VIA12SQ_C :         76
-	Via       VIA12SQ_C(rot) :       1449
-	Via          VIA12BAR1_C :          6
-	Via     VIA12BAR1_C(rot) :         72
-	Via       VIA12LG_C(rot) :          1
-	Via              VIA12SQ :         49
-	Via         VIA12SQ(rot) :          2
-	Via     VIA1_32SQ_C(rot) :        184
-	Via     VIA12_3SQ_C(rot) :        905
-	Via   VIA1_32_3SQ_C(rot) :        219
+	Via          VIA2_33SQ_C :       1054
+	Via          VIA23_3SQ_C :        323
+	Via        VIA2_33_3SQ_C :        192
+	Via            VIA12SQ_C :         67
+	Via       VIA12SQ_C(rot) :       1318
+	Via          VIA12BAR1_C :          4
+	Via     VIA12BAR1_C(rot) :         79
+	Via              VIA12SQ :         50
+	Via         VIA12SQ(rot) :          1
+	Via     VIA1_32SQ_C(rot) :        209
+	Via     VIA12_3SQ_C(rot) :        954
+	Via   VIA1_32_3SQ_C(rot) :        228
 
  
 Redundant via conversion report:
 --------------------------------
 
-  Total optimized via conversion rate =  0.00% (0 / 6232 vias)
+  Total optimized via conversion rate =  0.00% (0 / 6166 vias)
  
-    Layer VIA1       =  0.00% (0      / 2963    vias)
+    Layer VIA1       =  0.00% (0      / 2910    vias)
         Un-optimized =  0.00% (0       vias)
-        Un-mapped    = 100.00% (2963    vias)
-    Layer VIA2       =  0.00% (0      / 3203    vias)
+        Un-mapped    = 100.00% (2910    vias)
+    Layer VIA2       =  0.00% (0      / 3196    vias)
         Un-optimized =  0.00% (0       vias)
-        Un-mapped    = 100.00% (3203    vias)
-    Layer VIA3       =  0.00% (0      / 64      vias)
+        Un-mapped    = 100.00% (3196    vias)
+    Layer VIA3       =  0.00% (0      / 55      vias)
         Un-optimized =  0.00% (0       vias)
-        Un-mapped    = 100.00% (64      vias)
-    Layer VIA4       =  0.00% (0      / 2       vias)
+        Un-mapped    = 100.00% (55      vias)
+    Layer VIA4       =  0.00% (0      / 5       vias)
         Un-optimized =  0.00% (0       vias)
-        Un-mapped    = 100.00% (2       vias)
+        Un-mapped    = 100.00% (5       vias)
  
-  Total double via conversion rate    =  0.00% (0 / 6232 vias)
+  Total double via conversion rate    =  0.00% (0 / 6166 vias)
  
-    Layer VIA1       =  0.00% (0      / 2963    vias)
-    Layer VIA2       =  0.00% (0      / 3203    vias)
-    Layer VIA3       =  0.00% (0      / 64      vias)
-    Layer VIA4       =  0.00% (0      / 2       vias)
+    Layer VIA1       =  0.00% (0      / 2910    vias)
+    Layer VIA2       =  0.00% (0      / 3196    vias)
+    Layer VIA3       =  0.00% (0      / 55      vias)
+    Layer VIA4       =  0.00% (0      / 5       vias)
  
-  The optimized via conversion rate based on total routed via count =  0.00% (0 / 6232 vias)
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 6166 vias)
  
-    Layer VIA1       =  0.00% (0      / 2963    vias)
+    Layer VIA1       =  0.00% (0      / 2910    vias)
         Un-optimized =  0.00% (0       vias)
-        Un-mapped    = 100.00% (2963    vias)
-    Layer VIA2       =  0.00% (0      / 3203    vias)
+        Un-mapped    = 100.00% (2910    vias)
+    Layer VIA2       =  0.00% (0      / 3196    vias)
         Un-optimized =  0.00% (0       vias)
-        Un-mapped    = 100.00% (3203    vias)
-    Layer VIA3       =  0.00% (0      / 64      vias)
+        Un-mapped    = 100.00% (3196    vias)
+    Layer VIA3       =  0.00% (0      / 55      vias)
         Un-optimized =  0.00% (0       vias)
-        Un-mapped    = 100.00% (64      vias)
-    Layer VIA4       =  0.00% (0      / 2       vias)
+        Un-mapped    = 100.00% (55      vias)
+    Layer VIA4       =  0.00% (0      / 5       vias)
         Un-optimized =  0.00% (0       vias)
-        Un-mapped    = 100.00% (2       vias)
+        Un-mapped    = 100.00% (5       vias)
  
 
 
 Verify Summary:
 
-Total number of nets = 1381, of which 0 are not extracted
+Total number of nets = 1366, of which 0 are not extracted
 Total number of open nets = 0, of which 0 are frozen
 Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
                                  0 ports without pins of 0 cells connected to 0 nets
                                  0 ports of 0 cover cells connected to 0 non-pg nets
 
-Total number of DRCs = 1128
+Total number of DRCs = 1125
 Total number of antenna violations = no antenna rules defined
 Total number of tie to rail violations = not checked
 Total number of tie to rail directly violations = not checked

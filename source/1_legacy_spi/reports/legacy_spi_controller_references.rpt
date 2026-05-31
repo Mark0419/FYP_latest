@@ -3,7 +3,7 @@
 Report : reference
 Design : ahb_spi_legacy
 Version: V-2023.12-SP2
-Date   : Thu May 28 17:59:33 2026
+Date   : Sun May 31 03:10:25 2026
 ****************************************
 
 Attributes:
@@ -34,6 +34,9 @@ SAEDRVT14_AO222_1  saed14rvt_tt0p8v25c
 SAEDRVT14_AOI21_0P75
                    saed14rvt_tt0p8v25c
                                   0.266400       2      0.532800  
+SAEDRVT14_BUF_U_0P5
+                   saed14rvt_tt0p8v25c
+                                  0.266400       5      1.332000  
 SAEDRVT14_FDPRBQ_V2LP_0P5
                    saed14rvt_tt0p8v25c
                                   1.065600       5      5.328000  n
@@ -68,9 +71,9 @@ SAEDRVT14_TIE0_V1_2
                                   0.488400       1      0.488400  
 SAEDRVT14_TIE1_4   saed14rvt_tt0p8v25c
                                   0.399600       1      0.399600  
-spi_serializer_fsm              145.321202       1    145.321202  h, n
+spi_serializer_fsm              145.854002       1    145.854002  h, n
 -----------------------------------------------------------------------------
-Total 20 references                                   298.545606
+Total 21 references                                   300.410406
 
 ****************************************
 Design: spi_serializer_fsm 
@@ -98,7 +101,7 @@ SAEDRVT14_AOI22_0P5
                                   0.488400       8      3.907200  
 SAEDRVT14_BUF_U_0P5
                    saed14rvt_tt0p8v25c
-                                  0.266400       1      0.266400  
+                                  0.266400       3      0.799200  
 SAEDRVT14_EO2_V1_0P75
                    saed14rvt_tt0p8v25c
                                   0.444000       1      0.444000  
@@ -141,5 +144,5 @@ SAEDRVT14_OR2_MM_0P5
 SAEDRVT14_OR3_0P5  saed14rvt_tt0p8v25c
                                   0.355200       1      0.355200  
 -----------------------------------------------------------------------------
-Total 23 references                                   145.321202
+Total 23 references                                   145.854002
 1

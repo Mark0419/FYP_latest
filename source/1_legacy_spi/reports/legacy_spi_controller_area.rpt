@@ -3,7 +3,7 @@
 Report : area
 Design : ahb_spi_legacy
 Version: V-2023.12-SP2
-Date   : Thu May 28 17:59:33 2026
+Date   : Sun May 31 03:10:25 2026
 ****************************************
 
 Library(s) Used:
@@ -11,22 +11,22 @@ Library(s) Used:
     saed14rvt_tt0p8v25c (File: /data/synopsys/lib/saed14nm/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db)
 
 Number of ports:                          253
-Number of nets:                           730
-Number of cells:                          572
-Number of combinational cells:            415
+Number of nets:                           737
+Number of cells:                          579
+Number of combinational cells:            422
 Number of sequential cells:               156
 Number of macros/black boxes:               0
-Number of buf/inv:                        101
-Number of references:                      20
+Number of buf/inv:                        108
+Number of references:                      21
 
-Combinational area:                132.267600
-Buf/Inv area:                       18.026400
+Combinational area:                134.132400
+Buf/Inv area:                       19.891200
 Noncombinational area:             166.278006
 Macro/Black Box area:                0.000000
-Net Interconnect area:             613.504924
+Net Interconnect area:             562.071442
 
-Total cell area:                   298.545606
-Total area:                        912.050530
+Total cell area:                   300.410406
+Total area:                        862.481848
 
 Hierarchical area distribution
 ------------------------------
@@ -36,9 +36,9 @@ Hierarchical area distribution
 Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
                                   Total      Total    national  national   boxes   Design
 --------------------------------  ---------  -------  --------  ---------  ------  ------------------
-ahb_spi_legacy                     298.5456    100.0   64.7796    88.4448  0.0000  ahb_spi_legacy
-u_spi_fsm                          145.3212     48.7   67.4880    77.8332  0.0000  spi_serializer_fsm
+ahb_spi_legacy                     300.4104    100.0   66.1116    88.4448  0.0000  ahb_spi_legacy
+u_spi_fsm                          145.8540     48.6   68.0208    77.8332  0.0000  spi_serializer_fsm
 --------------------------------  ---------  -------  --------  ---------  ------  ------------------
-Total                                                 132.2676   166.2780  0.0000
+Total                                                 134.1324   166.2780  0.0000
 
 1
